@@ -1,0 +1,108 @@
+{
+  "output_filename": "improved-4c0dd81a9f38-sample_test.pptx",
+  "original_filename": "sample_test.pptx",
+  "slide_count": 2,
+  "quality_scores": {
+    "overall_score": 55,
+    "grade": "C",
+    "summary": "Quality analysis of 'sample_test.pptx' scored 55/100.",
+    "category_scores": {
+      "Grammar": 55,
+      "Spelling": 57,
+      "Readability": 52,
+      "Tone": 56,
+      "Clarity": 53,
+      "Conciseness": 51,
+      "Structure": 55
+    },
+    "seven_cs_scores": {
+      "Clear": 53,
+      "Concise": 54,
+      "Correct": 55,
+      "Complete": 56,
+      "Courteous": 57,
+      "Concrete": 53,
+      "Consistent": 54
+    },
+    "seven_cs_evaluation": {
+      "Clear": "Evaluated using the local quality fallback.",
+      "Concise": "Evaluated using the local quality fallback.",
+      "Correct": "Evaluated using the local quality fallback.",
+      "Complete": "Evaluated using the local quality fallback.",
+      "Courteous": "Evaluated using the local quality fallback.",
+      "Concrete": "Evaluated using the local quality fallback.",
+      "Consistent": "Evaluated using the local quality fallback."
+    },
+    "strengths": [
+      "Presentation text was extracted successfully.",
+      "Slide structure is preserved."
+    ],
+    "issues_found": [
+      "AI quality scoring was unavailable; local heuristics were used."
+    ],
+    "recommendations": [
+      "Review concise bullet wording and verify visual spacing."
+    ]
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "welcome to presenova presentation",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Title 1",
+          "original_paragraphs": [
+            "welcome to presenova presentation"
+          ],
+          "improved_paragraphs": [
+            "Welcome to presenova presentation."
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Subtitle 2",
+          "original_paragraphs": [
+            "we dont stop here and we can improve text"
+          ],
+          "improved_paragraphs": [
+            "We do not stop here and we can improve text."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 2,
+      "title": "Key Project Metrics",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Title 1",
+          "original_paragraphs": [
+            "Key Project Metrics"
+          ],
+          "improved_paragraphs": [
+            "Key Project Metrics."
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Content Placeholder 2",
+          "original_paragraphs": [
+            "First point about efficiency",
+            "Second point about accuracy"
+          ],
+          "improved_paragraphs": [
+            "First point about efficiency.",
+            "Second point about accuracy."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    }
+  ],
+  "generated_at": null
+}
