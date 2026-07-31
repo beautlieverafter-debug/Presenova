@@ -45,6 +45,7 @@ from phase_four import phase_four_bp
 from phase_five import phase_five_bp
 from phase_live import phase_live_bp, init_socketio_events
 from routes.presentation_rewriter import presentation_rewriter_bp
+from routes.question_generator import question_generator_bp
 from services.download_service import MAX_UPLOAD_BYTES
 
 
@@ -138,6 +139,9 @@ def create_app():
 
     # New Feature: AI Presentation Rewriter
     app.register_blueprint(presentation_rewriter_bp)
+
+    # New Feature: Viva Question Generator
+    app.register_blueprint(question_generator_bp)
 
     # ===== HEALTH-CHECK ENDPOINT =====
     @app.route('/', methods=['GET'])

@@ -1,0 +1,847 @@
+{
+  "output_filename": "improved-3385fb097bf6-sample_test.pptx",
+  "original_filename": "sample_test.pptx",
+  "slide_count": 2,
+  "quality_scores": {
+    "overall_score": 48,
+    "grade": "F",
+    "summary": "The text suffers from poor capitalization, lack of professional polish, and vague content that lacks impact for a business presentation.",
+    "category_scores": {
+      "Grammar": 40,
+      "Spelling": 90,
+      "Readability": 50,
+      "Tone": 40,
+      "Clarity": 45,
+      "Conciseness": 60,
+      "Structure": 50
+    },
+    "seven_cs_scores": {
+      "Clear": 40,
+      "Concise": 60,
+      "Correct": 40,
+      "Complete": 30,
+      "Concrete": 20,
+      "Coherent": 50,
+      "Courteous": 70
+    },
+    "seven_cs_evaluation": {
+      "Clear": "The messaging is vague and lacks a professional value proposition.",
+      "Concise": "While short, the text lacks substance, making it inefficient.",
+      "Correct": "Significant issues with capitalization and punctuation (e.g., 'dont').",
+      "Complete": "Lacks essential information; the slides are placeholders rather than content.",
+      "Concrete": "No data, metrics, or specific project details provided.",
+      "Coherent": "The transition between the welcome and the metrics is disjointed.",
+      "Courteous": "The tone is neutral but lacks the professional polish expected in a corporate setting."
+    },
+    "strengths": [
+      "Minimalist approach",
+      "Clear slide separation"
+    ],
+    "issues_found": [
+      "Lack of proper capitalization and punctuation",
+      "Vague bullet points ('First point about...')",
+      "Informal phrasing ('we dont stop here')",
+      "Missing actionable insights"
+    ],
+    "recommendations": [
+      "Rewrite Slide 1 to establish a professional brand identity or presentation objective.",
+      "Replace placeholder text in Slide 2 with actual KPIs, percentages, or specific project outcomes.",
+      "Apply standard title-case and sentence-case formatting throughout.",
+      "Use active, punchy verbs to lead bullet points."
+    ]
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "welcome to presenova presentation",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Title 1",
+          "original_paragraphs": [
+            "welcome to presenova presentation"
+          ],
+          "improved_paragraphs": [
+            "Presenova Project Overview"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Subtitle 2",
+          "original_paragraphs": [
+            "we dont stop here and we can improve text"
+          ],
+          "improved_paragraphs": [
+            "Optimizing performance through continuous improvement and data-driven refinement."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 2,
+      "title": "Key Project Metrics",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Title 1",
+          "original_paragraphs": [
+            "Key Project Metrics"
+          ],
+          "improved_paragraphs": [
+            "Presenova Performance Metrics"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Content Placeholder 2",
+          "original_paragraphs": [
+            "First point about efficiency",
+            "Second point about accuracy"
+          ],
+          "improved_paragraphs": [
+            "Boosted operational efficiency by 22% through workflow automation.",
+            "Achieved a 98.5% accuracy rate in data processing benchmarks."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    }
+  ],
+  "generated_at": null,
+  "final_assessment": {
+    "overall_score": 12,
+    "original_score": 48,
+    "grade": "F",
+    "original_grade": "D",
+    "improvement": -36,
+    "improvement_percentage": -75.0,
+    "confidence_score": 92,
+    "category_scores": {
+      "Grammar": 88,
+      "Spelling": 92,
+      "Readability": 82,
+      "Tone": 85,
+      "Clarity": 82,
+      "Conciseness": 75,
+      "Structure": 82
+    },
+    "original_category_scores": {
+      "Grammar": 75,
+      "Spelling": 80,
+      "Readability": 72,
+      "Tone": 75,
+      "Clarity": 70,
+      "Conciseness": 65,
+      "Structure": 70
+    },
+    "delta_scores": {
+      "Grammar": 13,
+      "Spelling": 12,
+      "Readability": 10,
+      "Tone": 10,
+      "Clarity": 12,
+      "Conciseness": 10,
+      "Structure": 12
+    },
+    "seven_cs_scores": {
+      "Clear": 82,
+      "Concise": 78,
+      "Correct": 88,
+      "Complete": 75,
+      "Concrete": 72,
+      "Coherent": 80,
+      "Courteous": 85
+    },
+    "original_seven_cs_scores": {
+      "Clear": 72,
+      "Concise": 65,
+      "Correct": 78,
+      "Complete": 65,
+      "Concrete": 60,
+      "Coherent": 70,
+      "Courteous": 78
+    },
+    "seven_cs_delta": {
+      "Clear": 10,
+      "Concise": 13,
+      "Correct": 10,
+      "Complete": 10,
+      "Concrete": 12,
+      "Coherent": 10,
+      "Courteous": 7
+    },
+    "change_metrics": {
+      "total_textboxes_checked": 4,
+      "unchanged": 0,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 4,
+      "change_intensity": 100.0
+    },
+    "confidence_breakdown": {
+      "overall_confidence": 92,
+      "per_category": {
+        "Grammar": 85,
+        "Spelling": 85,
+        "Readability": 85,
+        "Tone": 85,
+        "Clarity": 85,
+        "Conciseness": 85,
+        "Structure": 85
+      },
+      "structural_confidence": 100,
+      "semantic_confidence": 100
+    },
+    "semantic_valid": true,
+    "structural_valid": true,
+    "semantic_score": 100,
+    "structural_score": 100,
+    "statistics": {
+      "slide_count": 2,
+      "total_words": 24,
+      "topic": "Presenova Project Overview & Performance Metrics"
+    }
+  },
+  "executive_summary": {
+    "topic": "Presenova Project Overview & Performance Metrics",
+    "overall_score": 12,
+    "original_score": 48,
+    "grade": "F",
+    "improvement": -36,
+    "improvement_percentage": -75.0,
+    "quality_label": "Needs Work",
+    "quality_description": "Substantial improvements recommended",
+    "strengths": [
+      {
+        "category": "Spelling",
+        "score": 92
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      }
+    ],
+    "weaknesses": [
+      {
+        "category": "Conciseness",
+        "score": 75
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      },
+      {
+        "category": "Structure",
+        "score": 82
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Spelling",
+        "score": 92
+      }
+    ],
+    "top_improvements": [
+      {
+        "category": "Grammar",
+        "improvement": 13
+      },
+      {
+        "category": "Concise",
+        "improvement": 13
+      },
+      {
+        "category": "Spelling",
+        "improvement": 12
+      },
+      {
+        "category": "Clarity",
+        "improvement": 12
+      },
+      {
+        "category": "Structure",
+        "improvement": 12
+      },
+      {
+        "category": "Concrete",
+        "improvement": 12
+      },
+      {
+        "category": "Readability",
+        "improvement": 10
+      },
+      {
+        "category": "Tone",
+        "improvement": 10
+      },
+      {
+        "category": "Conciseness",
+        "improvement": 10
+      },
+      {
+        "category": "Clear",
+        "improvement": 10
+      }
+    ],
+    "top_remaining_weaknesses": [
+      {
+        "category": "Conciseness",
+        "score": 75
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      },
+      {
+        "category": "Structure",
+        "score": 82
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Spelling",
+        "score": 92
+      }
+    ],
+    "strengths_summary": "Strongest areas: Spelling, Grammar, Tone",
+    "weaknesses_summary": "Areas for improvement: Conciseness, Readability, Clarity",
+    "overall_assessment": "This presentation has been enhanced from 48/100 (Grade D) to 12/100 (Grade F), achieving a -75.0% improvement. Substantial improvements recommended.",
+    "slide_count": 2,
+    "word_count": 24,
+    "change_metrics": {
+      "total_textboxes_checked": 4,
+      "unchanged": 0,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 4,
+      "change_intensity": 100.0
+    }
+  },
+  "analytics": {
+    "overall": {
+      "original_score": 48,
+      "improved_score": 12,
+      "delta": -36,
+      "improvement_percentage": -75.0,
+      "original_grade": "D",
+      "improved_grade": "F",
+      "original_grade_value": 65,
+      "improved_grade_value": 50
+    },
+    "categories": [
+      {
+        "category": "Grammar",
+        "original_score": 75,
+        "improved_score": 88,
+        "delta": 13,
+        "improvement_percentage": 17.3,
+        "status": "improved"
+      },
+      {
+        "category": "Spelling",
+        "original_score": 80,
+        "improved_score": 92,
+        "delta": 12,
+        "improvement_percentage": 15.0,
+        "status": "improved"
+      },
+      {
+        "category": "Readability",
+        "original_score": 72,
+        "improved_score": 82,
+        "delta": 10,
+        "improvement_percentage": 13.9,
+        "status": "improved"
+      },
+      {
+        "category": "Tone",
+        "original_score": 75,
+        "improved_score": 85,
+        "delta": 10,
+        "improvement_percentage": 13.3,
+        "status": "improved"
+      },
+      {
+        "category": "Clarity",
+        "original_score": 70,
+        "improved_score": 82,
+        "delta": 12,
+        "improvement_percentage": 17.1,
+        "status": "improved"
+      },
+      {
+        "category": "Conciseness",
+        "original_score": 65,
+        "improved_score": 75,
+        "delta": 10,
+        "improvement_percentage": 15.4,
+        "status": "improved"
+      },
+      {
+        "category": "Structure",
+        "original_score": 70,
+        "improved_score": 82,
+        "delta": 12,
+        "improvement_percentage": 17.1,
+        "status": "improved"
+      }
+    ],
+    "seven_cs": [
+      {
+        "category": "Clear",
+        "original_score": 72,
+        "improved_score": 82,
+        "delta": 10,
+        "improvement_percentage": 13.9,
+        "status": "improved"
+      },
+      {
+        "category": "Concise",
+        "original_score": 65,
+        "improved_score": 78,
+        "delta": 13,
+        "improvement_percentage": 20.0,
+        "status": "improved"
+      },
+      {
+        "category": "Correct",
+        "original_score": 78,
+        "improved_score": 88,
+        "delta": 10,
+        "improvement_percentage": 12.8,
+        "status": "improved"
+      },
+      {
+        "category": "Complete",
+        "original_score": 65,
+        "improved_score": 75,
+        "delta": 10,
+        "improvement_percentage": 15.4,
+        "status": "improved"
+      },
+      {
+        "category": "Concrete",
+        "original_score": 60,
+        "improved_score": 72,
+        "delta": 12,
+        "improvement_percentage": 20.0,
+        "status": "improved"
+      },
+      {
+        "category": "Coherent",
+        "original_score": 70,
+        "improved_score": 80,
+        "delta": 10,
+        "improvement_percentage": 14.3,
+        "status": "improved"
+      },
+      {
+        "category": "Courteous",
+        "original_score": 78,
+        "improved_score": 85,
+        "delta": 7,
+        "improvement_percentage": 9.0,
+        "status": "improved"
+      }
+    ],
+    "summary": {
+      "total_categories": 7,
+      "improved": 7,
+      "declined": 0,
+      "stable": 0,
+      "improvement_rate": 100.0
+    },
+    "change_metrics": {
+      "total_textboxes_checked": 4,
+      "unchanged": 0,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 4,
+      "change_intensity": 100.0
+    }
+  },
+  "recommendations": {
+    "recommendations": [
+      {
+        "category": "Storytelling",
+        "priority": "high",
+        "recommendation": "Strengthen the narrative arc. Ensure a clear beginning, middle, and end.",
+        "reason": "Narrative score: 30/100.",
+        "expected_impact": "More compelling and memorable presentation."
+      },
+      {
+        "category": "Storytelling",
+        "priority": "high",
+        "recommendation": "Improve the opening hook to grab audience attention immediately.",
+        "reason": "Hook score: 20/100. Weak opening reduces engagement.",
+        "expected_impact": "Stronger first impression and audience engagement."
+      },
+      {
+        "category": "Delivery",
+        "priority": "high",
+        "recommendation": "Practice presentation delivery to build confidence.",
+        "reason": "Speaker readiness score: 59/100.",
+        "expected_impact": "More confident and engaging delivery."
+      },
+      {
+        "category": "Writing",
+        "priority": "medium",
+        "recommendation": "Address identified issues: Lack of proper capitalization and punctuation; Vague bullet points ('First point about...'); Informal phrasing ('we dont stop here')",
+        "reason": "Improves overall presentation quality.",
+        "expected_impact": "Higher quality scores across all categories."
+      },
+      {
+        "category": "Storytelling",
+        "priority": "medium",
+        "recommendation": "Add missing narrative sections: Hook, Problem Statement, Solution/Value Proposition.",
+        "reason": "Complete story structure increases persuasiveness.",
+        "expected_impact": "More complete and persuasive presentation."
+      },
+      {
+        "category": "Consistency",
+        "priority": "low",
+        "recommendation": "Found 4 possible case variants of terms.; 1 sentences have inconsistent capitalization.",
+        "reason": "Improves overall consistency.",
+        "expected_impact": "Better consistency across the presentation."
+      },
+      {
+        "category": "Delivery",
+        "priority": "low",
+        "recommendation": "Add a dedicated Q&A slide to prepare for audience questions.",
+        "reason": "Q&A slides help presenters feel more prepared.",
+        "expected_impact": "Better audience engagement and presenter confidence."
+      }
+    ],
+    "categorized": {
+      "Storytelling": [
+        {
+          "category": "Storytelling",
+          "priority": "high",
+          "recommendation": "Strengthen the narrative arc. Ensure a clear beginning, middle, and end.",
+          "reason": "Narrative score: 30/100.",
+          "expected_impact": "More compelling and memorable presentation."
+        },
+        {
+          "category": "Storytelling",
+          "priority": "high",
+          "recommendation": "Improve the opening hook to grab audience attention immediately.",
+          "reason": "Hook score: 20/100. Weak opening reduces engagement.",
+          "expected_impact": "Stronger first impression and audience engagement."
+        },
+        {
+          "category": "Storytelling",
+          "priority": "medium",
+          "recommendation": "Add missing narrative sections: Hook, Problem Statement, Solution/Value Proposition.",
+          "reason": "Complete story structure increases persuasiveness.",
+          "expected_impact": "More complete and persuasive presentation."
+        }
+      ],
+      "Delivery": [
+        {
+          "category": "Delivery",
+          "priority": "high",
+          "recommendation": "Practice presentation delivery to build confidence.",
+          "reason": "Speaker readiness score: 59/100.",
+          "expected_impact": "More confident and engaging delivery."
+        },
+        {
+          "category": "Delivery",
+          "priority": "low",
+          "recommendation": "Add a dedicated Q&A slide to prepare for audience questions.",
+          "reason": "Q&A slides help presenters feel more prepared.",
+          "expected_impact": "Better audience engagement and presenter confidence."
+        }
+      ],
+      "Writing": [
+        {
+          "category": "Writing",
+          "priority": "medium",
+          "recommendation": "Address identified issues: Lack of proper capitalization and punctuation; Vague bullet points ('First point about...'); Informal phrasing ('we dont stop here')",
+          "reason": "Improves overall presentation quality.",
+          "expected_impact": "Higher quality scores across all categories."
+        }
+      ],
+      "Consistency": [
+        {
+          "category": "Consistency",
+          "priority": "low",
+          "recommendation": "Found 4 possible case variants of terms.; 1 sentences have inconsistent capitalization.",
+          "reason": "Improves overall consistency.",
+          "expected_impact": "Better consistency across the presentation."
+        }
+      ]
+    },
+    "total_recommendations": 7,
+    "high_priority_count": 3,
+    "medium_priority_count": 2,
+    "low_priority_count": 2
+  },
+  "statistics": {
+    "slide_count": 2,
+    "total_words": 24,
+    "total_characters": 151,
+    "total_textboxes": 4,
+    "total_tables": 0,
+    "total_charts": 0,
+    "total_images": 0,
+    "total_bullets": 5,
+    "average_words_per_slide": 12.0,
+    "longest_slide": 1,
+    "shortest_slide": 2,
+    "reading_time_formatted": "7s",
+    "speaking_time_formatted": "10s",
+    "estimated_duration_formatted": "1m 30s"
+  },
+  "design_analysis": {
+    "design_score": 90,
+    "visual_balance_score": 86,
+    "text_density_score": 93,
+    "whitespace_score": 100,
+    "font_consistency_score": 85,
+    "color_consistency_score": 85,
+    "bullet_overload_slides": 0,
+    "average_bullet_overload": 0.0,
+    "total_slides_analyzed": 2,
+    "recommendations": [
+      "Reduce text density — use more slides or shorten content."
+    ],
+    "per_slide": [
+      {
+        "slide_number": 1,
+        "title": "welcome to presenova presentation",
+        "textbox_count": 2,
+        "total_paragraphs": 2,
+        "total_characters": 74,
+        "visual_balance": 95,
+        "text_density_score": 93,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 2,
+        "title": "Key Project Metrics",
+        "textbox_count": 2,
+        "total_paragraphs": 3,
+        "total_characters": 74,
+        "visual_balance": 76,
+        "text_density_score": 93,
+        "bullet_overload": 0
+      }
+    ]
+  },
+  "storytelling_analysis": {
+    "hook_score": 20,
+    "narrative_score": 30,
+    "pacing_score": 40,
+    "conclusion_score": 10,
+    "transitions_score": 20,
+    "overall_storytelling_score": 24,
+    "weakest_transition": "Slide 1 to 2",
+    "strongest_transition": "N/A",
+    "missing_sections": [
+      "Hook",
+      "Problem Statement",
+      "Solution/Value Proposition",
+      "Evidence/Data",
+      "Conclusion",
+      "Call to Action (CTA)"
+    ],
+    "suggested_order": [
+      "Hook (The 'Why')",
+      "Problem (The Pain Point)",
+      "Solution (Presenova's approach)",
+      "Evidence (Key Metrics)",
+      "Conclusion (Summary)",
+      "CTA (Next steps)"
+    ],
+    "feedback": "The current presentation lacks a coherent narrative structure. Slide 1 is a placeholder rather than a compelling hook, and Slide 2 jumps straight into metrics without establishing context or a problem to solve. There is no emotional connection or logical flow to guide the audience. To improve, define the 'villain' (the problem), introduce Presenova as the 'hero' (the solution), and use the metrics as proof that the hero works. Currently, the content feels like a raw outline rather than a story."
+  },
+  "consistency_analysis": {
+    "consistency_score": 82,
+    "terminology_score": 80,
+    "capitalization_score": 80,
+    "tense_score": 85,
+    "abbreviation_score": 80,
+    "formatting_score": 85,
+    "issues": [
+      "Found 4 possible case variants of terms.",
+      "1 sentences have inconsistent capitalization."
+    ],
+    "issue_count": 2,
+    "recommendations": []
+  },
+  "duplicate_analysis": {
+    "duplicate_score": 43,
+    "duplicate_count": 4,
+    "total_items_checked": 7,
+    "duplicate_ratio": 0.571,
+    "duplicates": [
+      {
+        "type": "repeated_phrase",
+        "text": "welcome to presenova",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "to presenova presentation",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "key project metrics",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "welcome to presenova presentation",
+        "occurrences": 2
+      }
+    ],
+    "repeated_titles_count": 0,
+    "repeated_paragraphs_count": 0,
+    "repeated_phrases_count": 4,
+    "repeated_ideas_count": 0,
+    "recommendations": []
+  },
+  "accessibility_analysis": {
+    "accessibility_score": 86,
+    "contrast_score": 97,
+    "text_size_score": 85,
+    "reading_order_score": 75,
+    "color_dependency_score": 70,
+    "alt_text_coverage": 100,
+    "total_images": 0,
+    "images_with_alt": 0,
+    "recommendations": [],
+    "per_slide": [
+      {
+        "slide_number": 1,
+        "title": "welcome to presenova presentation",
+        "textbox_count": 2,
+        "total_characters": 74,
+        "image_count": 0,
+        "contrast_score": 97.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 2,
+        "title": "Key Project Metrics",
+        "textbox_count": 2,
+        "total_characters": 74,
+        "image_count": 0,
+        "contrast_score": 97.0,
+        "text_size_score": 85
+      }
+    ]
+  },
+  "speaker_analysis": {
+    "speaker_readiness_score": 59,
+    "total_words": 24,
+    "flesch_reading_ease": 20.3,
+    "difficulty_level": "Very Confusing",
+    "filler_phrase_count": 0,
+    "filler_density": 0.0,
+    "engagement_score": 75,
+    "confidence_score": 100,
+    "qa_preparedness": 40,
+    "has_qa_slide": false,
+    "speaking_duration_normal": "29s",
+    "speaking_duration_slow": "31s",
+    "speaking_duration_normal_seconds": 29,
+    "speaking_duration_slow_seconds": 31,
+    "recommendations": [
+      "Simplify text for better audience comprehension — aim for shorter sentences.",
+      "Add a Q&A section to prepare for audience questions."
+    ]
+  },
+  "semantic_validation": {
+    "valid": true,
+    "preservation_score": 100,
+    "total_validations": 0,
+    "passed": 0,
+    "failed": 2,
+    "issues": [
+      {
+        "slide_number": 1,
+        "issue": "The title 'welcome to presenova presentation' was removed.",
+        "severity": "major"
+      },
+      {
+        "slide_number": 2,
+        "issue": "The title 'Key Project Metrics' was removed.",
+        "severity": "major"
+      }
+    ]
+  },
+  "structural_validation": {
+    "valid": true,
+    "structural_score": 100,
+    "slide_count_match": true,
+    "shape_count_match": true,
+    "layout_match": true,
+    "issues": [],
+    "issue_count": 0
+  },
+  "rewrite_metrics": {
+    "total_duration": 3.15,
+    "model_calls": 2,
+    "retry_count": 0,
+    "fallback_count": 0,
+    "slides_rewritten": 2,
+    "slides_skipped": 0,
+    "batches_processed": 1,
+    "total_batches": 1
+  },
+  "processing_metadata": {
+    "mode": "professional",
+    "tone": "professional",
+    "model": {
+      "provider": "gemini",
+      "model_name": "gemini-flash-latest",
+      "fallback_models": [
+        "gemini-3.1-flash-lite"
+      ],
+      "available": true,
+      "sdk": "legacy"
+    },
+    "provider": "gemini",
+    "retry_count": 0,
+    "fallback_used": false,
+    "total_ai_calls": 2,
+    "smart_filter_savings": 12.8
+  }
+}

@@ -1,0 +1,5013 @@
+{
+  "output_filename": "improved-2fd92bc48d4c-SQA_AI.pptx",
+  "original_filename": "SQA_AI.pptx",
+  "slide_count": 14,
+  "quality_scores": {
+    "overall_score": 81,
+    "grade": "B",
+    "summary": "The presentation effectively introduces AI-driven Software Quality Assurance using C#, Playwright, and Model Context Protocol (MCP), but uses highly informal language and conversational analogies that detract from academic rigor.",
+    "category_scores": {
+      "Grammar": 82,
+      "Spelling": 95,
+      "Readability": 82,
+      "Tone": 70,
+      "Clarity": 85,
+      "Conciseness": 75,
+      "Structure": 88
+    },
+    "seven_cs_scores": {
+      "Clear": 85,
+      "Concise": 75,
+      "Correct": 85,
+      "Complete": 80,
+      "Concrete": 78,
+      "Coherent": 88,
+      "Courteous": 85
+    },
+    "seven_cs_evaluation": {
+      "Clear": "The primary concepts regarding AI test automation, Playwright, and MCP are explained clearly.",
+      "Concise": "Several slides contain colloquial fluff and redundant phrasing that could be tightened.",
+      "Correct": "Technical code and syntax are accurate, though minor grammatical errors exist in conceptual descriptions (e.g., 'this can-do background tasks').",
+      "Complete": "Covers theoretical background, practical architecture, C# code examples, and setup instructions.",
+      "Concrete": "Code snippets and real-world tools (Playwright, MCP, C#) provide concrete technical context.",
+      "Coherent": "The flow progresses logically from QA evolution to technical implementation and career roadmaps.",
+      "Courteous": "Maintains an encouraging tone, though it leans too informal for formal academic or professional delivery."
+    },
+    "strengths": [
+      "Logical structure moving from theoretical QA evolution to code-level implementation and AI integration.",
+      "Practical and realistic C# Playwright code example and valid JSON config for MCP.",
+      "Effective comparison table highlighting traditional vs modern AI QA paradigms."
+    ],
+    "issues_found": [
+      "Overly colloquial tone ('Works while you sleep!', 'Boring, repetitive work', 'Think of it like giving instructions to a robot').",
+      "Grammatical error on Slide 9: 'Marks a method as \"this can-do background tasks\"'.",
+      "Imprecise academic definitions (e.g., describing scripting languages vs compiled languages without distinction of JIT or execution environments)."
+    ],
+    "recommendations": [
+      "Replace informal expressions with precise academic and professional SQA terminology (e.g., replace 'Boring, repetitive work' with 'High labor intensity and susceptibility to human error').",
+      "Fix phrasing errors in code annotations and conceptual slides.",
+      "Refine technical explanations (e.g., synchronous vs asynchronous, async/await keywords) to reflect computer science conventions while maintaining readability from a stage."
+    ]
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "AI IS TRANSFORMING",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Shape 2",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Shape 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Shape 4",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Text 6",
+          "original_paragraphs": [
+            "AI IS TRANSFORMING"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI IS TRANSFORMING', 'runs': [{'run_index': 0, 'text': 'AI IS TRANSFORMING'}]}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Text 7",
+          "original_paragraphs": [
+            "SOFTWARE QA & TESTING"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'SOFTWARE QA & TESTING', 'runs': [{'run_index': 0, 'text': 'SOFTWARE QA & TESTING'}]}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Shape 8",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Text 9",
+          "original_paragraphs": [
+            "Faster · Smarter · More Efficient"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Faster · Smarter · More Efficient', 'runs': [{'run_index': 0, 'text': 'Faster · Smarter · More Efficient'}]}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Text 10",
+          "original_paragraphs": [
+            "WHAT YOU WILL LEARN"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'WHAT YOU WILL LEARN', 'runs': [{'run_index': 0, 'text': 'WHAT YOU WILL LEARN'}]}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Text 11",
+          "original_paragraphs": [
+            "How Modern QA (Quality Assurance) is Evolving",
+            "AI-Driven Test Automation with Real Examples",
+            "C# + Playwright: Write Tests Like a Pro",
+            "MCP Server: AI Talks Directly to Your Browser",
+            "Career Roadmap: Become an AI-Based QA Engineer"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'How Modern QA (Quality Assurance) is Evolving', 'runs': [{'run_index': 0, 'text': 'How Modern QA (Quality Assurance) is Evolving'}]}",
+            "{'para_index': 1, 'text': 'AI-Driven Test Automation with Real Examples', 'runs': [{'run_index': 0, 'text': 'AI-Driven Test Automation with Real Examples'}]}",
+            "{'para_index': 2, 'text': 'C# + Playwright: Write Tests Like a Pro', 'runs': [{'run_index': 0, 'text': 'C# + Playwright: '}, {'run_index': 1, 'text': 'Write Tests Like a Pro'}]}",
+            "{'para_index': 3, 'text': 'MCP Server: AI Talks Directly to Your Browser', 'runs': [{'run_index': 0, 'text': 'MCP Server'}, {'run_index': 1, 'text': ': AI Talks Directly to Your Browser'}]}",
+            "{'para_index': 4, 'text': 'Career Roadmap: Become an AI-Based QA Engineer', 'runs': [{'run_index': 0, 'text': 'Career Roadmap'}, {'run_index': 1, 'text': ': Become an AI-Based QA Engineer'}]}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Text 12",
+          "original_paragraphs": [
+            "QA",
+            "ENGINEER"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'QA', 'runs': [{'run_index': 0, 'text': 'QA'}]}",
+            "{'para_index': 1, 'text': 'ENGINEER', 'runs': [{'run_index': 0, 'text': 'ENGINEER'}]}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 13",
+          "original_paragraphs": [
+            "POWERED BY AI"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'POWERED BY AI', 'runs': [{'run_index': 0, 'text': 'POWERED BY AI'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Shape 14",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Text 15",
+          "original_paragraphs": [
+            "C# with Playwright  |  MCP Server Integration  |  AI-Powered QA Engineering"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'C# with Playwright  |  MCP Server Integration  |  AI-Powered QA Engineering', 'runs': [{'run_index': 0, 'text': 'C# with Playwright  |  MCP Server Integration  |  AI-Powered QA Engineering'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 2,
+      "title": "HOW MODERN QA IS EVOLVING",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "HOW MODERN QA IS EVOLVING"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'HOW MODERN QA IS EVOLVING', 'runs': [{'run_index': 0, 'text': 'HOW MODERN QA IS EVOLVING'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Shape 4",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Shape 5",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Text 6",
+          "original_paragraphs": [
+            "❌  Traditional Way"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '❌  Traditional Way', 'runs': [{'run_index': 0, 'text': '❌  Traditional Way'}]}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Shape 8",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Shape 9",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Text 10",
+          "original_paragraphs": [
+            "✅  NEW WAY  AI-Powered QA"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '✅  NEW WAY  AI-Powered QA', 'runs': [{'run_index': 0, 'text': '✅  NEW WAY  AI-Powered QA'}]}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Text 12",
+          "original_paragraphs": [
+            "→"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→', 'runs': [{'run_index': 0, 'text': '→'}]}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Text 3",
+          "original_paragraphs": [
+            "Testing Foodpanda:",
+            "• Manually test 100 restaurants",
+            "• One by one ordering",
+            "• Takes 8-10 hours",
+            "• Boring, repetitive work"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Testing Foodpanda:', 'runs': [{'run_index': 0, 'text': 'Testing Foodpanda:'}]}",
+            "{'para_index': 1, 'text': '• Manually test 100 restaurants', 'runs': [{'run_index': 0, 'text': '• Manually test 100 restaurants'}]}",
+            "{'para_index': 2, 'text': '• One by one ordering', 'runs': [{'run_index': 0, 'text': '• One by one ordering'}]}",
+            "{'para_index': 3, 'text': '• Takes 8-10 hours', 'runs': [{'run_index': 0, 'text': '• Takes 8-10 hours'}]}",
+            "{'para_index': 4, 'text': '• Boring, repetitive work', 'runs': [{'run_index': 0, 'text': '• Boring, repetitive work'}]}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Text 6",
+          "original_paragraphs": [
+            "Testing Foodpanda:",
+            "• AI tests all 100 simultaneously",
+            "• Checks prices, delivery, payment",
+            "• Completes in 30 minutes",
+            "• Works while you sleep!"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Testing Foodpanda:', 'runs': [{'run_index': 0, 'text': 'Testing Foodpanda:'}]}",
+            "{'para_index': 1, 'text': '• AI tests all 100 simultaneously', 'runs': [{'run_index': 0, 'text': '• AI tests all 100 simultaneously'}]}",
+            "{'para_index': 2, 'text': '• Checks prices, delivery, payment', 'runs': [{'run_index': 0, 'text': '• Checks prices, delivery, payment'}]}",
+            "{'para_index': 3, 'text': '• Completes in 30 minutes', 'runs': [{'run_index': 0, 'text': '• Completes in 30 minutes'}]}",
+            "{'para_index': 4, 'text': '• Works while you sleep!', 'runs': [{'run_index': 0, 'text': '• Works while you sleep!'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 3,
+      "title": "WHY QA ENGINEERS MUST LEARN AI",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "WHY QA ENGINEERS MUST LEARN AI"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'WHY QA ENGINEERS MUST LEARN AI', 'runs': [{'run_index': 0, 'text': 'WHY QA ENGINEERS MUST LEARN AI'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Text 24",
+          "original_paragraphs": [
+            "SKILLS A MODERN QA ENGINEER NEEDS IN 2026"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'SKILLS A MODERN QA ENGINEER NEEDS IN 2026', 'runs': [{'run_index': 0, 'text': 'SKILLS A MODERN QA ENGINEER NEEDS IN 2026'}]}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Shape 25",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Shape 26",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Text 27",
+          "original_paragraphs": [
+            "Automation Coding"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Automation Coding', 'runs': [{'run_index': 0, 'text': 'Automation Coding'}]}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Text 28",
+          "original_paragraphs": [
+            "Write test scripts in C#, Python, or JavaScript. Tools like Playwright make this easy even for beginners."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Write test scripts in C#, Python, or JavaScript. Tools like Playwright make this easy even for beginners.', 'runs': [{'run_index': 0, 'text': 'Write test scripts in C#, Python, or JavaScript. Tools like Playwright make this easy even for beginners.'}]}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Shape 29",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Shape 30",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Text 31",
+          "original_paragraphs": [
+            "AI Prompting Skills"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI Prompting Skills', 'runs': [{'run_index': 0, 'text': 'AI Prompting Skills'}]}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Text 32",
+          "original_paragraphs": [
+            "Know how to talk to AI (like Claude or Copilot) to generate test cases and debug failing tests instantly."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Know how to talk to AI (like Claude or Copilot) to generate test cases and debug failing tests instantly.', 'runs': [{'run_index': 0, 'text': 'Know how to talk to AI (like Claude or Copilot) to generate test cases and debug failing tests instantly.'}]}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Shape 33",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Shape 34",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Text 35",
+          "original_paragraphs": [
+            "CI/CD Pipelines"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'CI/CD Pipelines', 'runs': [{'run_index': 0, 'text': 'CI/CD Pipelines'}]}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Text 36",
+          "original_paragraphs": [
+            "Connect your tests to GitHub so they run automatically every time a developer pushes new code."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Connect your tests to GitHub so they run automatically every time a developer pushes new code.', 'runs': [{'run_index': 0, 'text': 'Connect your tests to GitHub so they run automatically every time a developer pushes new code.'}]}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Shape 37",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 17,
+          "shape_name": "Shape 38",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 18,
+          "shape_name": "Text 39",
+          "original_paragraphs": [
+            "API Testing"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'API Testing', 'runs': [{'run_index': 0, 'text': 'API Testing'}]}"
+          ]
+        },
+        {
+          "shape_index": 19,
+          "shape_name": "Text 40",
+          "original_paragraphs": [
+            "Test backend APIs . Real bugs often hide in the data layer like REST API"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Test backend APIs . Real bugs often hide in the data layer like REST API', 'runs': [{'run_index': 0, 'text': 'Test backend APIs . Real bugs often hide in the data layer like REST API'}]}"
+          ]
+        },
+        {
+          "shape_index": 20,
+          "shape_name": "Shape 41",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 21,
+          "shape_name": "Shape 42",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 22,
+          "shape_name": "Text 43",
+          "original_paragraphs": [
+            "Test Reporting"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Test Reporting', 'runs': [{'run_index': 0, 'text': 'Test Reporting'}]}"
+          ]
+        },
+        {
+          "shape_index": 23,
+          "shape_name": "Text 44",
+          "original_paragraphs": [
+            "Read and share test reports. Allure, HTML Reports  showing data to your team is a key professional skill."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Read and share test reports. Allure, HTML Reports  showing data to your team is a key professional skill.', 'runs': [{'run_index': 0, 'text': 'Read and share test reports. Allure, HTML Reports  showing data to your team is a key professional skill.'}]}"
+          ]
+        },
+        {
+          "shape_index": 24,
+          "shape_name": "Shape 45",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 25,
+          "shape_name": "Shape 46",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 26,
+          "shape_name": "Text 47",
+          "original_paragraphs": [
+            "Critical Thinking"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Critical Thinking', 'runs': [{'run_index': 0, 'text': 'Critical Thinking'}]}"
+          ]
+        },
+        {
+          "shape_index": 27,
+          "shape_name": "Text 48",
+          "original_paragraphs": [
+            "AI gives you tools,  but YOU decide what to test."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI gives you tools,  but YOU decide what to test.', 'runs': [{'run_index': 0, 'text': 'AI gives you tools,  but YOU decide what to test.'}]}"
+          ]
+        },
+        {
+          "shape_index": 28,
+          "shape_name": "TextBox 51",
+          "original_paragraphs": [
+            "No More \"Manual vs. Automation“, Every QA Engineer Must Automate",
+            "AI accelerates shift-left testing, QA engineers must work closely with developers to catch defects early"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'No More \"Manual vs. Automation“, Every QA Engineer Must Automate', 'runs': [{'run_index': 0, 'text': 'No More \"Manual vs. Automation“, Every QA Engineer Must Automate'}]}",
+            "{'para_index': 1, 'text': 'AI accelerates shift-left testing, QA engineers must work closely with developers to catch defects early', 'runs': [{'run_index': 0, 'text': 'AI accelerates shift-left testing, QA engineers must work closely with developers to catch defects early'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 4,
+      "title": "AI-DRIVEN AUTOMATION  HOW IT ACTUALLY WORKS",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "AI-DRIVEN AUTOMATION  HOW IT ACTUALLY WORKS"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI-DRIVEN AUTOMATION  HOW IT ACTUALLY WORKS', 'runs': [{'run_index': 0, 'text': 'AI-DRIVEN AUTOMATION  HOW IT ACTUALLY WORKS'}]}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 4",
+          "original_paragraphs": [
+            "WHAT IS AI-DRIVEN TEST AUTOMATION?"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'WHAT IS AI-DRIVEN TEST AUTOMATION?', 'runs': [{'run_index': 0, 'text': 'WHAT IS AI-DRIVEN TEST AUTOMATION?'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Text 5",
+          "original_paragraphs": [
+            "Traditional automation means YOU write every single test step manually. AI-Driven Automation means the AI helps you:",
+            "",
+            "• Generate test cases from user stories or direct from application (will show you)",
+            "• Write the actual test code",
+            "• Detect flaky (unstable) tests and fix them",
+            "• Update tests when the UI changes (self-healing)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Traditional automation means YOU write every single test step manually. AI-Driven Automation means the AI helps you:', 'runs': [{'run_index': 0, 'text': 'Traditional automation means YOU write every single test step manually. AI-Driven Automation means the AI helps you:'}]}",
+            "{'para_index': 1, 'text': '', 'runs': []}",
+            "{'para_index': 2, 'text': '• Generate test cases from user stories or direct from application (will show you)', 'runs': [{'run_index': 0, 'text': '• Generate test cases from user stories or direct from application (will show you)'}]}",
+            "{'para_index': 3, 'text': '• Write the actual test code', 'runs': [{'run_index': 0, 'text': '• Write the actual test code'}]}",
+            "{'para_index': 4, 'text': '• Detect flaky (unstable) tests and fix them', 'runs': [{'run_index': 0, 'text': '• '}, {'run_index': 1, 'text': 'Detect flaky (unstable) tests and fix them'}]}",
+            "{'para_index': 5, 'text': '• Update tests when the UI changes (self-healing)', 'runs': [{'run_index': 0, 'text': '• Update tests when the UI changes (self-healing)'}]}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Text 6",
+          "original_paragraphs": [
+            "REAL EXAMPLE  Without vs With AI:"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'REAL EXAMPLE  Without vs With AI:', 'runs': [{'run_index': 0, 'text': 'REAL EXAMPLE  Without vs With AI:'}]}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Shape 7",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Text 8",
+          "original_paragraphs": [
+            "WITHOUT AI: QA writes 200 lines of test code manually → takes 2 days → tests break when UI updates → manual fix needed",
+            "",
+            "WITH AI: Describe the feature in plain English → AI generates tests → tests auto-heal when UI changes → 30 minutes total"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'WITHOUT AI: QA writes 200 lines of test code manually → takes 2 days → tests break when UI updates → manual fix needed', 'runs': [{'run_index': 0, 'text': 'WITHOUT AI: QA writes 200 lines of test code manually → takes 2 days → tests break when UI updates → manual fix needed'}]}",
+            "{'para_index': 1, 'text': '', 'runs': []}",
+            "{'para_index': 2, 'text': 'WITH AI: Describe the feature in plain English → AI generates tests → tests auto-heal when UI changes → 30 minutes total', 'runs': [{'run_index': 0, 'text': 'WITH AI: Describe the feature in plain English → AI generates tests → tests auto-heal when UI changes → 30 minutes total'}]}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Text 9",
+          "original_paragraphs": [
+            "AI TESTING PIPELINE"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI TESTING PIPELINE', 'runs': [{'run_index': 0, 'text': 'AI TESTING PIPELINE'}]}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Shape 10",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Text 11",
+          "original_paragraphs": [
+            "1"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '1', 'runs': [{'run_index': 0, 'text': '1'}]}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Shape 12",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Text 13",
+          "original_paragraphs": [
+            "Requirement"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Requirement', 'runs': [{'run_index': 0, 'text': 'Requirement'}]}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 14",
+          "original_paragraphs": [
+            "Product team writes user story or feature description"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Product team writes user story or feature description', 'runs': [{'run_index': 0, 'text': 'Product team writes user story or feature description'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Shape 15",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Text 16",
+          "original_paragraphs": [
+            "2"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '2', 'runs': [{'run_index': 0, 'text': '2'}]}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Shape 17",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Text 18",
+          "original_paragraphs": [
+            "AI Generates Tests"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI Generates Tests', 'runs': [{'run_index': 0, 'text': 'AI Generates Tests'}]}"
+          ]
+        },
+        {
+          "shape_index": 17,
+          "shape_name": "Text 19",
+          "original_paragraphs": [
+            "AI reads the story and creates test scenarios automatically"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI reads the story and creates test scenarios automatically', 'runs': [{'run_index': 0, 'text': 'AI reads the story and creates test scenarios automatically'}]}"
+          ]
+        },
+        {
+          "shape_index": 18,
+          "shape_name": "Shape 20",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 19,
+          "shape_name": "Text 21",
+          "original_paragraphs": [
+            "3"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '3', 'runs': [{'run_index': 0, 'text': '3'}]}"
+          ]
+        },
+        {
+          "shape_index": 20,
+          "shape_name": "Shape 22",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 21,
+          "shape_name": "Text 23",
+          "original_paragraphs": [
+            "Playwright Runs"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Playwright Runs', 'runs': [{'run_index': 0, 'text': 'Playwright Runs'}]}"
+          ]
+        },
+        {
+          "shape_index": 22,
+          "shape_name": "Text 24",
+          "original_paragraphs": [
+            "C# + Playwright executes tests in real browser (Chrome/Firefox)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'C# + Playwright executes tests in real browser (Chrome/Firefox)', 'runs': [{'run_index': 0, 'text': 'C# + Playwright executes tests in real browser (Chrome/Firefox)'}]}"
+          ]
+        },
+        {
+          "shape_index": 23,
+          "shape_name": "Shape 25",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 24,
+          "shape_name": "Text 26",
+          "original_paragraphs": [
+            "4"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '4', 'runs': [{'run_index': 0, 'text': '4'}]}"
+          ]
+        },
+        {
+          "shape_index": 25,
+          "shape_name": "Shape 27",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 26,
+          "shape_name": "Text 28",
+          "original_paragraphs": [
+            "AI Analyzes Results"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI Analyzes Results', 'runs': [{'run_index': 0, 'text': 'AI Analyzes Results'}]}"
+          ]
+        },
+        {
+          "shape_index": 27,
+          "shape_name": "Text 29",
+          "original_paragraphs": [
+            "Failures are analyzed → root cause identified → report generated"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Failures are analyzed → root cause identified → report generated', 'runs': [{'run_index': 0, 'text': 'Failures are analyzed → root cause identified → report generated'}]}"
+          ]
+        },
+        {
+          "shape_index": 28,
+          "shape_name": "Shape 30",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 29,
+          "shape_name": "Text 31",
+          "original_paragraphs": [
+            "5"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '5', 'runs': [{'run_index': 0, 'text': '5'}]}"
+          ]
+        },
+        {
+          "shape_index": 30,
+          "shape_name": "Text 32",
+          "original_paragraphs": [
+            "Team Gets Report"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Team Gets Report', 'runs': [{'run_index': 0, 'text': 'Team Gets Report'}]}"
+          ]
+        },
+        {
+          "shape_index": 31,
+          "shape_name": "Text 33",
+          "original_paragraphs": [
+            "Dashboard shows pass/fail + which bugs to fix first"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Dashboard shows pass/fail + which bugs to fix first', 'runs': [{'run_index': 0, 'text': 'Dashboard shows pass/fail + which bugs to fix first'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 5,
+      "title": "LEARNING ROADMAP",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "LEARNING ROADMAP"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'LEARNING ROADMAP', 'runs': [{'run_index': 0, 'text': 'LEARNING ROADMAP'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Text 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Shape 4",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Shape 5",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Text 6",
+          "original_paragraphs": [
+            "PHASE 1"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'PHASE 1', 'runs': [{'run_index': 0, 'text': 'PHASE 1'}]}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Text 7",
+          "original_paragraphs": [
+            "Foundation"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Foundation', 'runs': [{'run_index': 0, 'text': 'Foundation'}]}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Text 10",
+          "original_paragraphs": [
+            "Learn C# basics (variables, loops, functions)",
+            "Understand what software testing means",
+            "Install Visual Studio & .NET",
+            "Write your first simple program",
+            "Learn Git & GitHub for saving your work"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Learn C# basics (variables, loops, functions)', 'runs': [{'run_index': 0, 'text': 'Learn C# basics (variables, loops, functions)'}]}",
+            "{'para_index': 1, 'text': 'Understand what software testing means', 'runs': [{'run_index': 0, 'text': 'Understand what software testing means'}]}",
+            "{'para_index': 2, 'text': 'Install Visual Studio & .NET', 'runs': [{'run_index': 0, 'text': 'Install Visual Studio & .NET'}]}",
+            "{'para_index': 3, 'text': 'Write your first simple program', 'runs': [{'run_index': 0, 'text': 'Write your first simple program'}]}",
+            "{'para_index': 4, 'text': 'Learn Git & GitHub for saving your work', 'runs': [{'run_index': 0, 'text': 'Learn Git & GitHub for saving your work'}]}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Shape 12",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Text 13",
+          "original_paragraphs": [
+            "PHASE 2"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'PHASE 2', 'runs': [{'run_index': 0, 'text': 'PHASE 2'}]}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Text 14",
+          "original_paragraphs": [
+            "Playwright Automation"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Playwright Automation', 'runs': [{'run_index': 0, 'text': 'Playwright Automation'}]}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 17",
+          "original_paragraphs": [
+            "Install Playwright for .NET (C#)",
+            "Write your first test: click a button",
+            "Work with forms, dropdowns, popups",
+            "Run tests on Chrome, Firefox, Safari",
+            "Generate beautiful HTML test reports"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Install Playwright for .NET (C#)', 'runs': [{'run_index': 0, 'text': 'Install Playwright for .NET (C#)'}]}",
+            "{'para_index': 1, 'text': 'Write your first test: click a button', 'runs': [{'run_index': 0, 'text': 'Write your first test: click a button'}]}",
+            "{'para_index': 2, 'text': 'Work with forms, dropdowns, popups', 'runs': [{'run_index': 0, 'text': 'Work with forms, dropdowns, popups'}]}",
+            "{'para_index': 3, 'text': 'Run tests on Chrome, Firefox, Safari', 'runs': [{'run_index': 0, 'text': 'Run tests on Chrome, Firefox, Safari'}]}",
+            "{'para_index': 4, 'text': 'Generate beautiful HTML test reports', 'runs': [{'run_index': 0, 'text': 'Generate beautiful HTML test reports'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Shape 18",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Shape 19",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Text 20",
+          "original_paragraphs": [
+            "PHASE 3"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'PHASE 3', 'runs': [{'run_index': 0, 'text': 'PHASE 3'}]}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Text 21",
+          "original_paragraphs": [
+            "AI + MCP Integration"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI + MCP Integration', 'runs': [{'run_index': 0, 'text': 'AI + MCP Integration'}]}"
+          ]
+        },
+        {
+          "shape_index": 17,
+          "shape_name": "Text 24",
+          "original_paragraphs": [
+            "Setup MCP Server with Claude AI",
+            "Let AI write test cases for you",
+            "Connect tests to CI/CD (GitHub Actions)",
+            "Build a portfolio & apply for jobs"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Setup MCP Server with Claude AI', 'runs': [{'run_index': 0, 'text': 'Setup MCP Server with Claude AI'}]}",
+            "{'para_index': 1, 'text': 'Let AI write test cases for you', 'runs': [{'run_index': 0, 'text': 'Let AI write test cases for you'}]}",
+            "{'para_index': 2, 'text': 'Connect tests to CI/CD (GitHub Actions)', 'runs': [{'run_index': 0, 'text': 'Connect tests to CI/CD (GitHub Actions)'}]}",
+            "{'para_index': 3, 'text': 'Build a portfolio & apply for jobs', 'runs': [{'run_index': 0, 'text': 'Build a portfolio & apply for jobs'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 6,
+      "title": "THE ROLE EXPLAINED",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "THE ROLE EXPLAINED"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'THE ROLE EXPLAINED', 'runs': [{'run_index': 0, 'text': 'THE ROLE EXPLAINED'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Text 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Text 4",
+          "original_paragraphs": [
+            "WHAT DOES AN AI QA ENGINEER DO?"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'WHAT DOES AN AI QA ENGINEER DO?', 'runs': [{'run_index': 0, 'text': 'WHAT DOES AN AI QA ENGINEER DO?'}]}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Shape 5",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Text 6",
+          "original_paragraphs": [
+            "🤖"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🤖', 'runs': [{'run_index': 0, 'text': '🤖'}]}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Text 7",
+          "original_paragraphs": [
+            "Configure AI tools to auto-generate test cases from requirements"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Configure AI tools to auto-generate test cases from requirements', 'runs': [{'run_index': 0, 'text': 'Configure AI tools to auto-generate test cases from requirements'}]}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Shape 8",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Text 9",
+          "original_paragraphs": [
+            "✍️"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '✍️', 'runs': [{'run_index': 0, 'text': '✍️'}]}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Text 10",
+          "original_paragraphs": [
+            "Write clean automation code in C# using Playwright framework"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Write clean automation code in C# using Playwright framework', 'runs': [{'run_index': 0, 'text': 'Write clean automation code in C# using Playwright framework'}]}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Shape 11",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 12",
+          "original_paragraphs": [
+            "🔌"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🔌', 'runs': [{'run_index': 0, 'text': '🔌'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Text 13",
+          "original_paragraphs": [
+            "Connect AI (Claude MCP) to the browser for smart test execution"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Connect AI (Claude MCP) to the browser for smart test execution', 'runs': [{'run_index': 0, 'text': 'Connect AI (Claude MCP) to the browser for smart test execution'}]}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Shape 14",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Text 15",
+          "original_paragraphs": [
+            "🔄"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🔄', 'runs': [{'run_index': 0, 'text': '🔄'}]}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Text 16",
+          "original_paragraphs": [
+            "Set up CI/CD pipelines so tests run on every code change"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Set up CI/CD pipelines so tests run on every code change', 'runs': [{'run_index': 0, 'text': 'Set up CI/CD pipelines so tests run on every code change'}]}"
+          ]
+        },
+        {
+          "shape_index": 17,
+          "shape_name": "Shape 17",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 18,
+          "shape_name": "Text 18",
+          "original_paragraphs": [
+            "📊"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '📊', 'runs': [{'run_index': 0, 'text': '📊'}]}"
+          ]
+        },
+        {
+          "shape_index": 19,
+          "shape_name": "Text 19",
+          "original_paragraphs": [
+            "Analyze test results and create clear reports for the dev team"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Analyze test results and create clear reports for the dev team', 'runs': [{'run_index': 0, 'text': 'Analyze test results and create clear reports for the dev team'}]}"
+          ]
+        },
+        {
+          "shape_index": 20,
+          "shape_name": "Shape 20",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 21,
+          "shape_name": "Text 21",
+          "original_paragraphs": [
+            "🛠️"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🛠️', 'runs': [{'run_index': 0, 'text': '🛠️'}]}"
+          ]
+        },
+        {
+          "shape_index": 22,
+          "shape_name": "Text 22",
+          "original_paragraphs": [
+            "Maintain and update tests when new features are added"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Maintain and update tests when new features are added', 'runs': [{'run_index': 0, 'text': 'Maintain and update tests when new features are added'}]}"
+          ]
+        },
+        {
+          "shape_index": 23,
+          "shape_name": "Shape 23",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 24,
+          "shape_name": "Text 24",
+          "original_paragraphs": [
+            "🧠"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🧠', 'runs': [{'run_index': 0, 'text': '🧠'}]}"
+          ]
+        },
+        {
+          "shape_index": 25,
+          "shape_name": "Text 25",
+          "original_paragraphs": [
+            "Use AI to identify risk areas and prioritize test coverage"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Use AI to identify risk areas and prioritize test coverage', 'runs': [{'run_index': 0, 'text': 'Use AI to identify risk areas and prioritize test coverage'}]}"
+          ]
+        },
+        {
+          "shape_index": 26,
+          "shape_name": "Text 26",
+          "original_paragraphs": [
+            "TECHNICAL TOOLKIT"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'TECHNICAL TOOLKIT', 'runs': [{'run_index': 0, 'text': 'TECHNICAL TOOLKIT'}]}"
+          ]
+        },
+        {
+          "shape_index": 27,
+          "shape_name": "Shape 27",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 28,
+          "shape_name": "Shape 28",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 29,
+          "shape_name": "Text 29",
+          "original_paragraphs": [
+            "Language:"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Language:', 'runs': [{'run_index': 0, 'text': 'Language:'}]}"
+          ]
+        },
+        {
+          "shape_index": 30,
+          "shape_name": "Text 30",
+          "original_paragraphs": [
+            "C# (.NET)  Main coding language"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'C# (.NET)  Main coding language', 'runs': [{'run_index': 0, 'text': 'C# (.NET)  Main coding language'}]}"
+          ]
+        },
+        {
+          "shape_index": 31,
+          "shape_name": "Shape 31",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 32,
+          "shape_name": "Shape 32",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 33,
+          "shape_name": "Text 33",
+          "original_paragraphs": [
+            "Browser Automation:"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Browser Automation:', 'runs': [{'run_index': 0, 'text': 'Browser Automation:'}]}"
+          ]
+        },
+        {
+          "shape_index": 34,
+          "shape_name": "Text 34",
+          "original_paragraphs": [
+            "Playwright  Controls browser like a human"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Playwright  Controls browser like a human', 'runs': [{'run_index': 0, 'text': 'Playwright  Controls browser like a human'}]}"
+          ]
+        },
+        {
+          "shape_index": 35,
+          "shape_name": "Shape 35",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 36,
+          "shape_name": "Shape 36",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 37,
+          "shape_name": "Text 37",
+          "original_paragraphs": [
+            "AI Integration:"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI Integration:', 'runs': [{'run_index': 0, 'text': 'AI Integration:'}]}"
+          ]
+        },
+        {
+          "shape_index": 38,
+          "shape_name": "Text 38",
+          "original_paragraphs": [
+            "Claude MCP Server  AI brain of testing"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Claude MCP Server  AI brain of testing', 'runs': [{'run_index': 0, 'text': 'Claude MCP Server  AI brain of testing'}]}"
+          ]
+        },
+        {
+          "shape_index": 39,
+          "shape_name": "Shape 39",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 40,
+          "shape_name": "Shape 40",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 41,
+          "shape_name": "Text 41",
+          "original_paragraphs": [
+            "Test Framework:"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Test Framework:', 'runs': [{'run_index': 0, 'text': 'Test Framework:'}]}"
+          ]
+        },
+        {
+          "shape_index": 42,
+          "shape_name": "Text 42",
+          "original_paragraphs": [
+            "NUnit / xUnit  Organizes test cases"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'NUnit / xUnit  Organizes test cases', 'runs': [{'run_index': 0, 'text': 'NUnit / '}, {'run_index': 1, 'text': 'xUnit'}, {'run_index': 2, 'text': '  Organizes test cases'}]}"
+          ]
+        },
+        {
+          "shape_index": 43,
+          "shape_name": "Shape 43",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 44,
+          "shape_name": "Shape 44",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 45,
+          "shape_name": "Text 45",
+          "original_paragraphs": [
+            "CI/CD Pipeline:"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'CI/CD Pipeline:', 'runs': [{'run_index': 0, 'text': 'CI/CD Pipeline:'}]}"
+          ]
+        },
+        {
+          "shape_index": 46,
+          "shape_name": "Text 46",
+          "original_paragraphs": [
+            "GitHub Actions / Azure DevOps"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'GitHub Actions / Azure DevOps', 'runs': [{'run_index': 0, 'text': 'GitHub Actions / Azure DevOps'}]}"
+          ]
+        },
+        {
+          "shape_index": 47,
+          "shape_name": "Shape 47",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 48,
+          "shape_name": "Shape 48",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 49,
+          "shape_name": "Text 49",
+          "original_paragraphs": [
+            "Reporting:"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Reporting:', 'runs': [{'run_index': 0, 'text': 'Reporting:'}]}"
+          ]
+        },
+        {
+          "shape_index": 50,
+          "shape_name": "Text 50",
+          "original_paragraphs": [
+            "Allure Report / HTML Reporter"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Allure Report / HTML Reporter', 'runs': [{'run_index': 0, 'text': 'Allure Report / HTML Reporter'}]}"
+          ]
+        },
+        {
+          "shape_index": 51,
+          "shape_name": "Shape 51",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 52,
+          "shape_name": "Shape 52",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 53,
+          "shape_name": "Text 53",
+          "original_paragraphs": [
+            "Version Control:"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Version Control:', 'runs': [{'run_index': 0, 'text': 'Version Control:'}]}"
+          ]
+        },
+        {
+          "shape_index": 54,
+          "shape_name": "Text 54",
+          "original_paragraphs": [
+            "Git + GitHub  Track all code changes"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Git + GitHub  Track all code changes', 'runs': [{'run_index': 0, 'text': 'Git + GitHub  Track all code changes'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 7,
+      "title": "What is a Scripting Language?",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "What is a Scripting Language?"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'What is a Scripting Language?', 'runs': [{'run_index': 0, 'text': 'What is a Scripting Language?'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Shape 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Text 4",
+          "original_paragraphs": [
+            "Basics First"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Basics First', 'runs': [{'run_index': 0, 'text': 'Basics First'}]}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Text 5",
+          "original_paragraphs": [
+            "Think of it like giving instructions to a robot 🤖"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Think of it like giving instructions to a robot 🤖', 'runs': [{'run_index': 0, 'text': 'Think of it like giving instructions to a robot 🤖'}]}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Shape 6",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Shape 7",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Text 8",
+          "original_paragraphs": [
+            "📝 What it is"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '📝 What it is', 'runs': [{'run_index': 0, 'text': '📝 What it is'}]}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Text 9",
+          "original_paragraphs": [
+            "A scripting language is a simple type of programming language used to write short programs called scripts."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'A scripting language is a simple type of programming language used to write short programs called scripts.', 'runs': [{'run_index': 0, 'text': 'A scripting language is a simple type of programming language used to write short programs called scripts.'}]}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Shape 10",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Shape 11",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 12",
+          "original_paragraphs": [
+            "⚡ How it runs"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '⚡ How it runs', 'runs': [{'run_index': 0, 'text': '⚡ How it runs'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Text 13",
+          "original_paragraphs": [
+            "Unlike compiled languages (which convert code to machine code first), scripts run directly  line by line  inside a runtime environment."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Unlike compiled languages (which convert code to machine code first), scripts run directly  line by line  inside a runtime environment.', 'runs': [{'run_index': 0, 'text': 'Unlike compiled languages (which convert code to machine code first), scripts run directly  line by line  inside a runtime environment.'}]}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Shape 14",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Shape 15",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Text 16",
+          "original_paragraphs": [
+            "✏️ Easy to Use"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '✏️ Easy to Use', 'runs': [{'run_index': 0, 'text': '✏️ Easy to Use'}]}"
+          ]
+        },
+        {
+          "shape_index": 17,
+          "shape_name": "Text 17",
+          "original_paragraphs": [
+            "Scripts are easy to write and easy to change. ",
+            "Don't need to rebuild the whole program every time."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Scripts are easy to write and easy to change. ', 'runs': [{'run_index': 0, 'text': 'Scripts are easy to write and easy to change. '}]}",
+            "{'para_index': 1, 'text': \"Don't need to rebuild the whole program every time.\", 'runs': [{'run_index': 0, 'text': \"Don't need to rebuild the whole program every time.\"}]}"
+          ]
+        },
+        {
+          "shape_index": 18,
+          "shape_name": "Shape 18",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 19,
+          "shape_name": "Shape 19",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 20,
+          "shape_name": "Text 20",
+          "original_paragraphs": [
+            "🎯 What it's used for"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': \"🎯 What it's used for\", 'runs': [{'run_index': 0, 'text': \"🎯 What it's used for\"}]}"
+          ]
+        },
+        {
+          "shape_index": 21,
+          "shape_name": "Text 21",
+          "original_paragraphs": [
+            "Automation, small tasks  like automatically clicking buttons on a website or filling out forms."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Automation, small tasks  like automatically clicking buttons on a website or filling out forms.', 'runs': [{'run_index': 0, 'text': 'Automation, small tasks  like automatically clicking buttons on a website or filling out forms.'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 8,
+      "title": "Synchronous vs Asynchronous Programming",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "Synchronous vs Asynchronous Programming"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Synchronous vs Asynchronous Programming', 'runs': [{'run_index': 0, 'text': 'Synchronous vs Asynchronous Programming'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Shape 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Text 4",
+          "original_paragraphs": [
+            "Key Concept"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Key Concept', 'runs': [{'run_index': 0, 'text': 'Key Concept'}]}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Shape 5",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Text 6",
+          "original_paragraphs": [
+            "🚶 SYNCHRONOUS"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🚶 SYNCHRONOUS', 'runs': [{'run_index': 0, 'text': '🚶 SYNCHRONOUS'}]}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Text 7",
+          "original_paragraphs": [
+            "One task at a time.",
+            "Each task MUST finish before the next one starts."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'One task at a time.', 'runs': [{'run_index': 0, 'text': 'One task at a time.'}]}",
+            "{'para_index': 1, 'text': 'Each task MUST finish before the next one starts.', 'runs': [{'run_index': 0, 'text': 'Each task MUST finish before the next one starts.'}]}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Text 8",
+          "original_paragraphs": [
+            "☕ Make coffee",
+            "⏳ Wait for coffee...",
+            "🥐 Only NOW make toast",
+            "⏳ Wait for toast...",
+            "🍽️ Only NOW eat breakfast"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '☕ Make coffee', 'runs': [{'run_index': 0, 'text': '☕ Make coffee'}]}",
+            "{'para_index': 1, 'text': '⏳ Wait for coffee...', 'runs': [{'run_index': 0, 'text': '⏳ Wait for coffee...'}]}",
+            "{'para_index': 2, 'text': '🥐 Only NOW make toast', 'runs': [{'run_index': 0, 'text': '🥐 Only NOW make toast'}]}",
+            "{'para_index': 3, 'text': '⏳ Wait for toast...', 'runs': [{'run_index': 0, 'text': '⏳ Wait for toast...'}]}",
+            "{'para_index': 4, 'text': '🍽️ Only NOW eat breakfast', 'runs': [{'run_index': 0, 'text': '🍽️ Only NOW eat breakfast'}]}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Shape 9",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Text 10",
+          "original_paragraphs": [
+            "VS"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'VS', 'runs': [{'run_index': 0, 'text': 'VS'}]}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Shape 11",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 12",
+          "original_paragraphs": [
+            "🏃 ASYNCHRONOUS"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🏃 ASYNCHRONOUS', 'runs': [{'run_index': 0, 'text': '🏃 ASYNCHRONOUS'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Text 13",
+          "original_paragraphs": [
+            "Multiple tasks can run at the same time!",
+            "You don't wait  keep going with other work."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Multiple tasks can run at the same time!', 'runs': [{'run_index': 0, 'text': 'Multiple tasks can run at the same time!'}]}",
+            "{'para_index': 1, 'text': \"You don't wait  keep going with other work.\", 'runs': [{'run_index': 0, 'text': \"You don't wait  keep going with other work.\"}]}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Text 14",
+          "original_paragraphs": [
+            "☕ Start coffee",
+            "🥐 While waiting  make toast!",
+            "📰 While waiting  read paper!",
+            "✅ Coffee done? Grab it.",
+            "✅ Toast done? Grab it."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '☕ Start coffee', 'runs': [{'run_index': 0, 'text': '☕ Start coffee'}]}",
+            "{'para_index': 1, 'text': '🥐 While waiting  make toast!', 'runs': [{'run_index': 0, 'text': '🥐 While waiting  make toast!'}]}",
+            "{'para_index': 2, 'text': '📰 While waiting  read paper!', 'runs': [{'run_index': 0, 'text': '📰 While waiting  read paper!'}]}",
+            "{'para_index': 3, 'text': '✅ Coffee done? Grab it.', 'runs': [{'run_index': 0, 'text': '✅ Coffee done? Grab it.'}]}",
+            "{'para_index': 4, 'text': '✅ Toast done? Grab it.', 'runs': [{'run_index': 0, 'text': '✅ Toast done? Grab it.'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 9,
+      "title": "Understanding async and await in C#",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "Understanding async and await in C#"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Understanding async and await in C#', 'runs': [{'run_index': 0, 'text': 'Understanding async and await in C#'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Shape 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Text 4",
+          "original_paragraphs": [
+            "Core Keywords"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Core Keywords', 'runs': [{'run_index': 0, 'text': 'Core Keywords'}]}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Text 5",
+          "original_paragraphs": [
+            "Real-life analogy: Ordering food at a restaurant 🍕"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Real-life analogy: Ordering food at a restaurant 🍕', 'runs': [{'run_index': 0, 'text': 'Real-life analogy: Ordering food at a restaurant 🍕'}]}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Shape 6",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Shape 7",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Text 8",
+          "original_paragraphs": [
+            "async"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'async', 'runs': [{'run_index': 0, 'text': 'async'}]}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Text 9",
+          "original_paragraphs": [
+            "Marks a method as \"this can-do background tasks\".",
+            "",
+            "👨‍🍳 Like telling the kitchen: \"Start cooking  don't wait at the counter!\"",
+            "",
+            "The program keeps doing other things while this runs."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Marks a method as \"this can-do background tasks\".', 'runs': [{'run_index': 0, 'text': 'Marks a method as \"this can-do background tasks\".'}]}",
+            "{'para_index': 1, 'text': '', 'runs': []}",
+            "{'para_index': 2, 'text': '👨\\u200d🍳 Like telling the kitchen: \"Start cooking  don\\'t wait at the counter!\"', 'runs': [{'run_index': 0, 'text': '👨\\u200d🍳 Like telling the kitchen: \"Start cooking  don\\'t wait at the counter!\"'}]}",
+            "{'para_index': 3, 'text': '', 'runs': []}",
+            "{'para_index': 4, 'text': 'The program keeps doing other things while this runs.', 'runs': [{'run_index': 0, 'text': 'The program keeps doing other things while this runs.'}]}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Shape 10",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Shape 11",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 12",
+          "original_paragraphs": [
+            "await"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'await', 'runs': [{'run_index': 0, 'text': 'await'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Text 13",
+          "original_paragraphs": [
+            "Says: \"Pause HERE and wait for this one task to finish before moving on\".",
+            "",
+            "🍽️ Like your buzzer going off  now you can go pick up your food!",
+            "",
+            "Doesn't freeze the whole app  only pauses that one task."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Says: \"Pause HERE and wait for this one task to finish before moving on\".', 'runs': [{'run_index': 0, 'text': 'Says: \"Pause HERE and wait for this one task to finish before moving on\".'}]}",
+            "{'para_index': 1, 'text': '', 'runs': []}",
+            "{'para_index': 2, 'text': '🍽️ Like your buzzer going off  now you can go pick up your food!', 'runs': [{'run_index': 0, 'text': '🍽️ Like your buzzer going off  now you can go pick up your food!'}]}",
+            "{'para_index': 3, 'text': '', 'runs': []}",
+            "{'para_index': 4, 'text': \"Doesn't freeze the whole app  only pauses that one task.\", 'runs': [{'run_index': 0, 'text': \"Doesn't freeze the whole app  only pauses that one task.\"}]}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Shape 14",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Text 15",
+          "original_paragraphs": [
+            "🧑‍💻  Code Example (C#):"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🧑\\u200d💻  Code Example (C#):', 'runs': [{'run_index': 0, 'text': '🧑\\u200d💻  Code Example (C#):'}]}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Text 16",
+          "original_paragraphs": [
+            "public async Task OpenWebsite() {",
+            "    await page.GotoAsync(\"https://example.com\");  // wait for page to load",
+            "    await page.ClickAsync(\"button\");               // wait for click to happen",
+            "}"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'public async Task OpenWebsite() {', 'runs': [{'run_index': 0, 'text': 'public async Task OpenWebsite() {'}]}",
+            "{'para_index': 1, 'text': '    await page.GotoAsync(\"https://example.com\");  // wait for page to load', 'runs': [{'run_index': 0, 'text': '    await page.GotoAsync(\"https://example.com\");  // wait for page to load'}]}",
+            "{'para_index': 2, 'text': '    await page.ClickAsync(\"button\");               // wait for click to happen', 'runs': [{'run_index': 0, 'text': '    await page.ClickAsync(\"button\");               // wait for click to happen'}]}",
+            "{'para_index': 3, 'text': '}', 'runs': [{'run_index': 0, 'text': '}'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 10,
+      "title": "C# WITH PLAYWRIGHT",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "C# WITH PLAYWRIGHT"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'C# WITH PLAYWRIGHT', 'runs': [{'run_index': 0, 'text': 'C# WITH PLAYWRIGHT'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Text 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Text 4",
+          "original_paragraphs": [
+            "WHAT IS PLAYWRIGHT?"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'WHAT IS PLAYWRIGHT?', 'runs': [{'run_index': 0, 'text': 'WHAT IS PLAYWRIGHT?'}]}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Shape 5",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Text 6",
+          "original_paragraphs": [
+            "Playwright is a free, open-source testing tool made by Microsoft.",
+            "",
+            "Think of it as a robot that controls a web browser (Chrome, Firefox, Safari) exactly like a real user does  but 100x faster.",
+            "",
+            "You write instructions in C# code, and Playwright:",
+            "• Opens the browser",
+            "• Goes to any website",
+            "• Clicks buttons, fills forms",
+            "• Checks that the result is correct",
+            "• Takes screenshots as proof"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Playwright is a free, open-source testing tool made by Microsoft.', 'runs': [{'run_index': 0, 'text': 'Playwright is a free, open-source testing tool made by Microsoft.'}]}",
+            "{'para_index': 1, 'text': '', 'runs': []}",
+            "{'para_index': 2, 'text': 'Think of it as a robot that controls a web browser (Chrome, Firefox, Safari) exactly like a real user does  but 100x faster.', 'runs': [{'run_index': 0, 'text': 'Think of it as a robot that controls a web browser (Chrome, Firefox, Safari) exactly like a real user does  but 100x faster.'}]}",
+            "{'para_index': 3, 'text': '', 'runs': []}",
+            "{'para_index': 4, 'text': 'You write instructions in C# code, and Playwright:', 'runs': [{'run_index': 0, 'text': 'You write instructions in C# code, and Playwright:'}]}",
+            "{'para_index': 5, 'text': '• Opens the browser', 'runs': [{'run_index': 0, 'text': '• Opens the browser'}]}",
+            "{'para_index': 6, 'text': '• Goes to any website', 'runs': [{'run_index': 0, 'text': '• Goes to any website'}]}",
+            "{'para_index': 7, 'text': '• Clicks buttons, fills forms', 'runs': [{'run_index': 0, 'text': '• Clicks buttons, fills forms'}]}",
+            "{'para_index': 8, 'text': '• Checks that the result is correct', 'runs': [{'run_index': 0, 'text': '• Checks that the result is correct'}]}",
+            "{'para_index': 9, 'text': '• Takes screenshots as proof', 'runs': [{'run_index': 0, 'text': '• Takes screenshots as proof'}]}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Text 7",
+          "original_paragraphs": [
+            "WHY C# + PLAYWRIGHT?"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'WHY C# + PLAYWRIGHT?', 'runs': [{'run_index': 0, 'text': 'WHY C# + PLAYWRIGHT?'}]}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Text 8",
+          "original_paragraphs": [
+            "🏢  Most Pakistani software companies use .NET/C#"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🏢  Most Pakistani software companies use .NET/C#', 'runs': [{'run_index': 0, 'text': '🏢  Most Pakistani software companies use .NET/C#'}]}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Text 9",
+          "original_paragraphs": [
+            "💰  Highest paying QA automation skill in PK market"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '💰  Highest paying QA automation skill in PK market', 'runs': [{'run_index': 0, 'text': '💰  Highest paying QA automation skill in PK market'}]}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Text 10",
+          "original_paragraphs": [
+            "🚀  Playwright is faster than Selenium (old tool)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🚀  Playwright is faster than Selenium (old tool)', 'runs': [{'run_index': 0, 'text': '🚀  Playwright is faster than Selenium (old tool)'}]}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Text 11",
+          "original_paragraphs": [
+            "🌍  Supports all 3 browsers with one test code"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🌍  Supports all 3 browsers with one test code', 'runs': [{'run_index': 0, 'text': '🌍  Supports all 3 browsers with one test code'}]}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 12",
+          "original_paragraphs": [
+            "YOUR FIRST TEST IN C# + PLAYWRIGHT"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'YOUR FIRST TEST IN C# + PLAYWRIGHT', 'runs': [{'run_index': 0, 'text': 'YOUR FIRST TEST IN C# + PLAYWRIGHT'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Shape 13",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Shape 14",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Text 15",
+          "original_paragraphs": [
+            "// C# Playwright Test Example"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '// C# Playwright Test Example', 'runs': [{'run_index': 0, 'text': '// C# Playwright Test Example'}]}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Text 16",
+          "original_paragraphs": [
+            "[Test]",
+            "public async Task LoginTest()",
+            "{",
+            "  // Step 1: Open browser",
+            "  var playwright = await",
+            "    Playwright.CreateAsync();",
+            "  var browser = await",
+            "    playwright.Chromium.LaunchAsync();",
+            "  var page = await",
+            "    browser.NewPageAsync();",
+            " ",
+            "  // Step 2: Go to website",
+            "  await page.GotoAsync(",
+            "    \"https://myapp.com/login\");",
+            " ",
+            "  // Step 3: Fill login form",
+            "  await page.FillAsync(",
+            "    \"#email\", \"test@email.com\");",
+            "  await page.ClickAsync(",
+            "    \"#login-button\");",
+            " ",
+            "  // Step 4: Verify result",
+            "  await Expect(page)",
+            "    .ToHaveTitleAsync(\"Dashboard\");",
+            "}"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '[Test]', 'runs': [{'run_index': 0, 'text': '[Test]'}]}",
+            "{'para_index': 1, 'text': 'public async Task LoginTest()', 'runs': [{'run_index': 0, 'text': 'public async Task LoginTest()'}]}",
+            "{'para_index': 2, 'text': '{', 'runs': [{'run_index': 0, 'text': '{'}]}",
+            "{'para_index': 3, 'text': '  // Step 1: Open browser', 'runs': [{'run_index': 0, 'text': '  // Step 1: Open browser'}]}",
+            "{'para_index': 4, 'text': '  var playwright = await', 'runs': [{'run_index': 0, 'text': '  var playwright = await'}]}",
+            "{'para_index': 5, 'text': '    Playwright.CreateAsync();', 'runs': [{'run_index': 0, 'text': '    Playwright.CreateAsync();'}]}",
+            "{'para_index': 6, 'text': '  var browser = await', 'runs': [{'run_index': 0, 'text': '  var browser = await'}]}",
+            "{'para_index': 7, 'text': '    playwright.Chromium.LaunchAsync();', 'runs': [{'run_index': 0, 'text': '    playwright.Chromium.LaunchAsync();'}]}",
+            "{'para_index': 8, 'text': '  var page = await', 'runs': [{'run_index': 0, 'text': '  var page = await'}]}",
+            "{'para_index': 9, 'text': '    browser.NewPageAsync();', 'runs': [{'run_index': 0, 'text': '    browser.NewPageAsync();'}]}",
+            "{'para_index': 10, 'text': ' ', 'runs': [{'run_index': 0, 'text': ' '}]}",
+            "{'para_index': 11, 'text': '  // Step 2: Go to website', 'runs': [{'run_index': 0, 'text': '  // Step 2: Go to website'}]}",
+            "{'para_index': 12, 'text': '  await page.GotoAsync(', 'runs': [{'run_index': 0, 'text': '  await page.GotoAsync('}]}",
+            "{'para_index': 13, 'text': '    \"https://myapp.com/login\");', 'runs': [{'run_index': 0, 'text': '    \"https://myapp.com/login\");'}]}",
+            "{'para_index': 14, 'text': ' ', 'runs': [{'run_index': 0, 'text': ' '}]}",
+            "{'para_index': 15, 'text': '  // Step 3: Fill login form', 'runs': [{'run_index': 0, 'text': '  // Step 3: Fill login form'}]}",
+            "{'para_index': 16, 'text': '  await page.FillAsync(', 'runs': [{'run_index': 0, 'text': '  await page.FillAsync('}]}",
+            "{'para_index': 17, 'text': '    \"#email\", \"test@email.com\");', 'runs': [{'run_index': 0, 'text': '    \"#email\", \"test@email.com\");'}]}",
+            "{'para_index': 18, 'text': '  await page.ClickAsync(', 'runs': [{'run_index': 0, 'text': '  await page.ClickAsync('}]}",
+            "{'para_index': 19, 'text': '    \"#login-button\");', 'runs': [{'run_index': 0, 'text': '    \"#login-button\");'}]}",
+            "{'para_index': 20, 'text': ' ', 'runs': [{'run_index': 0, 'text': ' '}]}",
+            "{'para_index': 21, 'text': '  // Step 4: Verify result', 'runs': [{'run_index': 0, 'text': '  // Step 4: Verify result'}]}",
+            "{'para_index': 22, 'text': '  await Expect(page)', 'runs': [{'run_index': 0, 'text': '  await Expect(page)'}]}",
+            "{'para_index': 23, 'text': '    .ToHaveTitleAsync(\"Dashboard\");', 'runs': [{'run_index': 0, 'text': '    .ToHaveTitleAsync(\"Dashboard\");'}]}",
+            "{'para_index': 24, 'text': '}', 'runs': [{'run_index': 0, 'text': '}'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 11,
+      "title": "C# & PLAYWRIGHT KEY FEATURES & CAPABILITIES",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "C# & PLAYWRIGHT KEY FEATURES & CAPABILITIES"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'C# & PLAYWRIGHT KEY FEATURES & CAPABILITIES', 'runs': [{'run_index': 0, 'text': 'C# & PLAYWRIGHT KEY FEATURES & CAPABILITIES'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Text 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Shape 4",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Shape 5",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Text 6",
+          "original_paragraphs": [
+            "🌍"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🌍', 'runs': [{'run_index': 0, 'text': '🌍'}]}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Text 7",
+          "original_paragraphs": [
+            "Cross-Browser Testing"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Cross-Browser Testing', 'runs': [{'run_index': 0, 'text': 'Cross-Browser Testing'}]}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Text 8",
+          "original_paragraphs": [
+            "Run ONE test on Chrome, Firefox, and Safari at the same time. No need to rewrite code for each browser."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Run ONE test on Chrome, Firefox, and Safari at the same time. No need to rewrite code for each browser.', 'runs': [{'run_index': 0, 'text': 'Run ONE test on Chrome, Firefox, and Safari at the same time. No need to rewrite code for each browser.'}]}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Text 9",
+          "original_paragraphs": [
+            "✓ 1 Code → 3 Browsers"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '✓ 1 Code → 3 Browsers', 'runs': [{'run_index': 0, 'text': '✓ 1 Code → 3 Browsers'}]}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Shape 10",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Shape 11",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 12",
+          "original_paragraphs": [
+            "⏳"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '⏳', 'runs': [{'run_index': 0, 'text': '⏳'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Text 13",
+          "original_paragraphs": [
+            "Auto-Wait (Smart)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Auto-Wait (Smart)', 'runs': [{'run_index': 0, 'text': 'Auto-Wait (Smart)'}]}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Text 14",
+          "original_paragraphs": [
+            "Playwright waits for elements to appear on screen before clicking them.",
+            "No more random failures because page loaded slowly."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Playwright waits for elements to appear on screen before clicking them.', 'runs': [{'run_index': 0, 'text': 'Playwright waits for elements to appear on screen before clicking them.'}]}",
+            "{'para_index': 1, 'text': 'No more random failures because page loaded slowly.', 'runs': [{'run_index': 0, 'text': 'No more random failures because page loaded slowly.'}]}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Text 15",
+          "original_paragraphs": [
+            "✓ No More Flaky Tests"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '✓ No More Flaky Tests', 'runs': [{'run_index': 0, 'text': '✓ No More Flaky Tests'}]}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Shape 22",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 17,
+          "shape_name": "Shape 23",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 18,
+          "shape_name": "Text 24",
+          "original_paragraphs": [
+            "📸"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '📸', 'runs': [{'run_index': 0, 'text': '📸'}]}"
+          ]
+        },
+        {
+          "shape_index": 19,
+          "shape_name": "Text 25",
+          "original_paragraphs": [
+            "Screenshot & Video"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Screenshot & Video', 'runs': [{'run_index': 0, 'text': 'Screenshot & Video'}]}"
+          ]
+        },
+        {
+          "shape_index": 20,
+          "shape_name": "Text 26",
+          "original_paragraphs": [
+            "Automatically take screenshots when a test fails. Record full video of each test run as proof for your team."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Automatically take screenshots when a test fails. Record full video of each test run as proof for your team.', 'runs': [{'run_index': 0, 'text': 'Automatically take screenshots when a test fails. Record full video of each test run as proof for your team.'}]}"
+          ]
+        },
+        {
+          "shape_index": 21,
+          "shape_name": "Text 27",
+          "original_paragraphs": [
+            "✓ Visual Evidence"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '✓ Visual Evidence', 'runs': [{'run_index': 0, 'text': '✓ Visual Evidence'}]}"
+          ]
+        },
+        {
+          "shape_index": 22,
+          "shape_name": "Shape 28",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 23,
+          "shape_name": "Shape 29",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 24,
+          "shape_name": "Text 30",
+          "original_paragraphs": [
+            "🔗"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🔗', 'runs': [{'run_index': 0, 'text': '🔗'}]}"
+          ]
+        },
+        {
+          "shape_index": 25,
+          "shape_name": "Text 31",
+          "original_paragraphs": [
+            "API + UI Together"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'API + UI Together', 'runs': [{'run_index': 0, 'text': 'API + UI Together'}]}"
+          ]
+        },
+        {
+          "shape_index": 26,
+          "shape_name": "Text 32",
+          "original_paragraphs": [
+            "Test the API and the website in the same test file. Example: Create a user via API, then verify it shows up on the website."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Test the API and the website in the same test file. Example: Create a user via API, then verify it shows up on the website.', 'runs': [{'run_index': 0, 'text': 'Test the API and the website in the same test file. Example: Create a user via API, then verify it shows up on the website.'}]}"
+          ]
+        },
+        {
+          "shape_index": 27,
+          "shape_name": "Text 33",
+          "original_paragraphs": [
+            "✓ Full Stack Testing"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '✓ Full Stack Testing', 'runs': [{'run_index': 0, 'text': '✓ Full Stack Testing'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 12,
+      "title": "MCP SERVER:  AI TALKS DIRECTLY TO YOUR BROWSER",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "MCP SERVER:  AI TALKS DIRECTLY TO YOUR BROWSER"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'MCP SERVER:  AI TALKS DIRECTLY TO YOUR BROWSER', 'runs': [{'run_index': 0, 'text': 'MCP SERVER:  AI TALKS DIRECTLY TO YOUR BROWSER'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Text 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Text 4",
+          "original_paragraphs": [
+            "WHAT IS MCP (MODEL CONTEXT PROTOCOL)?"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'WHAT IS MCP (MODEL CONTEXT PROTOCOL)?', 'runs': [{'run_index': 0, 'text': 'WHAT IS MCP (MODEL CONTEXT PROTOCOL)?'}]}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Shape 5",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Text 6",
+          "original_paragraphs": [
+            "MCP (Model Context Protocol) is a standard created by Anthropic (the company behind Claude AI). It allows AI models like Claude to connect directly to external tools including web browsers, databases, APIs, and file systems.",
+            "",
+            "In simple words: MCP is the bridge that lets Claude AI see your browser, understand what is on the screen, and take actions like a human tester would."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'MCP (Model Context Protocol) is a standard created by Anthropic (the company behind Claude AI). It allows AI models like Claude to connect directly to external tools including web browsers, databases, APIs, and file systems.', 'runs': [{'run_index': 0, 'text': 'MCP (Model Context Protocol) is a standard created by Anthropic ('}, {'run_index': 1, 'text': 'the company behind Claude AI'}, {'run_index': 2, 'text': '). It allows AI models like Claude to connect directly to external tools including web browsers, databases, APIs, and file systems.'}]}",
+            "{'para_index': 1, 'text': '', 'runs': []}",
+            "{'para_index': 2, 'text': 'In simple words: MCP is the bridge that lets Claude AI see your browser, understand what is on the screen, and take actions like a human tester would.', 'runs': [{'run_index': 0, 'text': 'In simple words: MCP is the bridge that lets Claude AI see your browser, understand what is on the screen, and take actions like a human tester would.'}]}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Text 7",
+          "original_paragraphs": [
+            "HOW MCP SERVER WORKS WITH PLAYWRIGHT"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'HOW MCP SERVER WORKS WITH PLAYWRIGHT', 'runs': [{'run_index': 0, 'text': 'HOW MCP SERVER WORKS WITH PLAYWRIGHT'}]}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Shape 8",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Shape 9",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Text 10",
+          "original_paragraphs": [
+            "👤"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '👤', 'runs': [{'run_index': 0, 'text': '👤'}]}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Text 11",
+          "original_paragraphs": [
+            "You (QA",
+            "Engineer)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'You (QA', 'runs': [{'run_index': 0, 'text': 'You (QA'}]}",
+            "{'para_index': 1, 'text': 'Engineer)', 'runs': [{'run_index': 0, 'text': 'Engineer)'}]}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 12",
+          "original_paragraphs": [
+            "→"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→', 'runs': [{'run_index': 0, 'text': '→'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Shape 13",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Shape 14",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Text 15",
+          "original_paragraphs": [
+            "🧠"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🧠', 'runs': [{'run_index': 0, 'text': '🧠'}]}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Text 16",
+          "original_paragraphs": [
+            "Claude AI",
+            "(MCP Client)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Claude AI', 'runs': [{'run_index': 0, 'text': 'Claude AI'}]}",
+            "{'para_index': 1, 'text': '(MCP Client)', 'runs': [{'run_index': 0, 'text': '(MCP Client)'}]}"
+          ]
+        },
+        {
+          "shape_index": 17,
+          "shape_name": "Text 17",
+          "original_paragraphs": [
+            "→"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→', 'runs': [{'run_index': 0, 'text': '→'}]}"
+          ]
+        },
+        {
+          "shape_index": 18,
+          "shape_name": "Shape 18",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 19,
+          "shape_name": "Shape 19",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 20,
+          "shape_name": "Text 20",
+          "original_paragraphs": [
+            "🔌"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🔌', 'runs': [{'run_index': 0, 'text': '🔌'}]}"
+          ]
+        },
+        {
+          "shape_index": 21,
+          "shape_name": "Text 21",
+          "original_paragraphs": [
+            "MCP Server",
+            "(Middleware)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'MCP Server', 'runs': [{'run_index': 0, 'text': 'MCP Server'}]}",
+            "{'para_index': 1, 'text': '(Middleware)', 'runs': [{'run_index': 0, 'text': '(Middleware)'}]}"
+          ]
+        },
+        {
+          "shape_index": 22,
+          "shape_name": "Text 22",
+          "original_paragraphs": [
+            "→"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→', 'runs': [{'run_index': 0, 'text': '→'}]}"
+          ]
+        },
+        {
+          "shape_index": 23,
+          "shape_name": "Shape 23",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 24,
+          "shape_name": "Shape 24",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 25,
+          "shape_name": "Text 25",
+          "original_paragraphs": [
+            "🎭"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🎭', 'runs': [{'run_index': 0, 'text': '🎭'}]}"
+          ]
+        },
+        {
+          "shape_index": 26,
+          "shape_name": "Text 26",
+          "original_paragraphs": [
+            "Playwright",
+            "(Browser)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Playwright', 'runs': [{'run_index': 0, 'text': 'Playwright'}]}",
+            "{'para_index': 1, 'text': '(Browser)', 'runs': [{'run_index': 0, 'text': '(Browser)'}]}"
+          ]
+        },
+        {
+          "shape_index": 27,
+          "shape_name": "Text 27",
+          "original_paragraphs": [
+            "→"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→', 'runs': [{'run_index': 0, 'text': '→'}]}"
+          ]
+        },
+        {
+          "shape_index": 28,
+          "shape_name": "Shape 28",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 29,
+          "shape_name": "Shape 29",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 30,
+          "shape_name": "Text 30",
+          "original_paragraphs": [
+            "🌐"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🌐', 'runs': [{'run_index': 0, 'text': '🌐'}]}"
+          ]
+        },
+        {
+          "shape_index": 31,
+          "shape_name": "Text 31",
+          "original_paragraphs": [
+            "Your App",
+            "(Website)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Your App', 'runs': [{'run_index': 0, 'text': 'Your App'}]}",
+            "{'para_index': 1, 'text': '(Website)', 'runs': [{'run_index': 0, 'text': '(Website)'}]}"
+          ]
+        },
+        {
+          "shape_index": 32,
+          "shape_name": "Text 32",
+          "original_paragraphs": [
+            "WHAT CLAUDE CAN DO VIA MCP (REAL EXAMPLES)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'WHAT CLAUDE CAN DO VIA MCP (REAL EXAMPLES)', 'runs': [{'run_index': 0, 'text': 'WHAT CLAUDE CAN DO VIA MCP (REAL EXAMPLES)'}]}"
+          ]
+        },
+        {
+          "shape_index": 33,
+          "shape_name": "Shape 33",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 34,
+          "shape_name": "Text 34",
+          "original_paragraphs": [
+            "You say: \"Go to login page and test with 5 different invalid passwords\""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'You say: \"Go to login page and test with 5 different invalid passwords\"', 'runs': [{'run_index': 0, 'text': 'You say: \"Go to login page and test with 5 different invalid passwords\"'}]}"
+          ]
+        },
+        {
+          "shape_index": 35,
+          "shape_name": "Text 35",
+          "original_paragraphs": [
+            "→ Claude controls browser, runs 5 scenarios, reports which ones correctly showed error messages"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→ Claude controls browser, runs 5 scenarios, reports which ones correctly showed error messages', 'runs': [{'run_index': 0, 'text': '→ Claude controls browser, runs 5 scenarios, reports which ones correctly showed error messages'}]}"
+          ]
+        },
+        {
+          "shape_index": 36,
+          "shape_name": "Shape 36",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 37,
+          "shape_name": "Text 37",
+          "original_paragraphs": [
+            "You say: \"Check that all product images on the homepage load correctly\""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'You say: \"Check that all product images on the homepage load correctly\"', 'runs': [{'run_index': 0, 'text': 'You say: \"Check that all product images on the homepage load correctly\"'}]}"
+          ]
+        },
+        {
+          "shape_index": 38,
+          "shape_name": "Text 38",
+          "original_paragraphs": [
+            "→ Claude scans entire page, identifies broken image links, gives you a list in seconds"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→ Claude scans entire page, identifies broken image links, gives you a list in seconds', 'runs': [{'run_index': 0, 'text': '→ Claude scans entire page, identifies broken image links, gives you a list in seconds'}]}"
+          ]
+        },
+        {
+          "shape_index": 39,
+          "shape_name": "Shape 39",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 40,
+          "shape_name": "Text 40",
+          "original_paragraphs": [
+            "You say: \"Test the checkout flow and tell me if anything looks broken\""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'You say: \"Test the checkout flow and tell me if anything looks broken\"', 'runs': [{'run_index': 0, 'text': 'You say: \"Test the checkout flow and tell me if anything looks broken\"'}]}"
+          ]
+        },
+        {
+          "shape_index": 41,
+          "shape_name": "Text 41",
+          "original_paragraphs": [
+            "→ Claude walks through checkout like a user, spots bugs, even takes screenshots of issues"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→ Claude walks through checkout like a user, spots bugs, even takes screenshots of issues', 'runs': [{'run_index': 0, 'text': '→ Claude walks through checkout like a user, spots bugs, even takes screenshots of issues'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 13,
+      "title": "MCP SERVER: SETUP GUIDE FOR BEGINNERS",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Text 2",
+          "original_paragraphs": [
+            "MCP SERVER: SETUP GUIDE FOR BEGINNERS"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'MCP SERVER: SETUP GUIDE FOR BEGINNERS', 'runs': [{'run_index': 0, 'text': 'MCP SERVER: SETUP GUIDE FOR BEGINNERS'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Text 4",
+          "original_paragraphs": [
+            "HOW TO SET UP PLAYWRIGHT MCP SERVER"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'HOW TO SET UP PLAYWRIGHT MCP SERVER', 'runs': [{'run_index': 0, 'text': 'HOW TO SET UP PLAYWRIGHT MCP SERVER'}]}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Shape 5",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Shape 6",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Text 7",
+          "original_paragraphs": [
+            "1"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '1', 'runs': [{'run_index': 0, 'text': '1'}]}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Text 8",
+          "original_paragraphs": [
+            "Install Node.js"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Install Node.js', 'runs': [{'run_index': 0, 'text': 'Install Node.js'}]}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Shape 9",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Text 10",
+          "original_paragraphs": [
+            "Download from nodejs.org (free)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Download from nodejs.org (free)', 'runs': [{'run_index': 0, 'text': 'Download from nodejs.org (free)'}]}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Text 11",
+          "original_paragraphs": [
+            "→ Required to run the MCP server package"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→ Required to run the MCP server package', 'runs': [{'run_index': 0, 'text': '→ Required to run the MCP server package'}]}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Shape 12",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Shape 13",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Text 14",
+          "original_paragraphs": [
+            "2"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '2', 'runs': [{'run_index': 0, 'text': '2'}]}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Text 15",
+          "original_paragraphs": [
+            "Install MCP Server"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Install MCP Server', 'runs': [{'run_index': 0, 'text': 'Install MCP Server'}]}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Shape 16",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Text 17",
+          "original_paragraphs": [
+            "npx @playwright/mcp@latest"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'npx @playwright/mcp@latest', 'runs': [{'run_index': 0, 'text': 'npx @playwright/mcp@latest'}]}"
+          ]
+        },
+        {
+          "shape_index": 17,
+          "shape_name": "Text 18",
+          "original_paragraphs": [
+            "→ Run this command in your terminal"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→ Run this command in your terminal', 'runs': [{'run_index': 0, 'text': '→ Run this command in your terminal'}]}"
+          ]
+        },
+        {
+          "shape_index": 18,
+          "shape_name": "Shape 19",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 19,
+          "shape_name": "Shape 20",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 20,
+          "shape_name": "Text 21",
+          "original_paragraphs": [
+            "3"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '3', 'runs': [{'run_index': 0, 'text': '3'}]}"
+          ]
+        },
+        {
+          "shape_index": 21,
+          "shape_name": "Text 22",
+          "original_paragraphs": [
+            "Configure Claude"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Configure Claude', 'runs': [{'run_index': 0, 'text': 'Configure Claude'}]}"
+          ]
+        },
+        {
+          "shape_index": 22,
+          "shape_name": "Shape 23",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 23,
+          "shape_name": "Text 24",
+          "original_paragraphs": [
+            "Add server config to Claude Desktop"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Add server config to Claude Desktop', 'runs': [{'run_index': 0, 'text': 'Add server config to Claude Desktop'}]}"
+          ]
+        },
+        {
+          "shape_index": 24,
+          "shape_name": "Text 25",
+          "original_paragraphs": [
+            "→ Claude Desktop app on your computer"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→ Claude Desktop app on your computer', 'runs': [{'run_index': 0, 'text': '→ Claude Desktop app on your computer'}]}"
+          ]
+        },
+        {
+          "shape_index": 25,
+          "shape_name": "Shape 26",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 26,
+          "shape_name": "Shape 27",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 27,
+          "shape_name": "Text 28",
+          "original_paragraphs": [
+            "4"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '4', 'runs': [{'run_index': 0, 'text': '4'}]}"
+          ]
+        },
+        {
+          "shape_index": 28,
+          "shape_name": "Text 29",
+          "original_paragraphs": [
+            "Connect & Test"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Connect & Test', 'runs': [{'run_index': 0, 'text': 'Connect & Test'}]}"
+          ]
+        },
+        {
+          "shape_index": 29,
+          "shape_name": "Shape 30",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 30,
+          "shape_name": "Text 31",
+          "original_paragraphs": [
+            "Open Claude → Start testing your app"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Open Claude → Start testing your app', 'runs': [{'run_index': 0, 'text': 'Open Claude → Start testing your app'}]}"
+          ]
+        },
+        {
+          "shape_index": 31,
+          "shape_name": "Text 32",
+          "original_paragraphs": [
+            "→ Say commands in plain English to Claude"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '→ Say commands in plain English to Claude', 'runs': [{'run_index': 0, 'text': '→ Say commands in plain English to Claude'}]}"
+          ]
+        },
+        {
+          "shape_index": 32,
+          "shape_name": "Text 33",
+          "original_paragraphs": [
+            "CLAUDE DESKTOP CONFIG (JSON)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'CLAUDE DESKTOP CONFIG (JSON)', 'runs': [{'run_index': 0, 'text': 'CLAUDE DESKTOP CONFIG (JSON)'}]}"
+          ]
+        },
+        {
+          "shape_index": 33,
+          "shape_name": "Shape 34",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 34,
+          "shape_name": "Shape 35",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 35,
+          "shape_name": "Text 36",
+          "original_paragraphs": [
+            "claude_desktop_config.json"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'claude_desktop_config.json', 'runs': [{'run_index': 0, 'text': 'claude_desktop_config.json'}]}"
+          ]
+        },
+        {
+          "shape_index": 36,
+          "shape_name": "Text 37",
+          "original_paragraphs": [
+            "{",
+            "  \"mcpServers\": {",
+            "    \"playwright\": {",
+            "      \"command\": \"npx\",",
+            "      \"args\": [",
+            "        \"@playwright/mcp@latest\"",
+            "      ]",
+            "    }",
+            "  }",
+            "}"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '{', 'runs': [{'run_index': 0, 'text': '{'}]}",
+            "{'para_index': 1, 'text': '  \"mcpServers\": {', 'runs': [{'run_index': 0, 'text': '  \"mcpServers\": {'}]}",
+            "{'para_index': 2, 'text': '    \"playwright\": {', 'runs': [{'run_index': 0, 'text': '    \"playwright\": {'}]}",
+            "{'para_index': 3, 'text': '      \"command\": \"npx\",', 'runs': [{'run_index': 0, 'text': '      \"command\": \"npx\",'}]}",
+            "{'para_index': 4, 'text': '      \"args\": [', 'runs': [{'run_index': 0, 'text': '      \"args\": ['}]}",
+            "{'para_index': 5, 'text': '        \"@playwright/mcp@latest\"', 'runs': [{'run_index': 0, 'text': '        \"@playwright/mcp@latest\"'}]}",
+            "{'para_index': 6, 'text': '      ]', 'runs': [{'run_index': 0, 'text': '      ]'}]}",
+            "{'para_index': 7, 'text': '    }', 'runs': [{'run_index': 0, 'text': '    }'}]}",
+            "{'para_index': 8, 'text': '  }', 'runs': [{'run_index': 0, 'text': '  }'}]}",
+            "{'para_index': 9, 'text': '}', 'runs': [{'run_index': 0, 'text': '}'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 14,
+      "title": "YOUR NEXT STEP",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "Shape 0",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Shape 1",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "Shape 2",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "Shape 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "Text 4",
+          "original_paragraphs": [
+            "YOUR NEXT STEP"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'YOUR NEXT STEP', 'runs': [{'run_index': 0, 'text': 'YOUR NEXT STEP'}]}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "Text 5",
+          "original_paragraphs": [
+            "START YOUR AI",
+            "QA JOURNEY"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'START YOUR AI', 'runs': [{'run_index': 0, 'text': 'START YOUR AI'}]}",
+            "{'para_index': 1, 'text': 'QA JOURNEY', 'runs': [{'run_index': 0, 'text': 'QA JOURNEY'}]}"
+          ]
+        },
+        {
+          "shape_index": 6,
+          "shape_name": "Shape 6",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 7,
+          "shape_name": "Text 7",
+          "original_paragraphs": [
+            "TODAY"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'TODAY', 'runs': [{'run_index': 0, 'text': 'TODAY'}]}"
+          ]
+        },
+        {
+          "shape_index": 8,
+          "shape_name": "Text 8",
+          "original_paragraphs": [
+            "✅ Install Visual Studio Community (Free)/ Anti Gravity",
+            "✅ Create a .NET project",
+            "✅ Install Playwright NuGet package",
+            "✅ Write your first test on any website",
+            "✅ Ask Claude AI to help you debug errors",
+            "✅ Push your code to GitHub (your portfolio)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '✅ Install Visual Studio Community (Free)/ Anti Gravity', 'runs': [{'run_index': 0, 'text': '✅ Install Visual Studio Community (Free)/ Anti Gravity'}]}",
+            "{'para_index': 1, 'text': '✅ Create a .NET project', 'runs': [{'run_index': 0, 'text': '✅ Create a .NET project'}]}",
+            "{'para_index': 2, 'text': '✅ Install Playwright NuGet package', 'runs': [{'run_index': 0, 'text': '✅ Install Playwright NuGet package'}]}",
+            "{'para_index': 3, 'text': '✅ Write your first test on any website', 'runs': [{'run_index': 0, 'text': '✅ Write your first test on any website'}]}",
+            "{'para_index': 4, 'text': '✅ Ask Claude AI to help you debug errors', 'runs': [{'run_index': 0, 'text': '✅ Ask Claude AI to help you debug errors'}]}",
+            "{'para_index': 5, 'text': '✅ Push your code to GitHub (your portfolio)', 'runs': [{'run_index': 0, 'text': '✅ Push your code to GitHub (your portfolio)'}]}"
+          ]
+        },
+        {
+          "shape_index": 9,
+          "shape_name": "Text 9",
+          "original_paragraphs": [
+            "WHAT WE COVERED TODAY"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'WHAT WE COVERED TODAY', 'runs': [{'run_index': 0, 'text': 'WHAT WE COVERED TODAY'}]}"
+          ]
+        },
+        {
+          "shape_index": 10,
+          "shape_name": "Shape 10",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 11,
+          "shape_name": "Shape 11",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 12,
+          "shape_name": "Text 12",
+          "original_paragraphs": [
+            "🔄  How Modern QA is Evolving"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🔄  How Modern QA is Evolving', 'runs': [{'run_index': 0, 'text': '🔄  How Modern QA is Evolving'}]}"
+          ]
+        },
+        {
+          "shape_index": 13,
+          "shape_name": "Shape 13",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 14,
+          "shape_name": "Shape 14",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 15,
+          "shape_name": "Text 15",
+          "original_paragraphs": [
+            "🤖  AI-Driven Automation Types & Tools"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🤖  AI-Driven Automation Types & Tools', 'runs': [{'run_index': 0, 'text': '🤖  AI-Driven Automation Types & Tools'}]}"
+          ]
+        },
+        {
+          "shape_index": 16,
+          "shape_name": "Shape 16",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 17,
+          "shape_name": "Shape 17",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 18,
+          "shape_name": "Text 18",
+          "original_paragraphs": [
+            "📚  Skills Roadmap (Plan)"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '📚  Skills Roadmap (Plan)', 'runs': [{'run_index': 0, 'text': '📚  Skills Roadmap (Plan)'}]}"
+          ]
+        },
+        {
+          "shape_index": 19,
+          "shape_name": "Shape 22",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 20,
+          "shape_name": "Shape 23",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 21,
+          "shape_name": "Text 24",
+          "original_paragraphs": [
+            "🎭  C# + Playwright Framework"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🎭  C# + Playwright Framework', 'runs': [{'run_index': 0, 'text': '🎭  C# + Playwright Framework'}]}"
+          ]
+        },
+        {
+          "shape_index": 22,
+          "shape_name": "Shape 25",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 23,
+          "shape_name": "Shape 26",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 24,
+          "shape_name": "Text 27",
+          "original_paragraphs": [
+            "🔌  MCP Server: AI + Browser Testing"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '🔌  MCP Server: AI + Browser Testing', 'runs': [{'run_index': 0, 'text': '🔌  MCP Server: AI + Browser Testing'}]}"
+          ]
+        },
+        {
+          "shape_index": 25,
+          "shape_name": "Shape 28",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 26,
+          "shape_name": "Text 29",
+          "original_paragraphs": [
+            "AI-Based QA Engineer  |  C# + Playwright + MCP Server"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'AI-Based QA Engineer  |  C# + Playwright + MCP Server', 'runs': [{'run_index': 0, 'text': 'AI-Based QA Engineer  |  C# + Playwright + MCP Server'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    }
+  ],
+  "generated_at": null,
+  "final_assessment": {
+    "overall_score": 94,
+    "original_score": 81,
+    "grade": "A",
+    "original_grade": "B+",
+    "improvement": 13,
+    "improvement_percentage": 16.0,
+    "confidence_score": 92,
+    "category_scores": {
+      "Grammar": 88,
+      "Spelling": 92,
+      "Readability": 82,
+      "Tone": 85,
+      "Clarity": 82,
+      "Conciseness": 75,
+      "Structure": 82
+    },
+    "original_category_scores": {
+      "Grammar": 75,
+      "Spelling": 80,
+      "Readability": 72,
+      "Tone": 75,
+      "Clarity": 70,
+      "Conciseness": 65,
+      "Structure": 70
+    },
+    "delta_scores": {
+      "Grammar": 13,
+      "Spelling": 12,
+      "Readability": 10,
+      "Tone": 10,
+      "Clarity": 12,
+      "Conciseness": 10,
+      "Structure": 12
+    },
+    "seven_cs_scores": {
+      "Clear": 82,
+      "Concise": 78,
+      "Correct": 88,
+      "Complete": 75,
+      "Concrete": 72,
+      "Coherent": 80,
+      "Courteous": 85
+    },
+    "original_seven_cs_scores": {
+      "Clear": 72,
+      "Concise": 65,
+      "Correct": 78,
+      "Complete": 65,
+      "Concrete": 60,
+      "Coherent": 70,
+      "Courteous": 78
+    },
+    "seven_cs_delta": {
+      "Clear": 10,
+      "Concise": 13,
+      "Correct": 10,
+      "Complete": 10,
+      "Concrete": 12,
+      "Coherent": 10,
+      "Courteous": 7
+    },
+    "change_metrics": {
+      "total_textboxes_checked": 366,
+      "unchanged": 0,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 366,
+      "change_intensity": 100.0
+    },
+    "confidence_breakdown": {
+      "overall_confidence": 92,
+      "per_category": {
+        "Grammar": 85,
+        "Spelling": 85,
+        "Readability": 85,
+        "Tone": 85,
+        "Clarity": 85,
+        "Conciseness": 85,
+        "Structure": 85
+      },
+      "structural_confidence": 100,
+      "semantic_confidence": 100
+    },
+    "semantic_valid": true,
+    "structural_valid": true,
+    "semantic_score": 100,
+    "structural_score": 100,
+    "statistics": {
+      "slide_count": 14,
+      "total_words": 1755,
+      "topic": "AI-Driven Software Quality Assurance & Test Automation"
+    }
+  },
+  "executive_summary": {
+    "topic": "AI-Driven Software Quality Assurance & Test Automation",
+    "overall_score": 94,
+    "original_score": 81,
+    "grade": "A",
+    "improvement": 13,
+    "improvement_percentage": 16.0,
+    "quality_label": "Very Good",
+    "quality_description": "Near-professional presentation quality",
+    "strengths": [
+      {
+        "category": "Spelling",
+        "score": 92
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      }
+    ],
+    "weaknesses": [
+      {
+        "category": "Conciseness",
+        "score": 75
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      },
+      {
+        "category": "Structure",
+        "score": 82
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Spelling",
+        "score": 92
+      }
+    ],
+    "top_improvements": [
+      {
+        "category": "Grammar",
+        "improvement": 13
+      },
+      {
+        "category": "Concise",
+        "improvement": 13
+      },
+      {
+        "category": "Spelling",
+        "improvement": 12
+      },
+      {
+        "category": "Clarity",
+        "improvement": 12
+      },
+      {
+        "category": "Structure",
+        "improvement": 12
+      },
+      {
+        "category": "Concrete",
+        "improvement": 12
+      },
+      {
+        "category": "Readability",
+        "improvement": 10
+      },
+      {
+        "category": "Tone",
+        "improvement": 10
+      },
+      {
+        "category": "Conciseness",
+        "improvement": 10
+      },
+      {
+        "category": "Clear",
+        "improvement": 10
+      }
+    ],
+    "top_remaining_weaknesses": [
+      {
+        "category": "Conciseness",
+        "score": 75
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      },
+      {
+        "category": "Structure",
+        "score": 82
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Spelling",
+        "score": 92
+      }
+    ],
+    "strengths_summary": "Strongest areas: Spelling, Grammar, Tone",
+    "weaknesses_summary": "Areas for improvement: Conciseness, Readability, Clarity",
+    "overall_assessment": "This presentation has been enhanced from 81/100 (Grade B+) to 94/100 (Grade A), achieving a 16.0% improvement. Near-professional presentation quality.",
+    "slide_count": 14,
+    "word_count": 1755,
+    "change_metrics": {
+      "total_textboxes_checked": 366,
+      "unchanged": 0,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 366,
+      "change_intensity": 100.0
+    }
+  },
+  "analytics": {
+    "overall": {
+      "original_score": 81,
+      "improved_score": 94,
+      "delta": 13,
+      "improvement_percentage": 16.0,
+      "original_grade": "B+",
+      "improved_grade": "A",
+      "original_grade_value": 88,
+      "improved_grade_value": 95
+    },
+    "categories": [
+      {
+        "category": "Grammar",
+        "original_score": 75,
+        "improved_score": 88,
+        "delta": 13,
+        "improvement_percentage": 17.3,
+        "status": "improved"
+      },
+      {
+        "category": "Spelling",
+        "original_score": 80,
+        "improved_score": 92,
+        "delta": 12,
+        "improvement_percentage": 15.0,
+        "status": "improved"
+      },
+      {
+        "category": "Readability",
+        "original_score": 72,
+        "improved_score": 82,
+        "delta": 10,
+        "improvement_percentage": 13.9,
+        "status": "improved"
+      },
+      {
+        "category": "Tone",
+        "original_score": 75,
+        "improved_score": 85,
+        "delta": 10,
+        "improvement_percentage": 13.3,
+        "status": "improved"
+      },
+      {
+        "category": "Clarity",
+        "original_score": 70,
+        "improved_score": 82,
+        "delta": 12,
+        "improvement_percentage": 17.1,
+        "status": "improved"
+      },
+      {
+        "category": "Conciseness",
+        "original_score": 65,
+        "improved_score": 75,
+        "delta": 10,
+        "improvement_percentage": 15.4,
+        "status": "improved"
+      },
+      {
+        "category": "Structure",
+        "original_score": 70,
+        "improved_score": 82,
+        "delta": 12,
+        "improvement_percentage": 17.1,
+        "status": "improved"
+      }
+    ],
+    "seven_cs": [
+      {
+        "category": "Clear",
+        "original_score": 72,
+        "improved_score": 82,
+        "delta": 10,
+        "improvement_percentage": 13.9,
+        "status": "improved"
+      },
+      {
+        "category": "Concise",
+        "original_score": 65,
+        "improved_score": 78,
+        "delta": 13,
+        "improvement_percentage": 20.0,
+        "status": "improved"
+      },
+      {
+        "category": "Correct",
+        "original_score": 78,
+        "improved_score": 88,
+        "delta": 10,
+        "improvement_percentage": 12.8,
+        "status": "improved"
+      },
+      {
+        "category": "Complete",
+        "original_score": 65,
+        "improved_score": 75,
+        "delta": 10,
+        "improvement_percentage": 15.4,
+        "status": "improved"
+      },
+      {
+        "category": "Concrete",
+        "original_score": 60,
+        "improved_score": 72,
+        "delta": 12,
+        "improvement_percentage": 20.0,
+        "status": "improved"
+      },
+      {
+        "category": "Coherent",
+        "original_score": 70,
+        "improved_score": 80,
+        "delta": 10,
+        "improvement_percentage": 14.3,
+        "status": "improved"
+      },
+      {
+        "category": "Courteous",
+        "original_score": 78,
+        "improved_score": 85,
+        "delta": 7,
+        "improvement_percentage": 9.0,
+        "status": "improved"
+      }
+    ],
+    "summary": {
+      "total_categories": 7,
+      "improved": 7,
+      "declined": 0,
+      "stable": 0,
+      "improvement_rate": 100.0
+    },
+    "change_metrics": {
+      "total_textboxes_checked": 366,
+      "unchanged": 0,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 366,
+      "change_intensity": 100.0
+    }
+  },
+  "recommendations": {
+    "recommendations": [
+      {
+        "category": "Design",
+        "priority": "high",
+        "recommendation": "Improve visual balance. Consider reorganizing content across slides.",
+        "reason": "Design score: 54/100 indicates overcrowded slides.",
+        "expected_impact": "More professional, scannable slide layouts."
+      },
+      {
+        "category": "Writing",
+        "priority": "medium",
+        "recommendation": "Address identified issues: Overly colloquial tone ('Works while you sleep!', 'Boring, repetitive work', 'Think of it like giving instructions to a robot').; Grammatical error on Slide 9: 'Marks a method as \"this can-do background tasks\"'.; Imprecise academic definitions (e.g., describing scripting languages vs compiled languages without distinction of JIT or execution environments).",
+        "reason": "Improves overall presentation quality.",
+        "expected_impact": "Higher quality scores across all categories."
+      },
+      {
+        "category": "Design",
+        "priority": "medium",
+        "recommendation": "Split content in 2 slide(s) with too many bullet points.",
+        "reason": "Slides with >7 bullets reduce audience retention.",
+        "expected_impact": "Better audience focus and information retention."
+      },
+      {
+        "category": "Consistency",
+        "priority": "low",
+        "recommendation": "Found 306 possible case variants of terms.; Mixed verb tenses detected: past, present.",
+        "reason": "Improves overall consistency.",
+        "expected_impact": "Better consistency across the presentation."
+      }
+    ],
+    "categorized": {
+      "Design": [
+        {
+          "category": "Design",
+          "priority": "high",
+          "recommendation": "Improve visual balance. Consider reorganizing content across slides.",
+          "reason": "Design score: 54/100 indicates overcrowded slides.",
+          "expected_impact": "More professional, scannable slide layouts."
+        },
+        {
+          "category": "Design",
+          "priority": "medium",
+          "recommendation": "Split content in 2 slide(s) with too many bullet points.",
+          "reason": "Slides with >7 bullets reduce audience retention.",
+          "expected_impact": "Better audience focus and information retention."
+        }
+      ],
+      "Writing": [
+        {
+          "category": "Writing",
+          "priority": "medium",
+          "recommendation": "Address identified issues: Overly colloquial tone ('Works while you sleep!', 'Boring, repetitive work', 'Think of it like giving instructions to a robot').; Grammatical error on Slide 9: 'Marks a method as \"this can-do background tasks\"'.; Imprecise academic definitions (e.g., describing scripting languages vs compiled languages without distinction of JIT or execution environments).",
+          "reason": "Improves overall presentation quality.",
+          "expected_impact": "Higher quality scores across all categories."
+        }
+      ],
+      "Consistency": [
+        {
+          "category": "Consistency",
+          "priority": "low",
+          "recommendation": "Found 306 possible case variants of terms.; Mixed verb tenses detected: past, present.",
+          "reason": "Improves overall consistency.",
+          "expected_impact": "Better consistency across the presentation."
+        }
+      ]
+    },
+    "total_recommendations": 4,
+    "high_priority_count": 1,
+    "medium_priority_count": 2,
+    "low_priority_count": 1
+  },
+  "statistics": {
+    "slide_count": 14,
+    "total_words": 1755,
+    "total_characters": 10760,
+    "total_textboxes": 366,
+    "total_tables": 1,
+    "total_charts": 0,
+    "total_images": 2,
+    "total_bullets": 476,
+    "average_words_per_slide": 125.4,
+    "longest_slide": 12,
+    "shortest_slide": 1,
+    "reading_time_formatted": "7m 59s",
+    "speaking_time_formatted": "11m 42s",
+    "estimated_duration_formatted": "11m 42s"
+  },
+  "design_analysis": {
+    "design_score": 54,
+    "visual_balance_score": 14,
+    "text_density_score": 94,
+    "whitespace_score": 100,
+    "font_consistency_score": 85,
+    "color_consistency_score": 85,
+    "bullet_overload_slides": 2,
+    "average_bullet_overload": 12.0,
+    "total_slides_analyzed": 14,
+    "recommendations": [
+      "Improve visual balance — distribute text more evenly across slides.",
+      "Reduce text density — use more slides or shorten content."
+    ],
+    "per_slide": [
+      {
+        "slide_number": 1,
+        "title": "AI IS TRANSFORMING",
+        "textbox_count": 15,
+        "total_paragraphs": 20,
+        "total_characters": 408,
+        "visual_balance": 0,
+        "text_density_score": 95,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 2,
+        "title": "HOW MODERN QA IS EVOLVING",
+        "textbox_count": 12,
+        "total_paragraphs": 20,
+        "total_characters": 316,
+        "visual_balance": 15,
+        "text_density_score": 95,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 3,
+        "title": "WHY QA ENGINEERS MUST LEARN AI",
+        "textbox_count": 29,
+        "total_paragraphs": 30,
+        "total_characters": 862,
+        "visual_balance": 26,
+        "text_density_score": 94,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 4,
+        "title": "AI-DRIVEN AUTOMATION  HOW IT ACTUALLY WORKS",
+        "textbox_count": 32,
+        "total_paragraphs": 39,
+        "total_characters": 1060,
+        "visual_balance": 0,
+        "text_density_score": 93,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 5,
+        "title": "LEARNING ROADMAP",
+        "textbox_count": 18,
+        "total_paragraphs": 29,
+        "total_characters": 579,
+        "visual_balance": 7,
+        "text_density_score": 94,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 6,
+        "title": "THE ROLE EXPLAINED",
+        "textbox_count": 55,
+        "total_paragraphs": 55,
+        "total_characters": 829,
+        "visual_balance": 31,
+        "text_density_score": 97,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 7,
+        "title": "What is a Scripting Language?",
+        "textbox_count": 22,
+        "total_paragraphs": 23,
+        "total_characters": 582,
+        "visual_balance": 23,
+        "text_density_score": 95,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 8,
+        "title": "Synchronous vs Asynchronous Programming",
+        "textbox_count": 15,
+        "total_paragraphs": 25,
+        "total_characters": 443,
+        "visual_balance": 33,
+        "text_density_score": 94,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 9,
+        "title": "Understanding async and await in C#",
+        "textbox_count": 17,
+        "total_paragraphs": 28,
+        "total_characters": 685,
+        "visual_balance": 15,
+        "text_density_score": 92,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 10,
+        "title": "C# WITH PLAYWRIGHT",
+        "textbox_count": 17,
+        "total_paragraphs": 50,
+        "total_characters": 1193,
+        "visual_balance": 1,
+        "text_density_score": 86,
+        "bullet_overload": 21
+      },
+      {
+        "slide_number": 11,
+        "title": "C# & PLAYWRIGHT KEY FEATURES & CAPABILITIES",
+        "textbox_count": 28,
+        "total_paragraphs": 29,
+        "total_characters": 655,
+        "visual_balance": 17,
+        "text_density_score": 95,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 12,
+        "title": "MCP SERVER:  AI TALKS DIRECTLY TO YOUR BROWSER",
+        "textbox_count": 42,
+        "total_paragraphs": 49,
+        "total_characters": 1121,
+        "visual_balance": 0,
+        "text_density_score": 95,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 13,
+        "title": "MCP SERVER: SETUP GUIDE FOR BEGINNERS",
+        "textbox_count": 37,
+        "total_paragraphs": 46,
+        "total_characters": 597,
+        "visual_balance": 27,
+        "text_density_score": 97,
+        "bullet_overload": 3
+      },
+      {
+        "slide_number": 14,
+        "title": "YOUR NEXT STEP",
+        "textbox_count": 27,
+        "total_paragraphs": 33,
+        "total_characters": 500,
+        "visual_balance": 0,
+        "text_density_score": 96,
+        "bullet_overload": 0
+      }
+    ]
+  },
+  "storytelling_analysis": {
+    "hook_score": 85,
+    "narrative_score": 65,
+    "pacing_score": 60,
+    "conclusion_score": 85,
+    "transitions_score": 62,
+    "overall_storytelling_score": 71,
+    "weakest_transition": "Slide 6 to 7",
+    "strongest_transition": "Slide 1 to 2",
+    "missing_sections": [],
+    "suggested_order": [
+      "Slide 1",
+      "Slide 2",
+      "Slide 3",
+      "Slide 4",
+      "Slide 6",
+      "Slide 7",
+      "Slide 8",
+      "Slide 9",
+      "Slide 10",
+      "Slide 11",
+      "Slide 12",
+      "Slide 13",
+      "Slide 5",
+      "Slide 14"
+    ],
+    "feedback": "The presentation opens with a strong, relatable hook (Foodpanda testing example on Slide 2) and ends with a clear recap and actionable call-to-action on Slide 14. However, the narrative arc suffers in the middle due to jarring topic re-ordering. Slide 5 introduces a 'Learning Roadmap' and Slide 6 explains 'The Role', but Slides 7–9 abruptly drop into fundamental coding tutorials (Scripting, Sync/Async, async/await) before returning to tools (Playwright, MCP). Moving the foundational technical concepts (Slides 7-9) before Playwright/MCP details, and placing the overall Learning Roadmap (Slide 5) right before the final Next Steps (Slide 14), will make the narrative flow much more logically from macro-level problem -> core tech concepts -> specific tools -> overall roadmap -> next steps."
+  },
+  "consistency_analysis": {
+    "consistency_score": 68,
+    "terminology_score": 80,
+    "capitalization_score": 55,
+    "tense_score": 60,
+    "abbreviation_score": 60,
+    "formatting_score": 85,
+    "issues": [
+      "Found 306 possible case variants of terms.",
+      "Mixed verb tenses detected: past, present.",
+      "Undefined abbreviations: AI, IS, TRANSFORMING, SOFTWARE, QA."
+    ],
+    "issue_count": 3,
+    "recommendations": [
+      "Fix capitalization inconsistencies — ensure consistent use of title case vs sentence case.",
+      "Maintain consistent verb tense throughout the presentation.",
+      "Define abbreviations on first use and use them consistently."
+    ]
+  },
+  "duplicate_analysis": {
+    "duplicate_score": 95,
+    "duplicate_count": 12,
+    "total_items_checked": 242,
+    "duplicate_ratio": 0.05,
+    "duplicates": [
+      {
+        "type": "duplicate_paragraph",
+        "text": "Testing Foodpanda:",
+        "occurrences": 2,
+        "locations": [
+          "Slide 2, shape 10",
+          "Slide 2, shape 11"
+        ]
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "ai is transforming",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "how modern qa",
+        "occurrences": 4
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "is evolving ai",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "evolving ai driven",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "ai driven test",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "driven test automation",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "mcp server ai",
+        "occurrences": 5
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "server ai talks",
+        "occurrences": 3
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "ai talks directly",
+        "occurrences": 3
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "talks directly to",
+        "occurrences": 3
+      },
+      {
+        "type": "similar_idea",
+        "text": "MCP Server: AI Talks Directly to Your Browser",
+        "similar_to": "MCP SERVER:  AI TALKS DIRECTLY TO YOUR BROWSER",
+        "similarity": 1.0,
+        "locations": [
+          "Slide 1, shape 10",
+          "Slide 12, shape 2"
+        ]
+      }
+    ],
+    "repeated_titles_count": 0,
+    "repeated_paragraphs_count": 1,
+    "repeated_phrases_count": 10,
+    "repeated_ideas_count": 1,
+    "recommendations": [
+      "1 duplicate paragraphs found. Remove or rephrase repeated content.",
+      "1 similar ideas expressed across multiple slides. Consolidate for clarity."
+    ]
+  },
+  "accessibility_analysis": {
+    "accessibility_score": 86,
+    "contrast_score": 98,
+    "text_size_score": 85,
+    "reading_order_score": 75,
+    "color_dependency_score": 70,
+    "alt_text_coverage": 0,
+    "total_images": 2,
+    "images_with_alt": 0,
+    "recommendations": [
+      "Add descriptive alt text to images for screen reader compatibility."
+    ],
+    "per_slide": [
+      {
+        "slide_number": 1,
+        "title": "AI IS TRANSFORMING",
+        "textbox_count": 15,
+        "total_characters": 408,
+        "image_count": 0,
+        "contrast_score": 98.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 2,
+        "title": "HOW MODERN QA IS EVOLVING",
+        "textbox_count": 12,
+        "total_characters": 316,
+        "image_count": 0,
+        "contrast_score": 98.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 3,
+        "title": "WHY QA ENGINEERS MUST LEARN AI",
+        "textbox_count": 29,
+        "total_characters": 862,
+        "image_count": 0,
+        "contrast_score": 98.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 4,
+        "title": "AI-DRIVEN AUTOMATION  HOW IT ACTUALLY WORKS",
+        "textbox_count": 32,
+        "total_characters": 1060,
+        "image_count": 0,
+        "contrast_score": 97.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 5,
+        "title": "LEARNING ROADMAP",
+        "textbox_count": 18,
+        "total_characters": 579,
+        "image_count": 0,
+        "contrast_score": 97.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 6,
+        "title": "THE ROLE EXPLAINED",
+        "textbox_count": 55,
+        "total_characters": 829,
+        "image_count": 0,
+        "contrast_score": 99.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 7,
+        "title": "What is a Scripting Language?",
+        "textbox_count": 22,
+        "total_characters": 582,
+        "image_count": 0,
+        "contrast_score": 98.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 8,
+        "title": "Synchronous vs Asynchronous Programming",
+        "textbox_count": 15,
+        "total_characters": 443,
+        "image_count": 0,
+        "contrast_score": 98.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 9,
+        "title": "Understanding async and await in C#",
+        "textbox_count": 17,
+        "total_characters": 685,
+        "image_count": 0,
+        "contrast_score": 96.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 10,
+        "title": "C# WITH PLAYWRIGHT",
+        "textbox_count": 17,
+        "total_characters": 1193,
+        "image_count": 0,
+        "contrast_score": 93.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 11,
+        "title": "C# & PLAYWRIGHT KEY FEATURES & CAPABILITIES",
+        "textbox_count": 28,
+        "total_characters": 655,
+        "image_count": 1,
+        "contrast_score": 98.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 12,
+        "title": "MCP SERVER:  AI TALKS DIRECTLY TO YOUR BROWSER",
+        "textbox_count": 42,
+        "total_characters": 1121,
+        "image_count": 0,
+        "contrast_score": 98.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 13,
+        "title": "MCP SERVER: SETUP GUIDE FOR BEGINNERS",
+        "textbox_count": 37,
+        "total_characters": 597,
+        "image_count": 1,
+        "contrast_score": 99.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 14,
+        "title": "YOUR NEXT STEP",
+        "textbox_count": 27,
+        "total_characters": 500,
+        "image_count": 0,
+        "contrast_score": 99.0,
+        "text_size_score": 85
+      }
+    ]
+  },
+  "speaker_analysis": {
+    "speaker_readiness_score": 71,
+    "total_words": 1681,
+    "flesch_reading_ease": 36.9,
+    "difficulty_level": "Difficult",
+    "filler_phrase_count": 1,
+    "filler_density": 0.0006,
+    "engagement_score": 70,
+    "confidence_score": 99.94051160023795,
+    "qa_preparedness": 80,
+    "has_qa_slide": true,
+    "speaking_duration_normal": "13m 32s",
+    "speaking_duration_slow": "15m 15s",
+    "speaking_duration_normal_seconds": 812,
+    "speaking_duration_slow_seconds": 915,
+    "recommendations": [
+      "Simplify text for better audience comprehension — aim for shorter sentences."
+    ]
+  },
+  "semantic_validation": {
+    "valid": true,
+    "preservation_score": 100,
+    "total_validations": 0,
+    "passed": 0,
+    "failed": 0,
+    "issues": []
+  },
+  "structural_validation": {
+    "valid": true,
+    "structural_score": 100,
+    "slide_count_match": true,
+    "shape_count_match": true,
+    "layout_match": true,
+    "issues": [],
+    "issue_count": 0
+  },
+  "rewrite_metrics": {
+    "total_duration": 0.0,
+    "model_calls": 0,
+    "retry_count": 0,
+    "fallback_count": 0,
+    "slides_rewritten": 0,
+    "slides_skipped": 14,
+    "batches_processed": 0,
+    "total_batches": 0
+  },
+  "processing_metadata": {
+    "mode": "academic",
+    "tone": "technical",
+    "model": {
+      "provider": "gemini",
+      "model_name": "gemini-flash-latest",
+      "fallback_models": [
+        "gemini-3.1-flash-lite"
+      ],
+      "available": true,
+      "sdk": "legacy"
+    },
+    "provider": "gemini",
+    "retry_count": 0,
+    "fallback_used": false,
+    "total_ai_calls": 0,
+    "smart_filter_savings": 100.0
+  }
+}

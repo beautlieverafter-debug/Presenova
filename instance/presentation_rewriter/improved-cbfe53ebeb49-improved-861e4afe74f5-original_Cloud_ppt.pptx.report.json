@@ -1,0 +1,1265 @@
+{
+  "output_filename": "improved-cbfe53ebeb49-improved-861e4afe74f5-original_Cloud_ppt.pptx",
+  "original_filename": "improved-861e4afe74f5-original_Cloud_ppt.pptx",
+  "slide_count": 9,
+  "quality_scores": {
+    "overall_score": 82,
+    "grade": "B+",
+    "summary": "An accessible, well-structured introductory presentation on Google Cloud AI services. Minor visual formatting artifacts and typography errors slightly detract from an otherwise clear and scannable deck.",
+    "category_scores": {
+      "Grammar": 85,
+      "Spelling": 88,
+      "Readability": 82,
+      "Tone": 84,
+      "Clarity": 82,
+      "Conciseness": 78,
+      "Structure": 85
+    },
+    "seven_cs_scores": {
+      "Clear": 82,
+      "Concise": 78,
+      "Correct": 85,
+      "Complete": 80,
+      "Concrete": 78,
+      "Coherent": 85,
+      "Courteous": 90
+    },
+    "seven_cs_evaluation": {
+      "Clear": "Definitions are written in plain language suitable for a non-technical audience, though minor typos slightly impede readability.",
+      "Concise": "Bullet points are kept relatively short and slide-friendly, though a few descriptions could be further streamlined.",
+      "Correct": "Technical concepts accurately reflect Google Cloud AI capabilities, but text extraction artifacts (e.g., '_x000B_') and letter confusion ('Al:' vs 'AI:') need fixing.",
+      "Complete": "Covers essential AI domains (Vision, NLP, Translation, AutoML, TPU), though Speech tools are referenced in the summary without prior detail.",
+      "Concrete": "Includes specific practical examples like sentiment analysis (happy/sad) and object/logo recognition.",
+      "Coherent": "Follows a logical structure from definitions to hardware, custom model building, perception APIs, and summary.",
+      "Courteous": "Tone is appropriate, professional, and includes a polite closing statement."
+    },
+    "strengths": [
+      "Logical flow moving from core concepts to hardware, model building, perception APIs, and recap",
+      "Translates complex technical tools (TPUs, AutoML) into clear, non-technical benefits",
+      "Highly scannable slide layouts with short bullet points suitable for presentations"
+    ],
+    "issues_found": [
+      "Formatting artifacts and typos present (e.g., '_x000B_' vertical tabs on Slide 9, 'Al:' instead of 'AI:' on Slide 2, missing space in '&Video' on Slide 6)",
+      "Inconsistent casing across slide titles and bullet items (e.g., Title Case in Slide 7 bullets vs Sentence case elsewhere)",
+      "Speech capability is mentioned in the summary slide ('listen, and talk') but lacked its own slide in the main body"
+    ],
+    "recommendations": [
+      "Clean up typography and layout artifacts (fix 'Al' to 'AI', remove '_x000B_', and standardize spacing)",
+      "Standardize capitalization style across all bullet lists for professional visual consistency",
+      "Add a brief slide covering Cloud Speech API to ensure complete alignment with the final summary slide"
+    ]
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "Presented By:",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 2",
+          "original_paragraphs": [
+            "Presented By:",
+            "Ayesha Azeem",
+            "Alina Rafi",
+            "Naeema Hamid",
+            "Fatima Ahmed",
+            "Lubaina Zafar"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Presented By:', 'runs': [{'run_index': 0, 'text': 'Presented By'}, {'run_index': 1, 'text': ':'}]}",
+            "{'para_index': 1, 'text': 'Ayesha Azeem', 'runs': [{'run_index': 0, 'text': 'Ayesha Azeem'}]}",
+            "{'para_index': 2, 'text': 'Alina Rafi', 'runs': [{'run_index': 0, 'text': 'Alina Rafi'}]}",
+            "{'para_index': 3, 'text': 'Naeema Hamid', 'runs': [{'run_index': 0, 'text': 'Naeema'}, {'run_index': 1, 'text': ' Hamid'}]}",
+            "{'para_index': 4, 'text': 'Fatima Ahmed', 'runs': [{'run_index': 0, 'text': 'Fatima Ahmed'}]}",
+            "{'para_index': 5, 'text': 'Lubaina Zafar', 'runs': [{'run_index': 0, 'text': 'Lubaina'}, {'run_index': 1, 'text': ' Zafar'}]}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 3",
+          "original_paragraphs": [
+            "Smart\tTools For The Modern World"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Smart\\tTools For The Modern World', 'runs': [{'run_index': 0, 'text': 'Smart'}, {'run_index': 1, 'text': '\\tTools'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'For'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'The'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'Modern'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'World'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "object 2",
+          "original_paragraphs": [
+            "CLOUD AI "
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'CLOUD AI ', 'runs': [{'run_index': 0, 'text': 'CLOUD'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'AI'}, {'run_index': 3, 'text': ' '}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 2,
+      "title": "What is Cloud AI?",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 4",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 5",
+          "original_paragraphs": [
+            "What is Cloud AI?"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'What is Cloud AI?', 'runs': [{'run_index': 0, 'text': 'What'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'is'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'Cloud'}, {'run_index': 5, 'text': ' '}, {'run_index': 6, 'text': 'AI?'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "object 6",
+          "original_paragraphs": [
+            "Al: Technology that lets computers        learn and solve problems like humans."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Al: Technology that lets computers        learn and solve problems like humans.', 'runs': [{'run_index': 0, 'text': 'Al'}, {'run_index': 1, 'text': ':'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'Technology'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'that'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'lets'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'computers'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': '       '}, {'run_index': 12, 'text': 'learn '}, {'run_index': 13, 'text': 'and'}, {'run_index': 14, 'text': ' '}, {'run_index': 15, 'text': 'solve'}, {'run_index': 16, 'text': ' '}, {'run_index': 17, 'text': 'problems'}, {'run_index': 18, 'text': ' '}, {'run_index': 19, 'text': 'like'}, {'run_index': 20, 'text': ' '}, {'run_index': 21, 'text': 'humans.'}]}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "object 7",
+          "original_paragraphs": [
+            "The Cloud: Powerful tools shared by Google over the internet."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'The Cloud: Powerful tools shared by Google over the internet.', 'runs': [{'run_index': 0, 'text': 'The'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Cloud'}, {'run_index': 3, 'text': ':'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'Powerful'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'tools'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'shared'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': 'by'}, {'run_index': 12, 'text': ' '}, {'run_index': 13, 'text': 'Google '}, {'run_index': 14, 'text': 'over'}, {'run_index': 15, 'text': ' '}, {'run_index': 16, 'text': 'the'}, {'run_index': 17, 'text': ' '}, {'run_index': 18, 'text': 'internet.'}]}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "object 9",
+          "original_paragraphs": [
+            "Why use it: Add smart features to apps quickly without expensive hardware."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Why use it: Add smart features to apps quickly without expensive hardware.', 'runs': [{'run_index': 0, 'text': 'Why'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'use'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'it:'}, {'run_index': 5, 'text': ' '}, {'run_index': 6, 'text': 'Add'}, {'run_index': 7, 'text': ' '}, {'run_index': 8, 'text': 'smart'}, {'run_index': 9, 'text': ' '}, {'run_index': 10, 'text': 'features'}, {'run_index': 11, 'text': ' '}, {'run_index': 12, 'text': 'to '}, {'run_index': 13, 'text': 'apps '}, {'run_index': 14, 'text': 'quickly'}, {'run_index': 15, 'text': ' '}, {'run_index': 16, 'text': 'without'}, {'run_index': 17, 'text': ' '}, {'run_index': 18, 'text': 'expensive'}, {'run_index': 19, 'text': ' '}, {'run_index': 20, 'text': 'hardware.'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 3,
+      "title": "Cloud TPU: Tensor Processing Unit",
+      "textboxes": [
+        {
+          "shape_index": 2,
+          "shape_name": "object 4",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "object 5",
+          "original_paragraphs": [
+            "Cloud TPU: Tensor Processing Unit"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Cloud TPU: Tensor Processing Unit', 'runs': [{'run_index': 0, 'text': 'Cloud'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'TPU:'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'Tensor Processing Unit'}]}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "object 6",
+          "original_paragraphs": [
+            "Custom Chips: Ultra-fast computer hardware built by Google.",
+            "Speed: Designed specifically to run and train heavy AI models.",
+            "Efficiency: Saves massive amounts of time for complex data tasks."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Custom Chips: Ultra-fast computer hardware built by Google.', 'runs': [{'run_index': 0, 'text': 'Custom'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Chips:'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'Ultra-'}, {'run_index': 5, 'text': 'fast'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'computer '}, {'run_index': 8, 'text': 'hardware'}, {'run_index': 9, 'text': ' '}, {'run_index': 10, 'text': 'built'}, {'run_index': 11, 'text': ' '}, {'run_index': 12, 'text': 'by'}, {'run_index': 13, 'text': ' '}, {'run_index': 14, 'text': 'Google.'}]}",
+            "{'para_index': 1, 'text': 'Speed: Designed specifically to run and train heavy AI models.', 'runs': [{'run_index': 0, 'text': 'Speed'}, {'run_index': 1, 'text': ':'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'Designed'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'specifically'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'to'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'run'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': 'and '}, {'run_index': 12, 'text': 'train'}, {'run_index': 13, 'text': ' '}, {'run_index': 14, 'text': 'heavy'}, {'run_index': 15, 'text': ' '}, {'run_index': 16, 'text': 'AI'}, {'run_index': 17, 'text': ' '}, {'run_index': 18, 'text': 'models.'}]}",
+            "{'para_index': 2, 'text': 'Efficiency: Saves massive amounts of time for complex data tasks.', 'runs': [{'run_index': 0, 'text': 'Efficiency'}, {'run_index': 1, 'text': ':'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'Saves'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'massive'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'amounts'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'of'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': 'time '}, {'run_index': 12, 'text': 'for'}, {'run_index': 13, 'text': ' '}, {'run_index': 14, 'text': 'complex'}, {'run_index': 15, 'text': ' '}, {'run_index': 16, 'text': 'data'}, {'run_index': 17, 'text': ' '}, {'run_index': 18, 'text': 'tasks.'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 4,
+      "title": "BUILDING YOUR OWN AI",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 7",
+          "original_paragraphs": [
+            " BUILDING YOUR OWN AI"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': ' BUILDING YOUR OWN AI', 'runs': [{'run_index': 0, 'text': ' '}, {'run_index': 1, 'text': 'BUILDING'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'YOUR'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'OWN'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'AI'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "object 8",
+          "original_paragraphs": [
+            "Cloud AutoML",
+            "Train your own custom AI models easily. You don't need to be a coding expert to build high- quality results."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Cloud AutoML', 'runs': [{'run_index': 0, 'text': 'Cloud'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'AutoML'}]}",
+            "{'para_index': 1, 'text': \"Train your own custom AI models easily. You don't need to be a coding expert to build high- quality results.\", 'runs': [{'run_index': 0, 'text': 'Train'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'your'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'own'}, {'run_index': 5, 'text': ' '}, {'run_index': 6, 'text': 'custom'}, {'run_index': 7, 'text': ' '}, {'run_index': 8, 'text': 'AI '}, {'run_index': 9, 'text': 'models'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': 'easily.'}, {'run_index': 12, 'text': ' '}, {'run_index': 13, 'text': 'You'}, {'run_index': 14, 'text': ' '}, {'run_index': 15, 'text': \"don't\"}, {'run_index': 16, 'text': ' '}, {'run_index': 17, 'text': 'need'}, {'run_index': 18, 'text': ' '}, {'run_index': 19, 'text': 'to '}, {'run_index': 20, 'text': 'be'}, {'run_index': 21, 'text': ' '}, {'run_index': 22, 'text': 'a'}, {'run_index': 23, 'text': ' '}, {'run_index': 24, 'text': 'coding'}, {'run_index': 25, 'text': ' '}, {'run_index': 26, 'text': 'expert'}, {'run_index': 27, 'text': ' '}, {'run_index': 28, 'text': 'to'}, {'run_index': 29, 'text': ' '}, {'run_index': 30, 'text': 'build'}, {'run_index': 31, 'text': ' '}, {'run_index': 32, 'text': 'high- '}, {'run_index': 33, 'text': 'quality'}, {'run_index': 34, 'text': ' '}, {'run_index': 35, 'text': 'results.'}]}"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "object 9",
+          "original_paragraphs": [
+            "ML Engine",
+            "A workshop for developers. Build and run large AI projects using popular tools while Google handles the setup."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'ML Engine', 'runs': [{'run_index': 0, 'text': 'ML'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Engine'}]}",
+            "{'para_index': 1, 'text': 'A workshop for developers. Build and run large AI projects using popular tools while Google handles the setup.', 'runs': [{'run_index': 0, 'text': 'A'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'workshop'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'for'}, {'run_index': 5, 'text': ' '}, {'run_index': 6, 'text': 'developers.'}, {'run_index': 7, 'text': ' '}, {'run_index': 8, 'text': 'Build '}, {'run_index': 9, 'text': 'and'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': 'run'}, {'run_index': 12, 'text': ' '}, {'run_index': 13, 'text': 'large'}, {'run_index': 14, 'text': ' '}, {'run_index': 15, 'text': 'AI'}, {'run_index': 16, 'text': ' '}, {'run_index': 17, 'text': 'projects'}, {'run_index': 18, 'text': ' '}, {'run_index': 19, 'text': 'using '}, {'run_index': 20, 'text': 'popular'}, {'run_index': 21, 'text': ' '}, {'run_index': 22, 'text': 'tools '}, {'run_index': 23, 'text': 'while'}, {'run_index': 24, 'text': ' '}, {'run_index': 25, 'text': 'Google '}, {'run_index': 26, 'text': 'handles'}, {'run_index': 27, 'text': ' '}, {'run_index': 28, 'text': 'the'}, {'run_index': 29, 'text': ' '}, {'run_index': 30, 'text': 'setup.'}]}"
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "object 10",
+          "original_paragraphs": [
+            "Custom Training",
+            "Automate the hard parts of machine learning so you can focus on solving business problems."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Custom Training', 'runs': [{'run_index': 0, 'text': 'Custom'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Training'}]}",
+            "{'para_index': 1, 'text': 'Automate the hard parts of machine learning so you can focus on solving business problems.', 'runs': [{'run_index': 0, 'text': 'Automate'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'the'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'hard'}, {'run_index': 5, 'text': ' '}, {'run_index': 6, 'text': 'parts'}, {'run_index': 7, 'text': ' '}, {'run_index': 8, 'text': 'of '}, {'run_index': 9, 'text': 'machine'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': 'learning'}, {'run_index': 12, 'text': ' '}, {'run_index': 13, 'text': 'so'}, {'run_index': 14, 'text': ' '}, {'run_index': 15, 'text': 'you'}, {'run_index': 16, 'text': ' '}, {'run_index': 17, 'text': 'can '}, {'run_index': 18, 'text': 'focus'}, {'run_index': 19, 'text': ' '}, {'run_index': 20, 'text': 'on'}, {'run_index': 21, 'text': ' '}, {'run_index': 22, 'text': 'solving'}, {'run_index': 23, 'text': ' '}, {'run_index': 24, 'text': 'business problems.'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 5,
+      "title": "Cloud Natural Language",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 3",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '', 'runs': []}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 4",
+          "original_paragraphs": [
+            " Cloud Natural Language"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': ' Cloud Natural Language', 'runs': [{'run_index': 0, 'text': ' '}, {'run_index': 1, 'text': 'Cloud'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'Natural'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'Language'}]}"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "object 5",
+          "original_paragraphs": [
+            "\t\tText Analysis: Helps computers \"read\" and understand text documents.",
+            "\tSentiment: Can detect the emotion (happy or sad) in customer feedback.",
+            "\tEntities: Automatically finds names, places, and brands in text."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': '\\t\\tText Analysis: Helps computers \"read\" and understand text documents.', 'runs': [{'run_index': 0, 'text': '\\t\\t'}, {'run_index': 1, 'text': 'Text'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'Analysis:'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'Helps'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'computers'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': '\"read'}, {'run_index': 10, 'text': '\"'}, {'run_index': 11, 'text': ' '}, {'run_index': 12, 'text': 'and '}, {'run_index': 13, 'text': 'understand '}, {'run_index': 14, 'text': 'text'}, {'run_index': 15, 'text': ' '}, {'run_index': 16, 'text': 'documents.'}]}",
+            "{'para_index': 1, 'text': '\\tSentiment: Can detect the emotion (happy or sad) in customer feedback.', 'runs': [{'run_index': 0, 'text': '\\t'}, {'run_index': 1, 'text': 'Sentiment'}, {'run_index': 2, 'text': ':'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'Can '}, {'run_index': 5, 'text': 'detect'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'the'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'emotion'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': '(happy '}, {'run_index': 12, 'text': 'or'}, {'run_index': 13, 'text': ' '}, {'run_index': 14, 'text': 'sad)'}, {'run_index': 15, 'text': ' '}, {'run_index': 16, 'text': 'in'}, {'run_index': 17, 'text': ' '}, {'run_index': 18, 'text': 'customer'}, {'run_index': 19, 'text': ' '}, {'run_index': 20, 'text': 'feedback.'}]}",
+            "{'para_index': 2, 'text': '\\tEntities: Automatically finds names, places, and brands in text.', 'runs': [{'run_index': 0, 'text': '\\t'}, {'run_index': 1, 'text': 'Entities:'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'Automatically'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'finds'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'names,'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'places, '}, {'run_index': 10, 'text': 'and'}, {'run_index': 11, 'text': ' '}, {'run_index': 12, 'text': 'brands'}, {'run_index': 13, 'text': ' '}, {'run_index': 14, 'text': 'in'}, {'run_index': 15, 'text': ' '}, {'run_index': 16, 'text': 'text.'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 6,
+      "title": "Vision &Video Intelligence",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 3",
+          "original_paragraphs": [
+            "Vision &Video Intelligence"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Vision &Video Intelligence', 'runs': [{'run_index': 0, 'text': 'Vision'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': '&Video'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'Intelligence'}]}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 4",
+          "original_paragraphs": [
+            "Vision API: Helps computers \"see\" and name objects in photos.",
+            "Video Intelligence: Search and find specific moments in videos.",
+            "Detection Models: Detect text, faces & logos automatically.",
+            "\tReal-world Application: Organize huge libraries of visual content fast."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Vision API: Helps computers \"see\" and name objects in photos.', 'runs': [{'run_index': 0, 'text': 'Vision'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'AP'}, {'run_index': 3, 'text': 'I'}, {'run_index': 4, 'text': ':'}, {'run_index': 5, 'text': ' '}, {'run_index': 6, 'text': 'Helps'}, {'run_index': 7, 'text': ' '}, {'run_index': 8, 'text': 'computers'}, {'run_index': 9, 'text': ' '}, {'run_index': 10, 'text': '\"see\"'}, {'run_index': 11, 'text': ' '}, {'run_index': 12, 'text': 'and '}, {'run_index': 13, 'text': 'name'}, {'run_index': 14, 'text': ' '}, {'run_index': 15, 'text': 'objects'}, {'run_index': 16, 'text': ' '}, {'run_index': 17, 'text': 'in'}, {'run_index': 18, 'text': ' '}, {'run_index': 19, 'text': 'photos.'}]}",
+            "{'para_index': 1, 'text': 'Video Intelligence: Search and find specific moments in videos.', 'runs': [{'run_index': 0, 'text': 'Video'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Intelligence:'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'Search'}, {'run_index': 5, 'text': ' '}, {'run_index': 6, 'text': 'and'}, {'run_index': 7, 'text': ' '}, {'run_index': 8, 'text': 'find '}, {'run_index': 9, 'text': 'specific'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': 'moments'}, {'run_index': 12, 'text': ' '}, {'run_index': 13, 'text': 'in'}, {'run_index': 14, 'text': ' '}, {'run_index': 15, 'text': 'videos.'}]}",
+            "{'para_index': 2, 'text': 'Detection Models: Detect text, faces & logos automatically.', 'runs': [{'run_index': 0, 'text': 'Detection'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Models'}, {'run_index': 3, 'text': ': '}, {'run_index': 4, 'text': 'Detect'}, {'run_index': 5, 'text': ' '}, {'run_index': 6, 'text': 'text,'}, {'run_index': 7, 'text': ' '}, {'run_index': 8, 'text': 'faces'}, {'run_index': 9, 'text': ' & logos '}, {'run_index': 10, 'text': 'automatically'}, {'run_index': 11, 'text': '.'}]}",
+            "{'para_index': 3, 'text': '\\tReal-world Application: Organize huge libraries of visual content fast.', 'runs': [{'run_index': 0, 'text': '\\t'}, {'run_index': 1, 'text': 'Real-'}, {'run_index': 2, 'text': 'world'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'Application: '}, {'run_index': 5, 'text': 'Organize'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'huge'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'libraries'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': 'of'}, {'run_index': 12, 'text': ' '}, {'run_index': 13, 'text': 'visual '}, {'run_index': 14, 'text': 'content '}, {'run_index': 15, 'text': 'fast.'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 7,
+      "title": "Cloud Translation\nAPI",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 3",
+          "original_paragraphs": [
+            "Cloud Translation",
+            "API"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Cloud Translation', 'runs': [{'run_index': 0, 'text': 'Cl'}, {'run_index': 1, 'text': 'o'}, {'run_index': 2, 'text': 'ud'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'Translation'}]}",
+            "{'para_index': 1, 'text': 'API', 'runs': [{'run_index': 0, 'text': 'API'}]}"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 4",
+          "original_paragraphs": [
+            "Instantly Translate Text From One Language To Another.",
+            "\tSupports thousands of language pairs.",
+            "\tFast, accurate, and used by millions worldwide.",
+            "\tConnect with people and customers globally."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Instantly Translate Text From One Language To Another.', 'runs': [{'run_index': 0, 'text': 'Instantly'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Translate'}, {'run_index': 3, 'text': ' '}, {'run_index': 4, 'text': 'Text'}, {'run_index': 5, 'text': ' '}, {'run_index': 6, 'text': 'From'}, {'run_index': 7, 'text': ' '}, {'run_index': 8, 'text': 'One'}, {'run_index': 9, 'text': ' '}, {'run_index': 10, 'text': 'Language'}, {'run_index': 11, 'text': ' '}, {'run_index': 12, 'text': 'To '}, {'run_index': 13, 'text': 'Another.'}]}",
+            "{'para_index': 1, 'text': '\\tSupports thousands of language pairs.', 'runs': [{'run_index': 0, 'text': '\\t'}, {'run_index': 1, 'text': 'Supports'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'thousands'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'of'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'language'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'pairs.'}]}",
+            "{'para_index': 2, 'text': '\\tFast, accurate, and used by millions worldwide.', 'runs': [{'run_index': 0, 'text': '\\t'}, {'run_index': 1, 'text': 'Fast,'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'accurate,'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'and'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'used'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'by'}, {'run_index': 10, 'text': ' '}, {'run_index': 11, 'text': 'millions '}, {'run_index': 12, 'text': 'worldwide.'}]}",
+            "{'para_index': 3, 'text': '\\tConnect with people and customers globally.', 'runs': [{'run_index': 0, 'text': '\\t'}, {'run_index': 1, 'text': 'Connect'}, {'run_index': 2, 'text': ' '}, {'run_index': 3, 'text': 'with'}, {'run_index': 4, 'text': ' '}, {'run_index': 5, 'text': 'people'}, {'run_index': 6, 'text': ' '}, {'run_index': 7, 'text': 'and'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'customers '}, {'run_index': 10, 'text': 'globally.'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 8,
+      "title": "Summary:",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "object 2",
+          "original_paragraphs": [
+            "Summary:"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Summary:', 'runs': [{'run_index': 0, 'text': 'Summary'}, {'run_index': 1, 'text': ':'}]}"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Rectangle 1",
+          "original_paragraphs": [
+            "Make AI: Build your own smart tools (AutoML & Machine Learning Engine).",
+            "Fast Speed: Super fast Google chips to save time (Cloud TPU).",
+            "Read & Translate: Understand text and change languages (Natural Language &    Translation).",
+            "See & Hear: Look at pictures, watch videos, listen, and talk (Vision, Video, & Speech tools)."
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Make AI: Build your own smart tools (AutoML & Machine Learning Engine).', 'runs': [{'run_index': 0, 'text': 'Make AI:'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Build your own smart tools ('}, {'run_index': 3, 'text': 'AutoML'}, {'run_index': 4, 'text': ' & '}, {'run_index': 5, 'text': 'Machine Learning Engine'}, {'run_index': 6, 'text': ').'}]}",
+            "{'para_index': 1, 'text': 'Fast Speed: Super fast Google chips to save time (Cloud TPU).', 'runs': [{'run_index': 0, 'text': 'Fast Speed:'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Super fast Google chips to save time ('}, {'run_index': 3, 'text': 'Cloud TPU'}, {'run_index': 4, 'text': ').'}]}",
+            "{'para_index': 2, 'text': 'Read & Translate: Understand text and change languages (Natural Language &    Translation).', 'runs': [{'run_index': 0, 'text': 'Read & Translate:'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Understand text and change languages ('}, {'run_index': 3, 'text': 'Natural Language'}, {'run_index': 4, 'text': ' &'}, {'run_index': 5, 'text': '    '}, {'run_index': 6, 'text': 'Translation'}, {'run_index': 7, 'text': ').'}]}",
+            "{'para_index': 3, 'text': 'See & Hear: Look at pictures, watch videos, listen, and talk (Vision, Video, & Speech tools).', 'runs': [{'run_index': 0, 'text': 'See & Hear:'}, {'run_index': 1, 'text': ' '}, {'run_index': 2, 'text': 'Look at pictures, watch videos, listen, and talk ('}, {'run_index': 3, 'text': 'Vision'}, {'run_index': 4, 'text': ', '}, {'run_index': 5, 'text': 'Video'}, {'run_index': 6, 'text': ', & '}, {'run_index': 7, 'text': 'Speech'}, {'run_index': 8, 'text': ' '}, {'run_index': 9, 'text': 'tools'}, {'run_index': 10, 'text': ').'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 9,
+      "title": "Any\u000b_x000B_Questions?\u000b_x000B_Thank you for your time!",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "object 2",
+          "original_paragraphs": [
+            "Any\u000b_x000B_Questions?\u000b_x000B_Thank you for your time!"
+          ],
+          "improved_paragraphs": [
+            "{'para_index': 0, 'text': 'Any\\x0b_x000B_Questions?\\x0b_x000B_Thank you for your time!', 'runs': [{'run_index': 0, 'text': 'Any'}, {'run_index': 1, 'text': '_x000B_'}, {'run_index': 2, 'text': 'Questions?'}, {'run_index': 3, 'text': ''}, {'run_index': 4, 'text': '_x000B_Than'}, {'run_index': 5, 'text': 'k'}, {'run_index': 6, 'text': ' yo'}, {'run_index': 7, 'text': 'u'}, {'run_index': 8, 'text': ' fo'}, {'run_index': 9, 'text': 'r'}, {'run_index': 10, 'text': ' your'}, {'run_index': 11, 'text': ' '}, {'run_index': 12, 'text': 'time!'}]}"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    }
+  ],
+  "generated_at": null,
+  "final_assessment": {
+    "overall_score": 82,
+    "original_score": 82,
+    "grade": "B+",
+    "original_grade": "B+",
+    "improvement": 0,
+    "improvement_percentage": 0.0,
+    "confidence_score": 92,
+    "category_scores": {
+      "Grammar": 88,
+      "Spelling": 92,
+      "Readability": 82,
+      "Tone": 85,
+      "Clarity": 82,
+      "Conciseness": 75,
+      "Structure": 82
+    },
+    "original_category_scores": {
+      "Grammar": 75,
+      "Spelling": 80,
+      "Readability": 72,
+      "Tone": 75,
+      "Clarity": 70,
+      "Conciseness": 65,
+      "Structure": 70
+    },
+    "delta_scores": {
+      "Grammar": 13,
+      "Spelling": 12,
+      "Readability": 10,
+      "Tone": 10,
+      "Clarity": 12,
+      "Conciseness": 10,
+      "Structure": 12
+    },
+    "seven_cs_scores": {
+      "Clear": 82,
+      "Concise": 78,
+      "Correct": 88,
+      "Complete": 75,
+      "Concrete": 72,
+      "Coherent": 80,
+      "Courteous": 85
+    },
+    "original_seven_cs_scores": {
+      "Clear": 72,
+      "Concise": 65,
+      "Correct": 78,
+      "Complete": 65,
+      "Concrete": 60,
+      "Coherent": 70,
+      "Courteous": 78
+    },
+    "seven_cs_delta": {
+      "Clear": 0,
+      "Concise": 0,
+      "Correct": 0,
+      "Complete": 0,
+      "Concrete": 0,
+      "Coherent": 0,
+      "Courteous": 0
+    },
+    "change_metrics": {
+      "total_textboxes_checked": 26,
+      "unchanged": 0,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 26,
+      "change_intensity": 100.0
+    },
+    "confidence_breakdown": {
+      "overall_confidence": 92,
+      "per_category": {
+        "Grammar": 85,
+        "Spelling": 85,
+        "Readability": 85,
+        "Tone": 85,
+        "Clarity": 85,
+        "Conciseness": 85,
+        "Structure": 85
+      },
+      "structural_confidence": 100,
+      "semantic_confidence": 100
+    },
+    "semantic_valid": true,
+    "structural_valid": true,
+    "semantic_score": 100,
+    "structural_score": 100,
+    "statistics": {
+      "slide_count": 9,
+      "total_words": 312,
+      "topic": "Google Cloud AI Tools and Capabilities"
+    }
+  },
+  "executive_summary": {
+    "topic": "Google Cloud AI Tools and Capabilities",
+    "overall_score": 82,
+    "original_score": 82,
+    "grade": "B+",
+    "improvement": 0,
+    "improvement_percentage": 0.0,
+    "quality_label": "Good",
+    "quality_description": "Solid presentation with minor improvements needed",
+    "strengths": [
+      {
+        "category": "Spelling",
+        "score": 92
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      }
+    ],
+    "weaknesses": [
+      {
+        "category": "Conciseness",
+        "score": 75
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      },
+      {
+        "category": "Structure",
+        "score": 82
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Spelling",
+        "score": 92
+      }
+    ],
+    "top_improvements": [
+      {
+        "category": "Grammar",
+        "improvement": 13
+      },
+      {
+        "category": "Spelling",
+        "improvement": 12
+      },
+      {
+        "category": "Clarity",
+        "improvement": 12
+      },
+      {
+        "category": "Structure",
+        "improvement": 12
+      },
+      {
+        "category": "Readability",
+        "improvement": 10
+      },
+      {
+        "category": "Tone",
+        "improvement": 10
+      },
+      {
+        "category": "Conciseness",
+        "improvement": 10
+      }
+    ],
+    "top_remaining_weaknesses": [
+      {
+        "category": "Conciseness",
+        "score": 75
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      },
+      {
+        "category": "Structure",
+        "score": 82
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Spelling",
+        "score": 92
+      }
+    ],
+    "strengths_summary": "Strongest areas: Spelling, Grammar, Tone",
+    "weaknesses_summary": "Areas for improvement: Conciseness, Readability, Clarity",
+    "overall_assessment": "This presentation has been enhanced from 82/100 (Grade B+) to 82/100 (Grade B+), achieving a 0.0% improvement. Solid presentation with minor improvements needed.",
+    "slide_count": 9,
+    "word_count": 312,
+    "change_metrics": {
+      "total_textboxes_checked": 26,
+      "unchanged": 0,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 26,
+      "change_intensity": 100.0
+    }
+  },
+  "analytics": {
+    "overall": {
+      "original_score": 82,
+      "improved_score": 82,
+      "delta": 0,
+      "improvement_percentage": 0.0,
+      "original_grade": "B+",
+      "improved_grade": "B+",
+      "original_grade_value": 88,
+      "improved_grade_value": 88
+    },
+    "categories": [
+      {
+        "category": "Grammar",
+        "original_score": 75,
+        "improved_score": 88,
+        "delta": 13,
+        "improvement_percentage": 17.3,
+        "status": "improved"
+      },
+      {
+        "category": "Spelling",
+        "original_score": 80,
+        "improved_score": 92,
+        "delta": 12,
+        "improvement_percentage": 15.0,
+        "status": "improved"
+      },
+      {
+        "category": "Readability",
+        "original_score": 72,
+        "improved_score": 82,
+        "delta": 10,
+        "improvement_percentage": 13.9,
+        "status": "improved"
+      },
+      {
+        "category": "Tone",
+        "original_score": 75,
+        "improved_score": 85,
+        "delta": 10,
+        "improvement_percentage": 13.3,
+        "status": "improved"
+      },
+      {
+        "category": "Clarity",
+        "original_score": 70,
+        "improved_score": 82,
+        "delta": 12,
+        "improvement_percentage": 17.1,
+        "status": "improved"
+      },
+      {
+        "category": "Conciseness",
+        "original_score": 65,
+        "improved_score": 75,
+        "delta": 10,
+        "improvement_percentage": 15.4,
+        "status": "improved"
+      },
+      {
+        "category": "Structure",
+        "original_score": 70,
+        "improved_score": 82,
+        "delta": 12,
+        "improvement_percentage": 17.1,
+        "status": "improved"
+      }
+    ],
+    "seven_cs": [
+      {
+        "category": "Clear",
+        "original_score": 72,
+        "improved_score": 82,
+        "delta": 0,
+        "improvement_percentage": 0.0,
+        "status": "stable"
+      },
+      {
+        "category": "Concise",
+        "original_score": 65,
+        "improved_score": 78,
+        "delta": 0,
+        "improvement_percentage": 0.0,
+        "status": "stable"
+      },
+      {
+        "category": "Correct",
+        "original_score": 78,
+        "improved_score": 88,
+        "delta": 0,
+        "improvement_percentage": 0.0,
+        "status": "stable"
+      },
+      {
+        "category": "Complete",
+        "original_score": 65,
+        "improved_score": 75,
+        "delta": 0,
+        "improvement_percentage": 0.0,
+        "status": "stable"
+      },
+      {
+        "category": "Concrete",
+        "original_score": 60,
+        "improved_score": 72,
+        "delta": 0,
+        "improvement_percentage": 0.0,
+        "status": "stable"
+      },
+      {
+        "category": "Coherent",
+        "original_score": 70,
+        "improved_score": 80,
+        "delta": 0,
+        "improvement_percentage": 0.0,
+        "status": "stable"
+      },
+      {
+        "category": "Courteous",
+        "original_score": 78,
+        "improved_score": 85,
+        "delta": 0,
+        "improvement_percentage": 0.0,
+        "status": "stable"
+      }
+    ],
+    "summary": {
+      "total_categories": 7,
+      "improved": 7,
+      "declined": 0,
+      "stable": 0,
+      "improvement_rate": 100.0
+    },
+    "change_metrics": {
+      "total_textboxes_checked": 26,
+      "unchanged": 0,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 26,
+      "change_intensity": 100.0
+    }
+  },
+  "recommendations": {
+    "recommendations": [
+      {
+        "category": "Storytelling",
+        "priority": "high",
+        "recommendation": "Improve the opening hook to grab audience attention immediately.",
+        "reason": "Hook score: 45/100. Weak opening reduces engagement.",
+        "expected_impact": "Stronger first impression and audience engagement."
+      },
+      {
+        "category": "Writing",
+        "priority": "medium",
+        "recommendation": "Address identified issues: Formatting artifacts and typos present (e.g., '_x000B_' vertical tabs on Slide 9, 'Al:' instead of 'AI:' on Slide 2, missing space in '&Video' on Slide 6); Inconsistent casing across slide titles and bullet items (e.g., Title Case in Slide 7 bullets vs Sentence case elsewhere); Speech capability is mentioned in the summary slide ('listen, and talk') but lacked its own slide in the main body",
+        "reason": "Improves overall presentation quality.",
+        "expected_impact": "Higher quality scores across all categories."
+      },
+      {
+        "category": "Storytelling",
+        "priority": "medium",
+        "recommendation": "Add missing narrative sections: Hook, Problem Statement, Call to Action (CTA).",
+        "reason": "Complete story structure increases persuasiveness.",
+        "expected_impact": "More complete and persuasive presentation."
+      },
+      {
+        "category": "Consistency",
+        "priority": "low",
+        "recommendation": "Found 93 possible case variants of terms.; Mixed verb tenses detected: past, present.",
+        "reason": "Improves overall consistency.",
+        "expected_impact": "Better consistency across the presentation."
+      }
+    ],
+    "categorized": {
+      "Storytelling": [
+        {
+          "category": "Storytelling",
+          "priority": "high",
+          "recommendation": "Improve the opening hook to grab audience attention immediately.",
+          "reason": "Hook score: 45/100. Weak opening reduces engagement.",
+          "expected_impact": "Stronger first impression and audience engagement."
+        },
+        {
+          "category": "Storytelling",
+          "priority": "medium",
+          "recommendation": "Add missing narrative sections: Hook, Problem Statement, Call to Action (CTA).",
+          "reason": "Complete story structure increases persuasiveness.",
+          "expected_impact": "More complete and persuasive presentation."
+        }
+      ],
+      "Writing": [
+        {
+          "category": "Writing",
+          "priority": "medium",
+          "recommendation": "Address identified issues: Formatting artifacts and typos present (e.g., '_x000B_' vertical tabs on Slide 9, 'Al:' instead of 'AI:' on Slide 2, missing space in '&Video' on Slide 6); Inconsistent casing across slide titles and bullet items (e.g., Title Case in Slide 7 bullets vs Sentence case elsewhere); Speech capability is mentioned in the summary slide ('listen, and talk') but lacked its own slide in the main body",
+          "reason": "Improves overall presentation quality.",
+          "expected_impact": "Higher quality scores across all categories."
+        }
+      ],
+      "Consistency": [
+        {
+          "category": "Consistency",
+          "priority": "low",
+          "recommendation": "Found 93 possible case variants of terms.; Mixed verb tenses detected: past, present.",
+          "reason": "Improves overall consistency.",
+          "expected_impact": "Better consistency across the presentation."
+        }
+      ]
+    },
+    "total_recommendations": 4,
+    "high_priority_count": 1,
+    "medium_priority_count": 2,
+    "low_priority_count": 1
+  },
+  "statistics": {
+    "slide_count": 9,
+    "total_words": 312,
+    "total_characters": 2058,
+    "total_textboxes": 26,
+    "total_tables": 0,
+    "total_charts": 0,
+    "total_images": 9,
+    "total_bullets": 48,
+    "average_words_per_slide": 34.7,
+    "longest_slide": 4,
+    "shortest_slide": 9,
+    "reading_time_formatted": "1m 26s",
+    "speaking_time_formatted": "2m 5s",
+    "estimated_duration_formatted": "6m 45s"
+  },
+  "design_analysis": {
+    "design_score": 72,
+    "visual_balance_score": 61,
+    "text_density_score": 83,
+    "whitespace_score": 93,
+    "font_consistency_score": 85,
+    "color_consistency_score": 85,
+    "bullet_overload_slides": 0,
+    "average_bullet_overload": 0.0,
+    "total_slides_analyzed": 9,
+    "recommendations": [
+      "Reduce text density — use more slides or shorten content."
+    ],
+    "per_slide": [
+      {
+        "slide_number": 1,
+        "title": "Presented By:",
+        "textbox_count": 3,
+        "total_paragraphs": 8,
+        "total_characters": 113,
+        "visual_balance": 65,
+        "text_density_score": 92,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 2,
+        "title": "What is Cloud AI?",
+        "textbox_count": 5,
+        "total_paragraphs": 5,
+        "total_characters": 231,
+        "visual_balance": 66,
+        "text_density_score": 91,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 3,
+        "title": "Cloud TPU: Tensor Processing Unit",
+        "textbox_count": 3,
+        "total_paragraphs": 5,
+        "total_characters": 219,
+        "visual_balance": 44,
+        "text_density_score": 85,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 4,
+        "title": "BUILDING YOUR OWN AI",
+        "textbox_count": 5,
+        "total_paragraphs": 8,
+        "total_characters": 365,
+        "visual_balance": 65,
+        "text_density_score": 85,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 5,
+        "title": "Cloud Natural Language",
+        "textbox_count": 3,
+        "total_paragraphs": 5,
+        "total_characters": 229,
+        "visual_balance": 40,
+        "text_density_score": 85,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 6,
+        "title": "Vision &Video Intelligence",
+        "textbox_count": 2,
+        "total_paragraphs": 5,
+        "total_characters": 281,
+        "visual_balance": 59,
+        "text_density_score": 72,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 7,
+        "title": "Cloud Translation\nAPI",
+        "textbox_count": 2,
+        "total_paragraphs": 6,
+        "total_characters": 204,
+        "visual_balance": 60,
+        "text_density_score": 80,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 8,
+        "title": "Summary:",
+        "textbox_count": 2,
+        "total_paragraphs": 5,
+        "total_characters": 324,
+        "visual_balance": 52,
+        "text_density_score": 68,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 9,
+        "title": "Any\u000b_x000B_Questions?\u000b_x000B_Thank you for your time!",
+        "textbox_count": 1,
+        "total_paragraphs": 1,
+        "total_characters": 53,
+        "visual_balance": 100,
+        "text_density_score": 89,
+        "bullet_overload": 0
+      }
+    ]
+  },
+  "storytelling_analysis": {
+    "hook_score": 45,
+    "narrative_score": 60,
+    "pacing_score": 65,
+    "conclusion_score": 68,
+    "transitions_score": 60,
+    "overall_storytelling_score": 60,
+    "weakest_transition": "Slide 2 to 3",
+    "strongest_transition": "Slide 7 to 8",
+    "missing_sections": [
+      "Hook",
+      "Problem Statement",
+      "Call to Action (CTA)"
+    ],
+    "suggested_order": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      4,
+      3,
+      8,
+      9
+    ],
+    "feedback": "The presentation functions as a product feature catalog rather than a compelling narrative. It opens with a standard title slide and basic definitions without establishing an engaging hook, real-world problem, or relatable business scenario. Placing hardware details (Cloud TPU) immediately after the general definition creates an abrupt shift into technical infrastructure before establishing user value or software capabilities. The presentation excels on Slide 8 with a clear thematic summary, but ends abruptly with a basic Q&A slide without a call to action. To improve, open with a problem statement/hook (e.g., 'How modern businesses process millions of visual & text data points instantly'), present user-facing capabilities first (NL, Vision, Translation), move to custom building tools (AutoML), explain backend performance (TPU), and close with a clear call to action or next steps."
+  },
+  "consistency_analysis": {
+    "consistency_score": 74,
+    "terminology_score": 80,
+    "capitalization_score": 85,
+    "tense_score": 60,
+    "abbreviation_score": 60,
+    "formatting_score": 85,
+    "issues": [
+      "Found 93 possible case variants of terms.",
+      "Mixed verb tenses detected: past, present.",
+      "Undefined abbreviations: CLOUD, AI, BUILDING, YOUR, OWN."
+    ],
+    "issue_count": 3,
+    "recommendations": [
+      "Maintain consistent verb tense throughout the presentation.",
+      "Define abbreviations on first use and use them consistently."
+    ]
+  },
+  "duplicate_analysis": {
+    "duplicate_score": 76,
+    "duplicate_count": 10,
+    "total_items_checked": 41,
+    "duplicate_ratio": 0.244,
+    "duplicates": [
+      {
+        "type": "repeated_phrase",
+        "text": "what is cloud",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "is cloud ai",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "cloud tpu tensor",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "tpu tensor processing",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "tensor processing unit",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "building your own",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "your own ai",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "cloud natural language",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "vision video intelligence",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "video intelligence vision",
+        "occurrences": 2
+      }
+    ],
+    "repeated_titles_count": 0,
+    "repeated_paragraphs_count": 0,
+    "repeated_phrases_count": 10,
+    "repeated_ideas_count": 0,
+    "recommendations": []
+  },
+  "accessibility_analysis": {
+    "accessibility_score": 83,
+    "contrast_score": 92,
+    "text_size_score": 82,
+    "reading_order_score": 75,
+    "color_dependency_score": 70,
+    "alt_text_coverage": 0,
+    "total_images": 9,
+    "images_with_alt": 0,
+    "recommendations": [
+      "Add descriptive alt text to images for screen reader compatibility."
+    ],
+    "per_slide": [
+      {
+        "slide_number": 1,
+        "title": "Presented By:",
+        "textbox_count": 3,
+        "total_characters": 113,
+        "image_count": 1,
+        "contrast_score": 97.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 2,
+        "title": "What is Cloud AI?",
+        "textbox_count": 5,
+        "total_characters": 231,
+        "image_count": 2,
+        "contrast_score": 96.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 3,
+        "title": "Cloud TPU: Tensor Processing Unit",
+        "textbox_count": 3,
+        "total_characters": 219,
+        "image_count": 2,
+        "contrast_score": 93.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 4,
+        "title": "BUILDING YOUR OWN AI",
+        "textbox_count": 5,
+        "total_characters": 365,
+        "image_count": 1,
+        "contrast_score": 93.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 5,
+        "title": "Cloud Natural Language",
+        "textbox_count": 3,
+        "total_characters": 229,
+        "image_count": 1,
+        "contrast_score": 93.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 6,
+        "title": "Vision &Video Intelligence",
+        "textbox_count": 2,
+        "total_characters": 281,
+        "image_count": 1,
+        "contrast_score": 86.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 7,
+        "title": "Cloud Translation\nAPI",
+        "textbox_count": 2,
+        "total_characters": 204,
+        "image_count": 1,
+        "contrast_score": 90.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 8,
+        "title": "Summary:",
+        "textbox_count": 2,
+        "total_characters": 324,
+        "image_count": 0,
+        "contrast_score": 84.0,
+        "text_size_score": 60
+      },
+      {
+        "slide_number": 9,
+        "title": "Any\u000b_x000B_Questions?\u000b_x000B_Thank you for your time!",
+        "textbox_count": 1,
+        "total_characters": 53,
+        "image_count": 0,
+        "contrast_score": 95.0,
+        "text_size_score": 85
+      }
+    ]
+  },
+  "speaker_analysis": {
+    "speaker_readiness_score": 74,
+    "total_words": 312,
+    "flesch_reading_ease": 43.6,
+    "difficulty_level": "Difficult",
+    "filler_phrase_count": 0,
+    "filler_density": 0.0,
+    "engagement_score": 75,
+    "confidence_score": 100,
+    "qa_preparedness": 80,
+    "has_qa_slide": true,
+    "speaking_duration_normal": "3m 34s",
+    "speaking_duration_slow": "3m 54s",
+    "speaking_duration_normal_seconds": 214,
+    "speaking_duration_slow_seconds": 234,
+    "recommendations": [
+      "Simplify text for better audience comprehension — aim for shorter sentences."
+    ]
+  },
+  "semantic_validation": {
+    "valid": true,
+    "preservation_score": 100,
+    "total_validations": 0,
+    "passed": 0,
+    "failed": 0,
+    "issues": []
+  },
+  "structural_validation": {
+    "valid": true,
+    "structural_score": 100,
+    "slide_count_match": true,
+    "shape_count_match": true,
+    "layout_match": true,
+    "issues": [],
+    "issue_count": 0
+  },
+  "rewrite_metrics": {
+    "total_duration": 0.0,
+    "model_calls": 0,
+    "retry_count": 0,
+    "fallback_count": 0,
+    "slides_rewritten": 0,
+    "slides_skipped": 9,
+    "batches_processed": 0,
+    "total_batches": 0
+  },
+  "processing_metadata": {
+    "mode": "professional",
+    "tone": "professional",
+    "model": {
+      "provider": "gemini",
+      "model_name": "gemini-flash-latest",
+      "fallback_models": [
+        "gemini-3.1-flash-lite"
+      ],
+      "available": true,
+      "sdk": "legacy"
+    },
+    "provider": "gemini",
+    "retry_count": 0,
+    "fallback_used": false,
+    "total_ai_calls": 0,
+    "smart_filter_savings": 100.0
+  }
+}

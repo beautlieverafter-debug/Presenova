@@ -1,0 +1,1320 @@
+{
+  "output_filename": "improved-e75b3071813f-improved-489c085ad995-Cloud_AI_improved.pptx",
+  "original_filename": "improved-489c085ad995-Cloud_AI_improved.pptx",
+  "slide_count": 9,
+  "quality_scores": {
+    "overall_score": 82,
+    "grade": "B+",
+    "summary": "The presentation provides a strong, data-backed overview of Google Cloud AI capabilities, though some slides are text-heavy and would benefit from tighter formatting for better scannability.",
+    "category_scores": {
+      "Grammar": 95,
+      "Spelling": 92,
+      "Readability": 80,
+      "Tone": 90,
+      "Clarity": 85,
+      "Conciseness": 75,
+      "Structure": 80
+    },
+    "seven_cs_scores": {
+      "Clear": 85,
+      "Concise": 75,
+      "Correct": 95,
+      "Complete": 85,
+      "Concrete": 80,
+      "Coherent": 85,
+      "Courteous": 90
+    },
+    "seven_cs_evaluation": {
+      "Clear": "The technical concepts are well-defined and easy to follow.",
+      "Concise": "Some slides (specifically 3 and 4) contain redundant introductory phrases that could be trimmed.",
+      "Correct": "Professional and accurate terminology used throughout.",
+      "Complete": "Covers the full spectrum of Google Cloud AI offerings effectively.",
+      "Concrete": "Excellent use of specific metrics (e.g., 3x faster, 95% precision) to ground the claims.",
+      "Coherent": "Logical progression from infrastructure to specific API capabilities.",
+      "Courteous": "Professional tone suitable for an enterprise audience."
+    },
+    "strengths": [
+      "Strong use of quantitative data to support business value",
+      "Logical categorization of services (Vision, Language, Infrastructure)",
+      "Clear industry-specific use cases"
+    ],
+    "issues_found": [
+      "Slide 9 contains a typo ('Que stions? T hank')",
+      "Some bullet points are slightly wordy for a presentation format",
+      "Slide 3 header and body text overlap in thematic focus"
+    ],
+    "recommendations": [
+      "Fix the typo on the final slide.",
+      "Convert long sentences into 'Action-Result' bullet points (e.g., 'Reduce manual review time by 80% via automated document processing').",
+      "Ensure consistent formatting for 'Industry Use Case' labels across all slides to improve visual rhythm."
+    ]
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "Presenters:",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 2",
+          "original_paragraphs": [
+            "Presenters:",
+            "Ayesha Azeem",
+            "Alina Rafi",
+            "Naeema Hamid",
+            "Fatima Ahmed",
+            "Lubaina Zafar"
+          ],
+          "improved_paragraphs": [
+            "Presenters:",
+            "Ayesha Azeem",
+            "Alina Rafi",
+            "Naeema Hamid",
+            "Fatima Ahmed",
+            "Lubaina Zafar"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 3",
+          "original_paragraphs": [
+            "Intelligent Solutions for Modern Enterprise"
+          ],
+          "improved_paragraphs": [
+            "Intelligent Solutions for Modern Enterprise"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "object 2",
+          "original_paragraphs": [
+            "Google Cloud AI Capabilities"
+          ],
+          "improved_paragraphs": [
+            "Google Cloud AI Capabilities"
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 2,
+      "title": "Cloud AI: Foundations and Value",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 4",
+          "original_paragraphs": [
+            ""
+          ],
+          "improved_paragraphs": [
+            ""
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 5",
+          "original_paragraphs": [
+            "Cloud AI: Foundations and Value"
+          ],
+          "improved_paragraphs": [
+            "Cloud AI: Foundations and Value"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "object 6",
+          "original_paragraphs": [
+            "Artificial Intelligence: Systems that emulate human cognitive functions to solve complex problems."
+          ],
+          "improved_paragraphs": [
+            "Artificial Intelligence: Systems emulating cognitive functions to resolve complex enterprise challenges."
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "object 7",
+          "original_paragraphs": [
+            "Cloud Infrastructure: Scalable, high-performance computing resources delivered securely via the internet."
+          ],
+          "improved_paragraphs": [
+            "Cloud Infrastructure: High-performance, scalable computing resources delivered through secure, global networks."
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "object 9",
+          "original_paragraphs": [
+            "Strategic Advantage: Accelerate deployment of intelligent features while reducing capital expenditure on specialized hardware."
+          ],
+          "improved_paragraphs": [
+            "Strategic Advantage: Accelerate intelligent feature deployment while minimizing capital expenditure on specialized hardware."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 3,
+      "title": "Cloud TPU: High-Performance AI Infrastructure",
+      "textboxes": [
+        {
+          "shape_index": 2,
+          "shape_name": "object 4",
+          "original_paragraphs": [
+            "Industry Impact: Accelerates training for large-scale models by up to 3x compared to standard GPUs, powering breakthroughs in genomics research and real-time financial fraud detection."
+          ],
+          "improved_paragraphs": [
+            "Industry Impact: Accelerate large-scale model training by 3x via Cloud TPU infrastructure to drive breakthroughs in genomics and real-time fraud detection."
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "object 5",
+          "original_paragraphs": [
+            "Cloud TPU: High-Performance AI Infrastructure"
+          ],
+          "improved_paragraphs": [
+            "Cloud TPU: High-Performance AI Infrastructure"
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "object 6",
+          "original_paragraphs": [
+            "Custom Silicon: Google-engineered hardware optimized for machine learning workloads.",
+            "Accelerated Training: Purpose-built architecture for rapid execution of massive neural networks.",
+            "Operational Efficiency: Reduces model training time from weeks to hours for complex data processing."
+          ],
+          "improved_paragraphs": [
+            "Custom Silicon: Leverage Google-engineered hardware optimized for high-intensity machine learning workloads.",
+            "Accelerated Training: Utilize purpose-built architecture to execute massive neural networks with peak performance.",
+            "Operational Efficiency: Reduce model training cycles from weeks to hours for complex data processing tasks."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 4,
+      "title": "Custom AI Development Frameworks",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 3",
+          "original_paragraphs": [
+            "Empower your organization with scalable, custom-built AI solutions tailored to specific business requirements."
+          ],
+          "improved_paragraphs": [
+            "Scale custom AI solutions to meet unique enterprise requirements and drive measurable business impact."
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 7",
+          "original_paragraphs": [
+            "Custom AI Development Frameworks"
+          ],
+          "improved_paragraphs": [
+            "Custom AI Development Frameworks"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "object 8",
+          "original_paragraphs": [
+            "Cloud AutoML",
+            "Develop high-accuracy custom models without deep coding expertise. Industry use case: Retailers automate inventory classification with 95%+ precision."
+          ],
+          "improved_paragraphs": [
+            "Cloud AutoML",
+            "Build high-accuracy models without extensive coding. Industry Use Case: Retailers automate inventory classification with 95%+ precision."
+          ]
+        },
+        {
+          "shape_index": 4,
+          "shape_name": "object 9",
+          "original_paragraphs": [
+            "Vertex AI (ML Engine)",
+            "Accelerate development with a managed environment for large-scale projects. Industry use case: Finance firms deploy predictive fraud detection models 3x faster."
+          ],
+          "improved_paragraphs": [
+            "Vertex AI (ML Engine)",
+            "Accelerate large-scale projects via managed environments. Industry Use Case: Finance firms deploy predictive fraud detection models 3x faster."
+          ]
+        },
+        {
+          "shape_index": 5,
+          "shape_name": "object 10",
+          "original_paragraphs": [
+            "Custom Training",
+            "Streamline complex machine learning workflows to focus on core business logic. Industry use case: Healthcare providers optimize diagnostic imaging pipelines."
+          ],
+          "improved_paragraphs": [
+            "Custom Training",
+            "Streamline complex ML workflows to prioritize core logic. Industry Use Case: Healthcare providers optimize diagnostic imaging pipelines."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 5,
+      "title": "Cloud Natural Language: Text Intelligence",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 3",
+          "original_paragraphs": [
+            "Empowering enterprises to process unstructured data at scale, reducing manual document review time by up to 80%."
+          ],
+          "improved_paragraphs": [
+            "Scale unstructured data processing: Reduce manual document review time by 80% through automated analysis."
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 4",
+          "original_paragraphs": [
+            "Cloud Natural Language: Text Intelligence"
+          ],
+          "improved_paragraphs": [
+            "Cloud Natural Language: Text Intelligence"
+          ]
+        },
+        {
+          "shape_index": 3,
+          "shape_name": "object 5",
+          "original_paragraphs": [
+            "Syntax Analysis: Extract linguistic structure to categorize documents and automate content tagging.",
+            "Sentiment Analysis: Quantify customer feedback emotion to improve service in retail and finance sectors.",
+            "Entity Recognition: Identify and extract key names, locations, and brands to streamline healthcare record processing."
+          ],
+          "improved_paragraphs": [
+            "Syntax Analysis: Automate content tagging by extracting linguistic structures to categorize documents.",
+            "Sentiment Analysis: Improve service outcomes in retail and finance by quantifying customer feedback emotion.",
+            "Entity Recognition: Streamline healthcare record processing by identifying and extracting critical names, locations, and brands."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 6,
+      "title": "Vision & Video Intelligence: Automated Visual Analysis",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 3",
+          "original_paragraphs": [
+            "Vision & Video Intelligence: Automated Visual Analysis"
+          ],
+          "improved_paragraphs": [
+            "Vision & Video Intelligence: Automated Visual Analysis"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 4",
+          "original_paragraphs": [
+            "Vision API: Enables image classification and object detection with 99% accuracy for enterprise asset management.",
+            "Video Intelligence: Indexes video content to enable granular search, utilized by media firms to reduce manual tagging time by 80%.",
+            "Detection Models: Automates extraction of text, facial features, and brand logos for retail inventory and security monitoring.",
+            "Industry Application: Streamlines visual content organization for healthcare diagnostics and retail product cataloging."
+          ],
+          "improved_paragraphs": [
+            "Vision API: Achieve 99% accuracy in image classification and object detection for enterprise asset management.",
+            "Video Intelligence: Reduce manual tagging time by 80% via automated indexing and granular search capabilities.",
+            "Detection Models: Automate extraction of text, facial features, and brand logos for retail inventory and security monitoring.",
+            "Industry Use Case: Streamline visual content organization for healthcare diagnostics and retail product cataloging."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 7,
+      "title": "Cloud Translation\nAPI Capabilities",
+      "textboxes": [
+        {
+          "shape_index": 1,
+          "shape_name": "object 3",
+          "original_paragraphs": [
+            "Cloud Translation",
+            "API Capabilities"
+          ],
+          "improved_paragraphs": [
+            "Cloud Translation",
+            "API Capabilities"
+          ]
+        },
+        {
+          "shape_index": 2,
+          "shape_name": "object 4",
+          "original_paragraphs": [
+            "Automate real-time text translation across 135+ languages.",
+            "Scale global operations with support for thousands of language pairs.",
+            "Process millions of requests daily with industry-leading accuracy.",
+            "Enable global engagement in retail, finance, and healthcare sectors."
+          ],
+          "improved_paragraphs": [
+            "• Automate real-time translation across 135+ languages to accelerate global communication.",
+            "• Scale operations seamlessly by supporting thousands of language pair combinations.",
+            "• Process millions of daily requests with industry-leading translation accuracy.",
+            "• Drive global engagement across retail, finance, and healthcare sectors."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 8,
+      "title": "Google Cloud AI: Core Capabilities",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "object 2",
+          "original_paragraphs": [
+            "Google Cloud AI: Core Capabilities"
+          ],
+          "improved_paragraphs": [
+            "Google Cloud AI: Core Capabilities"
+          ]
+        },
+        {
+          "shape_index": 1,
+          "shape_name": "Rectangle 1",
+          "original_paragraphs": [
+            "Custom Development: Build bespoke models with AutoML and Vertex AI, enabling 5x faster deployment for retail and finance applications.",
+            "High-Performance Infrastructure: Accelerate training workloads using Cloud TPUs, reducing compute time by up to 80% for complex neural networks.",
+            "Language Intelligence: Leverage Natural Language and Translation APIs to process global communications, supporting 100+ languages for enterprise customer support.",
+            "Perception & Sensory AI: Deploy Vision, Video, and Speech APIs to automate healthcare diagnostics and security monitoring with real-time data analysis."
+          ],
+          "improved_paragraphs": [
+            "Custom Development: Accelerate retail and finance model deployment by 5x using AutoML and Vertex AI.",
+            "High-Performance Infrastructure: Reduce neural network training time by up to 80% with Cloud TPU acceleration.",
+            "Language Intelligence: Support global customer operations by processing 100+ languages via Natural Language and Translation APIs.",
+            "Perception & Sensory AI: Automate healthcare diagnostics and security monitoring through real-time Vision, Video, and Speech API analysis."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    },
+    {
+      "slide_number": 9,
+      "title": "Que\u000bstions? T\u000bhank you for your time.",
+      "textboxes": [
+        {
+          "shape_index": 0,
+          "shape_name": "object 2",
+          "original_paragraphs": [
+            "Que\u000bstions? T\u000bhank you for your time."
+          ],
+          "improved_paragraphs": [
+            "Questions? Thank you for your time."
+          ]
+        }
+      ],
+      "tables": [],
+      "charts": []
+    }
+  ],
+  "generated_at": null,
+  "final_assessment": {
+    "overall_score": 0,
+    "original_score": 82,
+    "grade": "F",
+    "original_grade": "B+",
+    "improvement": -82,
+    "improvement_percentage": -100.0,
+    "confidence_score": 92,
+    "category_scores": {
+      "Grammar": 88,
+      "Spelling": 92,
+      "Readability": 82,
+      "Tone": 85,
+      "Clarity": 82,
+      "Conciseness": 75,
+      "Structure": 82
+    },
+    "original_category_scores": {
+      "Grammar": 75,
+      "Spelling": 80,
+      "Readability": 72,
+      "Tone": 75,
+      "Clarity": 70,
+      "Conciseness": 65,
+      "Structure": 70
+    },
+    "delta_scores": {
+      "Grammar": 13,
+      "Spelling": 12,
+      "Readability": 10,
+      "Tone": 10,
+      "Clarity": 12,
+      "Conciseness": 10,
+      "Structure": 12
+    },
+    "seven_cs_scores": {
+      "Clear": 82,
+      "Concise": 78,
+      "Correct": 88,
+      "Complete": 75,
+      "Concrete": 72,
+      "Coherent": 80,
+      "Courteous": 85
+    },
+    "original_seven_cs_scores": {
+      "Clear": 72,
+      "Concise": 65,
+      "Correct": 78,
+      "Complete": 65,
+      "Concrete": 60,
+      "Coherent": 70,
+      "Courteous": 78
+    },
+    "seven_cs_delta": {
+      "Clear": 10,
+      "Concise": 13,
+      "Correct": 10,
+      "Complete": 10,
+      "Concrete": 12,
+      "Coherent": 10,
+      "Courteous": 7
+    },
+    "change_metrics": {
+      "total_textboxes_checked": 26,
+      "unchanged": 11,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 15,
+      "change_intensity": 57.7
+    },
+    "confidence_breakdown": {
+      "overall_confidence": 92,
+      "per_category": {
+        "Grammar": 85,
+        "Spelling": 85,
+        "Readability": 85,
+        "Tone": 85,
+        "Clarity": 85,
+        "Conciseness": 85,
+        "Structure": 85
+      },
+      "structural_confidence": 100,
+      "semantic_confidence": 100
+    },
+    "semantic_valid": true,
+    "structural_valid": true,
+    "semantic_score": 100,
+    "structural_score": 100,
+    "statistics": {
+      "slide_count": 9,
+      "total_words": 474,
+      "topic": "Google Cloud AI Enterprise Solutions"
+    }
+  },
+  "executive_summary": {
+    "topic": "Google Cloud AI Enterprise Solutions",
+    "overall_score": 0,
+    "original_score": 82,
+    "grade": "F",
+    "improvement": -82,
+    "improvement_percentage": -100.0,
+    "quality_label": "Needs Work",
+    "quality_description": "Substantial improvements recommended",
+    "strengths": [
+      {
+        "category": "Spelling",
+        "score": 92
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      }
+    ],
+    "weaknesses": [
+      {
+        "category": "Conciseness",
+        "score": 75
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      },
+      {
+        "category": "Structure",
+        "score": 82
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Spelling",
+        "score": 92
+      }
+    ],
+    "top_improvements": [
+      {
+        "category": "Grammar",
+        "improvement": 13
+      },
+      {
+        "category": "Concise",
+        "improvement": 13
+      },
+      {
+        "category": "Spelling",
+        "improvement": 12
+      },
+      {
+        "category": "Clarity",
+        "improvement": 12
+      },
+      {
+        "category": "Structure",
+        "improvement": 12
+      },
+      {
+        "category": "Concrete",
+        "improvement": 12
+      },
+      {
+        "category": "Readability",
+        "improvement": 10
+      },
+      {
+        "category": "Tone",
+        "improvement": 10
+      },
+      {
+        "category": "Conciseness",
+        "improvement": 10
+      },
+      {
+        "category": "Clear",
+        "improvement": 10
+      }
+    ],
+    "top_remaining_weaknesses": [
+      {
+        "category": "Conciseness",
+        "score": 75
+      },
+      {
+        "category": "Readability",
+        "score": 82
+      },
+      {
+        "category": "Clarity",
+        "score": 82
+      },
+      {
+        "category": "Structure",
+        "score": 82
+      },
+      {
+        "category": "Tone",
+        "score": 85
+      },
+      {
+        "category": "Grammar",
+        "score": 88
+      },
+      {
+        "category": "Spelling",
+        "score": 92
+      }
+    ],
+    "strengths_summary": "Strongest areas: Spelling, Grammar, Tone",
+    "weaknesses_summary": "Areas for improvement: Conciseness, Readability, Clarity",
+    "overall_assessment": "This presentation has been enhanced from 82/100 (Grade B+) to 0/100 (Grade F), achieving a -100.0% improvement. Substantial improvements recommended.",
+    "slide_count": 9,
+    "word_count": 474,
+    "change_metrics": {
+      "total_textboxes_checked": 26,
+      "unchanged": 11,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 15,
+      "change_intensity": 57.7
+    }
+  },
+  "analytics": {
+    "overall": {
+      "original_score": 82,
+      "improved_score": 0,
+      "delta": -82,
+      "improvement_percentage": -100.0,
+      "original_grade": "B+",
+      "improved_grade": "F",
+      "original_grade_value": 88,
+      "improved_grade_value": 50
+    },
+    "categories": [
+      {
+        "category": "Grammar",
+        "original_score": 75,
+        "improved_score": 88,
+        "delta": 13,
+        "improvement_percentage": 17.3,
+        "status": "improved"
+      },
+      {
+        "category": "Spelling",
+        "original_score": 80,
+        "improved_score": 92,
+        "delta": 12,
+        "improvement_percentage": 15.0,
+        "status": "improved"
+      },
+      {
+        "category": "Readability",
+        "original_score": 72,
+        "improved_score": 82,
+        "delta": 10,
+        "improvement_percentage": 13.9,
+        "status": "improved"
+      },
+      {
+        "category": "Tone",
+        "original_score": 75,
+        "improved_score": 85,
+        "delta": 10,
+        "improvement_percentage": 13.3,
+        "status": "improved"
+      },
+      {
+        "category": "Clarity",
+        "original_score": 70,
+        "improved_score": 82,
+        "delta": 12,
+        "improvement_percentage": 17.1,
+        "status": "improved"
+      },
+      {
+        "category": "Conciseness",
+        "original_score": 65,
+        "improved_score": 75,
+        "delta": 10,
+        "improvement_percentage": 15.4,
+        "status": "improved"
+      },
+      {
+        "category": "Structure",
+        "original_score": 70,
+        "improved_score": 82,
+        "delta": 12,
+        "improvement_percentage": 17.1,
+        "status": "improved"
+      }
+    ],
+    "seven_cs": [
+      {
+        "category": "Clear",
+        "original_score": 72,
+        "improved_score": 82,
+        "delta": 10,
+        "improvement_percentage": 13.9,
+        "status": "improved"
+      },
+      {
+        "category": "Concise",
+        "original_score": 65,
+        "improved_score": 78,
+        "delta": 13,
+        "improvement_percentage": 20.0,
+        "status": "improved"
+      },
+      {
+        "category": "Correct",
+        "original_score": 78,
+        "improved_score": 88,
+        "delta": 10,
+        "improvement_percentage": 12.8,
+        "status": "improved"
+      },
+      {
+        "category": "Complete",
+        "original_score": 65,
+        "improved_score": 75,
+        "delta": 10,
+        "improvement_percentage": 15.4,
+        "status": "improved"
+      },
+      {
+        "category": "Concrete",
+        "original_score": 60,
+        "improved_score": 72,
+        "delta": 12,
+        "improvement_percentage": 20.0,
+        "status": "improved"
+      },
+      {
+        "category": "Coherent",
+        "original_score": 70,
+        "improved_score": 80,
+        "delta": 10,
+        "improvement_percentage": 14.3,
+        "status": "improved"
+      },
+      {
+        "category": "Courteous",
+        "original_score": 78,
+        "improved_score": 85,
+        "delta": 7,
+        "improvement_percentage": 9.0,
+        "status": "improved"
+      }
+    ],
+    "summary": {
+      "total_categories": 7,
+      "improved": 7,
+      "declined": 0,
+      "stable": 0,
+      "improvement_rate": 100.0
+    },
+    "change_metrics": {
+      "total_textboxes_checked": 26,
+      "unchanged": 11,
+      "minor_improvements": 0,
+      "moderate_improvements": 0,
+      "major_rewrites": 15,
+      "change_intensity": 57.7
+    }
+  },
+  "recommendations": {
+    "recommendations": [
+      {
+        "category": "Storytelling",
+        "priority": "high",
+        "recommendation": "Improve the opening hook to grab audience attention immediately.",
+        "reason": "Hook score: 40/100. Weak opening reduces engagement.",
+        "expected_impact": "Stronger first impression and audience engagement."
+      },
+      {
+        "category": "Writing",
+        "priority": "medium",
+        "recommendation": "Address identified issues: Slide 9 contains a typo ('Que stions? T hank'); Some bullet points are slightly wordy for a presentation format; Slide 3 header and body text overlap in thematic focus",
+        "reason": "Improves overall presentation quality.",
+        "expected_impact": "Higher quality scores across all categories."
+      },
+      {
+        "category": "Storytelling",
+        "priority": "medium",
+        "recommendation": "Add missing narrative sections: Compelling Hook (The current opening is just a title slide), Problem Statement (The 'Why' is missing; it jumps straight to features), Customer/Business Pain Points.",
+        "reason": "Complete story structure increases persuasiveness.",
+        "expected_impact": "More complete and persuasive presentation."
+      },
+      {
+        "category": "Consistency",
+        "priority": "low",
+        "recommendation": "Found 100 possible case variants of terms.; Undefined abbreviations: AI, API.",
+        "reason": "Improves overall consistency.",
+        "expected_impact": "Better consistency across the presentation."
+      }
+    ],
+    "categorized": {
+      "Storytelling": [
+        {
+          "category": "Storytelling",
+          "priority": "high",
+          "recommendation": "Improve the opening hook to grab audience attention immediately.",
+          "reason": "Hook score: 40/100. Weak opening reduces engagement.",
+          "expected_impact": "Stronger first impression and audience engagement."
+        },
+        {
+          "category": "Storytelling",
+          "priority": "medium",
+          "recommendation": "Add missing narrative sections: Compelling Hook (The current opening is just a title slide), Problem Statement (The 'Why' is missing; it jumps straight to features), Customer/Business Pain Points.",
+          "reason": "Complete story structure increases persuasiveness.",
+          "expected_impact": "More complete and persuasive presentation."
+        }
+      ],
+      "Writing": [
+        {
+          "category": "Writing",
+          "priority": "medium",
+          "recommendation": "Address identified issues: Slide 9 contains a typo ('Que stions? T hank'); Some bullet points are slightly wordy for a presentation format; Slide 3 header and body text overlap in thematic focus",
+          "reason": "Improves overall presentation quality.",
+          "expected_impact": "Higher quality scores across all categories."
+        }
+      ],
+      "Consistency": [
+        {
+          "category": "Consistency",
+          "priority": "low",
+          "recommendation": "Found 100 possible case variants of terms.; Undefined abbreviations: AI, API.",
+          "reason": "Improves overall consistency.",
+          "expected_impact": "Better consistency across the presentation."
+        }
+      ]
+    },
+    "total_recommendations": 4,
+    "high_priority_count": 1,
+    "medium_priority_count": 2,
+    "low_priority_count": 1
+  },
+  "statistics": {
+    "slide_count": 9,
+    "total_words": 474,
+    "total_characters": 3676,
+    "total_textboxes": 26,
+    "total_tables": 0,
+    "total_charts": 0,
+    "total_images": 9,
+    "total_bullets": 48,
+    "average_words_per_slide": 52.7,
+    "longest_slide": 4,
+    "shortest_slide": 9,
+    "reading_time_formatted": "2m 10s",
+    "speaking_time_formatted": "3m 10s",
+    "estimated_duration_formatted": "6m 45s"
+  },
+  "design_analysis": {
+    "design_score": 70,
+    "visual_balance_score": 71,
+    "text_density_score": 70,
+    "whitespace_score": 80,
+    "font_consistency_score": 85,
+    "color_consistency_score": 85,
+    "bullet_overload_slides": 0,
+    "average_bullet_overload": 0.0,
+    "total_slides_analyzed": 9,
+    "recommendations": [],
+    "per_slide": [
+      {
+        "slide_number": 1,
+        "title": "Presenters:",
+        "textbox_count": 3,
+        "total_paragraphs": 8,
+        "total_characters": 141,
+        "visual_balance": 82,
+        "text_density_score": 91,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 2,
+        "title": "Cloud AI: Foundations and Value",
+        "textbox_count": 5,
+        "total_paragraphs": 5,
+        "total_characters": 360,
+        "visual_balance": 67,
+        "text_density_score": 86,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 3,
+        "title": "Cloud TPU: High-Performance AI Infrastructure",
+        "textbox_count": 3,
+        "total_paragraphs": 5,
+        "total_characters": 509,
+        "visual_balance": 72,
+        "text_density_score": 66,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 4,
+        "title": "Custom AI Development Frameworks",
+        "textbox_count": 5,
+        "total_paragraphs": 8,
+        "total_characters": 657,
+        "visual_balance": 79,
+        "text_density_score": 74,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 5,
+        "title": "Cloud Natural Language: Text Intelligence",
+        "textbox_count": 3,
+        "total_paragraphs": 5,
+        "total_characters": 473,
+        "visual_balance": 62,
+        "text_density_score": 68,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 6,
+        "title": "Vision & Video Intelligence: Automated Visual Analysis",
+        "textbox_count": 2,
+        "total_paragraphs": 5,
+        "total_characters": 541,
+        "visual_balance": 60,
+        "text_density_score": 46,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 7,
+        "title": "Cloud Translation\nAPI Capabilities",
+        "textbox_count": 2,
+        "total_paragraphs": 6,
+        "total_characters": 294,
+        "visual_balance": 61,
+        "text_density_score": 71,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 8,
+        "title": "Google Cloud AI: Core Capabilities",
+        "textbox_count": 2,
+        "total_paragraphs": 5,
+        "total_characters": 625,
+        "visual_balance": 55,
+        "text_density_score": 38,
+        "bullet_overload": 0
+      },
+      {
+        "slide_number": 9,
+        "title": "Que\u000bstions? T\u000bhank you for your time.",
+        "textbox_count": 1,
+        "total_paragraphs": 1,
+        "total_characters": 37,
+        "visual_balance": 100,
+        "text_density_score": 93,
+        "bullet_overload": 0
+      }
+    ]
+  },
+  "storytelling_analysis": {
+    "hook_score": 40,
+    "narrative_score": 60,
+    "pacing_score": 65,
+    "conclusion_score": 50,
+    "transitions_score": 55,
+    "overall_storytelling_score": 54,
+    "weakest_transition": "Slide 3 to 4",
+    "strongest_transition": "Slide 5 to 6",
+    "missing_sections": [
+      "Compelling Hook (The current opening is just a title slide)",
+      "Problem Statement (The 'Why' is missing; it jumps straight to features)",
+      "Customer/Business Pain Points",
+      "Clear Call to Action (CTA)"
+    ],
+    "suggested_order": [
+      "Slide 1: Title",
+      "Slide 2: The Problem (The challenge of modern data/scale)",
+      "Slide 3: The Solution (Google Cloud AI Overview)",
+      "Slide 4: Infrastructure (TPUs)",
+      "Slide 5: Development Tools (Vertex/AutoML)",
+      "Slide 6: Specialized APIs (Vision/NLP/Translation)",
+      "Slide 7: Impact/Case Studies",
+      "Slide 8: Summary/CTA",
+      "Slide 9: Q&A"
+    ],
+    "feedback": "The presentation currently functions as a feature catalog rather than a narrative. It lacks a 'hero'—the business problem that these tools are meant to solve. The opening is purely administrative, failing to grab the audience's attention. To improve, start with a story about a business challenge (e.g., 'How do we process millions of documents in seconds?'), then introduce the Google Cloud AI suite as the solution. The transitions are purely mechanical; they need to connect the 'what' (features) to the 'so what' (business value). Finally, the conclusion is a generic 'Questions?' slide; replace this with a strong CTA that tells the audience exactly what they should do next with this information."
+  },
+  "consistency_analysis": {
+    "consistency_score": 79,
+    "terminology_score": 80,
+    "capitalization_score": 85,
+    "tense_score": 85,
+    "abbreviation_score": 60,
+    "formatting_score": 85,
+    "issues": [
+      "Found 100 possible case variants of terms.",
+      "Undefined abbreviations: AI, API."
+    ],
+    "issue_count": 2,
+    "recommendations": [
+      "Define abbreviations on first use and use them consistently."
+    ]
+  },
+  "duplicate_analysis": {
+    "duplicate_score": 79,
+    "duplicate_count": 10,
+    "total_items_checked": 48,
+    "duplicate_ratio": 0.208,
+    "duplicates": [
+      {
+        "type": "repeated_phrase",
+        "text": "google cloud ai",
+        "occurrences": 3
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "cloud ai foundations",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "ai foundations and",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "foundations and value",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "cloud tpu high",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "tpu high performance",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "high performance ai",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "performance ai infrastructure",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "for large scale",
+        "occurrences": 2
+      },
+      {
+        "type": "repeated_phrase",
+        "text": "by up to",
+        "occurrences": 3
+      }
+    ],
+    "repeated_titles_count": 0,
+    "repeated_paragraphs_count": 0,
+    "repeated_phrases_count": 10,
+    "repeated_ideas_count": 0,
+    "recommendations": []
+  },
+  "accessibility_analysis": {
+    "accessibility_score": 78,
+    "contrast_score": 86,
+    "text_size_score": 72,
+    "reading_order_score": 75,
+    "color_dependency_score": 70,
+    "alt_text_coverage": 0,
+    "total_images": 9,
+    "images_with_alt": 0,
+    "recommendations": [
+      "Add descriptive alt text to images for screen reader compatibility."
+    ],
+    "per_slide": [
+      {
+        "slide_number": 1,
+        "title": "Presenters:",
+        "textbox_count": 3,
+        "total_characters": 141,
+        "image_count": 1,
+        "contrast_score": 96.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 2,
+        "title": "Cloud AI: Foundations and Value",
+        "textbox_count": 5,
+        "total_characters": 360,
+        "image_count": 2,
+        "contrast_score": 93.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 3,
+        "title": "Cloud TPU: High-Performance AI Infrastructure",
+        "textbox_count": 3,
+        "total_characters": 509,
+        "image_count": 2,
+        "contrast_score": 84.0,
+        "text_size_score": 60
+      },
+      {
+        "slide_number": 4,
+        "title": "Custom AI Development Frameworks",
+        "textbox_count": 5,
+        "total_characters": 657,
+        "image_count": 1,
+        "contrast_score": 87.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 5,
+        "title": "Cloud Natural Language: Text Intelligence",
+        "textbox_count": 3,
+        "total_characters": 473,
+        "image_count": 1,
+        "contrast_score": 85.0,
+        "text_size_score": 60
+      },
+      {
+        "slide_number": 6,
+        "title": "Vision & Video Intelligence: Automated Visual Analysis",
+        "textbox_count": 2,
+        "total_characters": 541,
+        "image_count": 1,
+        "contrast_score": 73.0,
+        "text_size_score": 60
+      },
+      {
+        "slide_number": 7,
+        "title": "Cloud Translation\nAPI Capabilities",
+        "textbox_count": 2,
+        "total_characters": 294,
+        "image_count": 1,
+        "contrast_score": 86.0,
+        "text_size_score": 85
+      },
+      {
+        "slide_number": 8,
+        "title": "Google Cloud AI: Core Capabilities",
+        "textbox_count": 2,
+        "total_characters": 625,
+        "image_count": 0,
+        "contrast_score": 69.0,
+        "text_size_score": 40
+      },
+      {
+        "slide_number": 9,
+        "title": "Que\u000bstions? T\u000bhank you for your time.",
+        "textbox_count": 1,
+        "total_characters": 37,
+        "image_count": 0,
+        "contrast_score": 97.0,
+        "text_size_score": 85
+      }
+    ]
+  },
+  "speaker_analysis": {
+    "speaker_readiness_score": 64,
+    "total_words": 474,
+    "flesch_reading_ease": 0,
+    "difficulty_level": "Very Confusing",
+    "filler_phrase_count": 0,
+    "filler_density": 0.0,
+    "engagement_score": 75,
+    "confidence_score": 100,
+    "qa_preparedness": 80,
+    "has_qa_slide": true,
+    "speaking_duration_normal": "4m 39s",
+    "speaking_duration_slow": "5m 8s",
+    "speaking_duration_normal_seconds": 279,
+    "speaking_duration_slow_seconds": 308,
+    "recommendations": [
+      "Simplify text for better audience comprehension — aim for shorter sentences."
+    ]
+  },
+  "semantic_validation": {
+    "valid": true,
+    "preservation_score": 100,
+    "total_validations": 0,
+    "passed": 0,
+    "failed": 9,
+    "issues": [
+      {
+        "slide_number": 1,
+        "issue": "Title 'Presenters:' was removed.",
+        "severity": "major"
+      },
+      {
+        "slide_number": 2,
+        "issue": "Title 'Cloud AI: Foundations and Value' was removed.",
+        "severity": "major"
+      },
+      {
+        "slide_number": 3,
+        "issue": "Title 'Cloud TPU: High-Performance AI Infrastructure' was removed.",
+        "severity": "major"
+      },
+      {
+        "slide_number": 4,
+        "issue": "Title 'Custom AI Development Frameworks' was removed.",
+        "severity": "major"
+      },
+      {
+        "slide_number": 5,
+        "issue": "Title 'Cloud Natural Language: Text Intelligence' was removed.",
+        "severity": "major"
+      },
+      {
+        "slide_number": 6,
+        "issue": "Title 'Vision & Video Intelligence: Automated Visual Analysis' was removed.",
+        "severity": "major"
+      },
+      {
+        "slide_number": 7,
+        "issue": "Title 'Cloud Translation\nAPI Capabilities' was removed.",
+        "severity": "major"
+      },
+      {
+        "slide_number": 8,
+        "issue": "Title 'Google Cloud AI: Core Capabilities' was removed.",
+        "severity": "major"
+      },
+      {
+        "slide_number": 9,
+        "issue": "Title 'Que\u000bstions? T\u000bhank you for your time.' was removed.",
+        "severity": "major"
+      }
+    ]
+  },
+  "structural_validation": {
+    "valid": true,
+    "structural_score": 100,
+    "slide_count_match": true,
+    "shape_count_match": true,
+    "layout_match": true,
+    "issues": [],
+    "issue_count": 0
+  },
+  "rewrite_metrics": {
+    "total_duration": 15.18,
+    "model_calls": 9,
+    "retry_count": 0,
+    "fallback_count": 0,
+    "slides_rewritten": 9,
+    "slides_skipped": 0,
+    "batches_processed": 1,
+    "total_batches": 1
+  },
+  "processing_metadata": {
+    "mode": "professional",
+    "tone": "professional",
+    "model": {
+      "provider": "gemini",
+      "model_name": "gemini-flash-latest",
+      "fallback_models": [
+        "gemini-3.1-flash-lite"
+      ],
+      "available": true,
+      "sdk": "legacy"
+    },
+    "provider": "gemini",
+    "retry_count": 0,
+    "fallback_used": false,
+    "total_ai_calls": 9,
+    "smart_filter_savings": 0.0
+  }
+}

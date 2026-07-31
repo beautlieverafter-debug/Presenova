@@ -4,13 +4,10 @@ Centralized Prompt Templates for the AI Presentation Enhancement Engine.
 All prompts are defined here to keep them consistent, auditable, and
 easy to modify across processing modes and tones.
 """
-
 import json
 import logging
 from typing import Optional
-
 logger = logging.getLogger(__name__)
-
 # ── Processing Modes ─────────────────────────────────────────────────────────
 # Each mode defines a distinct prompt personality and quality target.
 MODE_SYSTEM_INSTRUCTIONS = {
@@ -119,20 +116,20 @@ Clear, Concise, Correct, Complete, Concrete, Coherent, Courteous
 === TEXT ===
 {text[:120000]}
 """
-
-
 # ── Build rewrite prompt ─────────────────────────────────────────────────────
-
 def build_rewrite_prompt(
     slides: list[dict],
     grammar_issues_summary: str = "",
     presentation_context: Optional[dict] = None,
     mode: str = "professional",
     tone: str = "professional",
+    focus_items: Optional[list[str]] = None,
 ) -> str:
     """Build a comprehensive prompt for rewriting presentation text.
 
-    Incorporates processing mode, tone, presentation context, and grammar issues.
+    Incorporates processing mode, tone, presentation context, grammar issues,
+    and pre-analysis recommendations (focus_items) the rewrite must explicitly
+    address instead of just a generic polish pass.
     """
     mode_system = MODE_SYSTEM_INSTRUCTIONS.get(mode, MODE_SYSTEM_INSTRUCTIONS["professional"])
     tone_instruction = TONE_INSTRUCTIONS.get(tone, TONE_INSTRUCTIONS["professional"])
@@ -143,41 +140,52 @@ def build_rewrite_prompt(
         slide_type = slide.get('_inferred_type', 'Content Slide')
         target_lines = [f'  Slide role: {slide_type}']
 
-        for textbox in slide.get('textboxes', []):
-            paragraphs = ' | '.join(
-                f'[P{p.get("para_index", i)}]: {json.dumps(str(p.get("text", "") if isinstance(p, dict) else str(p)), ensure_ascii=False)}'
-                for i, p in enumerate(textbox.get('paragraphs', []))
-            )
-            target_lines.append(
-                f'  Textbox shape_index={textbox.get("shape_index")} '
-                f'({len(textbox.get("paragraphs", []))} paragraphs): {paragraphs}'
-            )
+    for textbox in slide.get('textboxes', []):
+        paragraphs = ' | '.join(
+        f'[P{p.get("para_index", i)}]: {json.dumps(str(p.get("text", "") if isinstance(p, dict) else str(p)), ensure_ascii=False)}'
+        for i, p in enumerate(textbox.get('paragraphs', []))
+    )
 
-        for table in slide.get('tables_data', []):
-            for cell in table.get('cells', []):
-                paragraphs = ' | '.join(
-                    f'[P{i}]: {json.dumps(str(p.get("text", "") if isinstance(p, dict) else str(p)), ensure_ascii=False)}'
-                    for i, p in enumerate(cell.get('paragraphs', []))
-                )
-                target_lines.append(
+        # Check if this textbox is the slide title
+        is_title = textbox.get("shape_index") == slide.get("title_shape_index")
+        title_tag = "[TITLE] " if is_title else ""
+
+        target_lines.append(
+            f'  {title_tag}Textbox shape_index={textbox.get("shape_index")} '
+            f'({len(textbox.get("paragraphs", []))} paragraphs): {paragraphs}'
+        )
+
+        for table in slide.get('tables_data', []):            for cell in table.get('cells', []):
+        paragraphs = ' | '.join(
+            f'[P{i}]: {json.dumps(str(p.get("text", "") if isinstance(p, dict) else str(p)), ensure_ascii=False)}'
+            for i, p in enumerate(cell.get('paragraphs', []))
+            )
+        target_lines.append(
                     f'  Table shape_index={table.get("shape_index")} '
                     f'cell=({cell.get("row_index")},{cell.get("column_index")}): {paragraphs}'
                 )
-
         for chart in slide.get('charts_data', []):
-            if chart.get('title_paragraphs'):
+              if chart.get('title_paragraphs'):
                 paragraphs = ' | '.join(
                     f'[P{i}]: {json.dumps(str(p.get("text", "") if isinstance(p, dict) else str(p)), ensure_ascii=False)}'
                     for i, p in enumerate(chart.get('title_paragraphs', []))
                 )
                 target_lines.append(f'  Chart shape_index={chart.get("shape_index")} title: {paragraphs}')
-
-        slide_blocks.append(
+                slide_blocks.append(
             f'Slide {slide.get("slide_number")} — Title: {json.dumps(slide.get("title", ""), ensure_ascii=False)}\n'
             + ('\n'.join(target_lines) if target_lines else '  (no text targets)')
         )
 
     grammar = f'\nGrammar issues to fix:\n{grammar_issues_summary}\n' if grammar_issues_summary else ''
+    focus_block = ''
+    if focus_items:
+        items = '\n'.join(f'- {item}' for item in focus_items)
+        focus_block = f'''
+=== MUST-ADDRESS ISSUES ===
+Pre-analysis found these specific issues. Fix every one that applies to the
+slide(s) below — don't stop at a generic polish pass:
+{items}
+'''
     context_block = ''
 
     if presentation_context:
@@ -212,10 +220,14 @@ and visual structure.
 6. Make titles clear and descriptive when possible.
 7. Use parallel grammatical structure in bullet lists.
 8. Avoid weak phrases: "In this section", "As you can see", etc.
+9. Any textbox marked [TITLE] sits in a fixed-height box designed for ONE line.
+   Keep its rewritten length within about 20% of the original word count.
+   Do not expand a short title into a long sentence because it will wrap
+   and overlap the content below it.
 
 === JSON SCHEMA ===
 {{"slides":[{{"slide_number":1,"textboxes":[{{"shape_index":0,"paragraphs":["..."]}}],"tables":[{{"shape_index":1,"cells":[{{"row_index":0,"column_index":0,"paragraphs":["..."]}}]}}],"charts":[{{"shape_index":2,"title_paragraphs":["..."]}}]}}]}}
-{grammar}
+{grammar}{focus_block}
 === SLIDE DATA ===
 {chr(10).join(slide_blocks)}
 '''
@@ -295,8 +307,6 @@ REWRITTEN:
     "text_count": sum(len(tb.get("paragraphs", [])) for tb in s.get("textboxes", [])),
 } for s in rewritten_slides], indent=2)}
 '''
-
-
 # ── Build scoring prompt ────────────────────────────────────────────────────
 
 def build_scoring_prompt(
@@ -331,10 +341,7 @@ ORIGINAL slides:
 IMPROVED slides:
 {json.dumps([{"slide_number": s.get("slide_number"), "title": s.get("title")} for s in rewritten_slides])}
 '''
-
-
 # ── Build narrative analysis prompt ─────────────────────────────────────────
-
 def build_narrative_analysis_prompt(slides: list[dict]) -> str:
     """Build a prompt for analyzing the narrative/storytelling quality."""
     slide_texts = []
@@ -364,11 +371,95 @@ PRESENTATION:
 '''
 
 
+# ── Build Viva Question Generation Prompt ─────────────────────────────────
+
+def build_question_generation_prompt(
+    text: str,
+    presentation_context: Optional[dict] = None,
+    num_questions: int = 10,
+) -> str:
+    """Build a prompt for generating viva/thesis-defense style questions.
+
+    The prompt instructs the AI to generate questions grounded in the actual
+    uploaded content, covering conceptual, justification, critical, evidence,
+    and future categories. Returns valid JSON only.
+
+    Args:
+        text: The extracted text from the uploaded document.
+        presentation_context: Optional dict with topic, objective, type, etc.
+        num_questions: Desired number of questions to generate.
+
+    Returns:
+        A complete prompt string for the AI provider.
+    """
+    context_block = ""
+    if presentation_context:
+        themes = ", ".join(presentation_context.get("key_themes", [])) or "N/A"
+        context_block = f"""
+=== PRESENTATION CONTEXT ===
+• Topic: {presentation_context.get("overall_topic", "N/A")}
+• Objective: {presentation_context.get("main_objective", "N/A")}
+• Type: {presentation_context.get("presentation_type", "N/A")}
+• Level: {presentation_context.get("technical_level", "N/A")}
+• Audience: {presentation_context.get("audience", "N/A")}
+• Key themes: {themes}
+"""
+
+    return f"""You are an Expert Academic Viva Voce Examiner. Your role is to generate
+high-quality, defense-style oral examination questions that are deeply grounded
+in the specific content of the uploaded document. Every question must reference
+actual claims, data, diagrams, or sections from the provided text.
+
+=== OBJECTIVE ===
+Generate {num_questions} viva/thesis-defense style questions that test deep
+understanding of the material. Questions must cover a MIX of these five categories:
+
+1. **Conceptual** — Tests understanding of core concepts, definitions, and theories.
+2. **Justification** — Asks the student to justify design choices, methodology, or conclusions.
+3. **Critical** — Challenges assumptions, limitations, or alternative perspectives.
+4. **Evidence** — Asks for supporting data, citations, or empirical backing.
+5. **Future** — Explores future work, extensions, open questions, or real-world impact.
+
+=== RULES ===
+1. Every question MUST be directly grounded in the uploaded document content.
+   Do NOT generate generic questions that could apply to any document.
+2. Distribute questions across all five categories — no category should dominate.
+3. Mix difficulty levels: basic, intermediate, and advanced.
+4. Each question must include a specific source_reference pointing to which part
+   of the document the question is based on (e.g. "Slide 3 — mentions X",
+   "Section 2.3 — discusses Y", "Figure 1 — shows Z").
+5. For prep_tip, provide 2-3 bullet points of what a STRONG answer should cover.
+   These are preparation hints, NOT the full answer.
+6. If the document content is too short or thin to generate {num_questions}
+   quality distinct questions, generate FEWER questions (as few as needed) rather
+   than repeating similar or generic questions.{context_block}
+=== JSON SCHEMA ===
+{{
+  "questions": [
+    {{
+      "id": "q1",
+      "category": "conceptual|justification|critical|evidence|future",
+      "difficulty": "basic|intermediate|advanced",
+      "question": "Your question here?",
+      "source_reference": "e.g. Slide 3 / Section 2.1 — mentions X",
+      "prep_tip": "- Point 1\\n- Point 2\\n- Point 3"
+    }}
+  ],
+  "summary": {{
+    "total_questions": 10,
+    "by_difficulty": {{"basic": 3, "intermediate": 4, "advanced": 3}},
+    "focus_areas": ["List of 2-4 key topics the questions cover"]
+  }}
+}}
+
+Return ONLY valid JSON — no markdown, no explanations outside the JSON.
+
+=== DOCUMENT TEXT ===
+{text[:120000]}
+"""
 def get_system_prompt(mode: str = "professional") -> str:
     """Get the system-level instruction for a given mode."""
     return MODE_SYSTEM_INSTRUCTIONS.get(mode, MODE_SYSTEM_INSTRUCTIONS["professional"])
-
-
 def get_tone_instruction(tone: str = "professional") -> str:
     """Get the tone instruction string for a given tone."""
     return TONE_INSTRUCTIONS.get(tone, TONE_INSTRUCTIONS["professional"])
@@ -381,6 +472,7 @@ __all__ = [
     "build_validation_prompt",
     "build_scoring_prompt",
     "build_narrative_analysis_prompt",
+    "build_question_generation_prompt",
     "get_system_prompt",
     "get_tone_instruction",
     "MODE_SYSTEM_INSTRUCTIONS",

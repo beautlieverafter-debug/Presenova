@@ -6,6 +6,7 @@ place. It never rebuilds slides or copies visual objects into a new deck.
 
 import logging
 import os
+import re
 import tempfile
 import hashlib
 from io import BytesIO
@@ -13,6 +14,8 @@ from io import BytesIO
 from pptx import Presentation
 from pptx.enum.shapes import MSO_SHAPE_TYPE
 from pptx.oxml.ns import qn
+from pptx.enum.text import PP_ALIGN, MSO_AUTO_SIZE
+
 
 logger = logging.getLogger(__name__)
 
@@ -191,14 +194,20 @@ def get_presentation_metadata(file_path: str) -> dict:
 def _set_paragraph_text_preserving_format(paragraph, new_text: str) -> None:
     """Replace paragraph text while keeping all original run elements.
 
-    Text is distributed proportionally over the original runs instead of
-    collapsing them into one run. This keeps mixed font/color/bold segments,
-    hyperlinks, language settings, and other run-level OOXML properties.
+    Text is distributed over the original runs at WORD boundaries only
+    (never mid-word) so bold/italic/color/font-size changes never land in
+    the middle of a word. Distribution is still proportional to each run's
+    original character share, so a run that was originally "most of the
+    sentence" still gets most of the new sentence too.
     """
     runs = list(paragraph.runs)
     if not runs:
         if new_text:
             paragraph.add_run().text = new_text
+        return
+
+    if len(runs) == 1:
+        runs[0].text = new_text
         return
 
     old_lengths = [len(run.text or '') for run in runs]
@@ -209,29 +218,46 @@ def _set_paragraph_text_preserving_format(paragraph, new_text: str) -> None:
             run.text = ''
         return
 
+    # Keep trailing whitespace attached to its word so joins don't need
+    # extra spacing logic, and so a cut always falls between words.
+    tokens = re.findall(r'\S+\s*|\s+', new_text)
+    total_words = len(tokens)
+    if total_words == 0:
+        runs[0].text = new_text
+        for run in runs[1:]:
+            run.text = ''
+        return
+
     cursor = 0
     cumulative = 0
     for index, (run, old_length) in enumerate(zip(runs, old_lengths)):
         cumulative += old_length
-        end = len(new_text) if index == len(runs) - 1 else round(
-            len(new_text) * cumulative / old_total
-        )
-        run.text = new_text[cursor:end]
-        cursor = end
-
+        if index == len(runs) - 1:
+            word_end = total_words
+        else:
+            word_end = round(total_words * cumulative / old_total)
+            word_end = max(cursor, min(word_end, total_words))
+        run.text = ''.join(tokens[cursor:word_end])
+        cursor = word_end
 
 def _replace_text_frame_text(text_frame, rewritten_paragraphs: list[str]) -> None:
     """Replace exactly one string for each existing paragraph."""
     original_paragraphs = list(text_frame.paragraphs)
+
     if len(original_paragraphs) != len(rewritten_paragraphs):
         raise ValueError(
             f'Paragraph count changed ({len(original_paragraphs)} -> '
             f'{len(rewritten_paragraphs)}).'
         )
+
     for paragraph, new_text in zip(original_paragraphs, rewritten_paragraphs):
         _set_paragraph_text_preserving_format(paragraph, str(new_text))
 
-
+    # Safety net: shrink text automatically if it becomes too long
+    try:
+        text_frame.auto_size = MSO_AUTO_SIZE.TEXT_TO_FIT_SHAPE
+    except Exception:
+        pass
 def _replace_textbox_text(shape, rewritten_paragraphs: list[str]) -> None:
     """Compatibility wrapper for normal shapes and table cells."""
     _replace_text_frame_text(shape.text_frame, rewritten_paragraphs)

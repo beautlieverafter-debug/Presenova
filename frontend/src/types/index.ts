@@ -74,6 +74,8 @@ export interface AnalysisReport {
   recommendations: string[];
   original_text?: string;
   improved_text?: string;
+  strengths?: string[];
+  analysis_timestamp: string;
 }
 
 // Phase 4: Speech Analysis Response
@@ -137,10 +139,10 @@ export interface ApiError {
   status: number;
 }
 
-// Phase 2: Document Version Comparison
-export interface ComparisonReport {
-  score_difference: number;
-  key_improvements: string[];
-  remaining_issues: string[];
-  synthesis_summary: string;
-}
+// Phase 2: Document Version Comparison (NO LONGER USED - kept for reference)
+// export interface ComparisonReport {
+//   score_difference: number;
+//   key_improvements: string[];
+//   remaining_issues: string[];
+//   synthesis_summary: string;
+// }

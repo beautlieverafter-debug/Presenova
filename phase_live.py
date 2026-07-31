@@ -80,6 +80,14 @@ if GROQ_API_KEY and GROQ_API_KEY != 'your-groq-api-key-here':
 # Create Blueprint
 phase_live_bp = Blueprint('phase_live', __name__, url_prefix='/api/presentation')
 
+# ===== SCORING RELIABILITY THRESHOLDS (FIX) =====
+# A single valid frame/audio-chunk is not enough evidence to trust a metric.
+# These minimums prevent one lucky frame or one Whisper hallucination from
+# driving the whole session score.
+MIN_VALID_VIDEO_SAMPLES = 5     # need at least 5 good frames before trusting eye/posture avg
+MIN_VALID_AUDIO_SAMPLES = 3     # need at least 3 good audio chunks before trusting WPM avg
+MIN_WORDS_PER_CHUNK = 2         # Whisper hallucinates 1-word phrases on silence/noise
+
 # ===== REAL-TIME FEATURE EXTRACTION FUNCTIONS =====
 
 face_cascade = None
@@ -215,6 +223,7 @@ def _unmeasured_visual_result(hint):
         "eye_contact_score": 0,
         "posture_score": 0,
         "confidence_score": 0,
+        "hint": hint,  # FIX: was missing, so the reason never reached the caller/frontend
         "emotion": "NOT DETECTED",
         "valid": False
     }
@@ -539,7 +548,24 @@ def analyze_audio_chunk(base64_audio_data: str, session_id: str = "live", transc
             print(f"🎙️ [LIVE STT RESULT] Transcript: '{transcript}'")
             words = transcript.split()
             word_count = len([w for w in words if w.strip()])
-            
+
+            # ── FIX: Whisper (and most Whisper-family models) is known to
+            # hallucinate short filler phrases ("you", "thank you", "bye")
+            # on silence or background noise. A 1-word transcript from a 3s
+            # chunk is almost never real speech — treat it as unmeasured
+            # instead of letting it produce a fake WPM/score.
+            if word_count < MIN_WORDS_PER_CHUNK:
+                print(f"[LIVE STT WARN] Discarding likely-hallucinated chunk transcript: '{transcript}' ({word_count} word(s)).")
+                return {
+                    "wpm": 0,
+                    "filler_word_detected": False,
+                    "transcript": "",
+                    "filler_count": 0,
+                    "pitch_score": None,
+                    "vocal_sentiment": "Unavailable",
+                    "valid": False
+                }
+
             # Pacing calculation: chunk size is 3 seconds, so WPM = word_count * 20
             wpm = word_count * 20
             
@@ -695,6 +721,7 @@ def init_socketio_events(socketio):
                 "eye_contact": 0,
                 "posture": 0,
                 "confidence": 0,
+                "hint": metrics.get("hint", "Face was not detected."),  # FIX: surface the reason to the UI
                 "emotion": metrics.get("emotion", "NOT DETECTED")
             }, room=request.sid, namespace='/ws/live-session')
             return
@@ -914,9 +941,15 @@ def submit_presentation():
         qna_scores = [i["score"] for i in interruptions if i.get("score") is not None]
         avg_qna = avg_or_zero(qna_scores)
 
-        visual_presence = int((avg_eye + avg_posture) / 2) if eye_scores and posture_scores else None
+        # ── FIX: gate each dimension behind a minimum sample count, not just
+        # "list is non-empty". One lucky frame or one hallucinated Whisper
+        # chunk should not be enough evidence to score a whole dimension.
+        has_enough_video = len(eye_scores) >= MIN_VALID_VIDEO_SAMPLES and len(posture_scores) >= MIN_VALID_VIDEO_SAMPLES
+        has_enough_audio = len(wpm_history) >= MIN_VALID_AUDIO_SAMPLES
+
+        visual_presence = int((avg_eye + avg_posture) / 2) if has_enough_video else None
         vocal_delivery = None
-        if wpm_history:
+        if has_enough_audio:
             vocal_delivery = min(100, max(20, 100 - (fillers * 4) - abs(avg_wpm - 140) // 2))
         content_quality = avg_qna if qna_scores else None
 
@@ -930,6 +963,11 @@ def submit_presentation():
 
         total_weight = sum(weight for _, weight in weighted_scores)
         overall_execution = int(sum(score * weight for score, weight in weighted_scores) / total_weight) if total_weight else 0
+
+        # ── FIX: explicit flag for "nothing measurable happened this session"
+        # so the frontend can show "Insufficient data" instead of a bare 0/40
+        # that looks like a real (bad) score.
+        has_any_data = bool(weighted_scores)
         
         # Build full transcript for evaluation
         transcript_full = " ".join(transcripts)
@@ -948,12 +986,13 @@ def submit_presentation():
                 "avg_qna": avg_qna,
                 "interruptions": interruptions,
                 "overall_execution": overall_execution,
-                "has_visual_metrics": bool(eye_scores and posture_scores),
-                "has_voice_metrics": bool(wpm_history),
+                "has_visual_metrics": has_enough_video,
+                "has_voice_metrics": has_enough_audio,
                 "has_qna_scores": bool(qna_scores)
             }
         )
         report_json["overall_score"] = overall_execution
+        report_json["insufficient_data"] = not has_any_data  # FIX
 
         # Context Memory Matrix: Fetch past reports for this topic to check progress
         past_reports = HistoricalReport.get_by_user_and_topic(user_id, session.topic)
@@ -974,6 +1013,15 @@ def submit_presentation():
                         ("Keep polishing your delivery!" if diff <= 0 else "Great improvements in eye contact and presentation flow!")
             }
 
+        # FIX: don't present a misleading "progress" comparison when this
+        # session (or the prior one) had no real measured data.
+        if not has_any_data:
+            comparison = {
+                "improved": False,
+                "difference": 0,
+                "note": "No usable camera or voice data was captured this session. Make sure your camera and mic are on, then try again."
+            }
+
         report_json["comparison"] = comparison
         report_json["topic"] = session.topic
         report_json["session_metrics"] = {
@@ -989,9 +1037,11 @@ def submit_presentation():
                 "audio_samples": len(wpm_history),
                 "transcript_segments": len(transcripts),
                 "qna_scores": len(qna_scores),
-                "has_video_metrics": bool(eye_scores and posture_scores),
-                "has_audio_metrics": bool(wpm_history),
-                "has_qna_scores": bool(qna_scores)
+                "has_video_metrics": has_enough_video,
+                "has_audio_metrics": has_enough_audio,
+                "has_qna_scores": bool(qna_scores),
+                "min_video_samples_required": MIN_VALID_VIDEO_SAMPLES,   # FIX
+                "min_audio_samples_required": MIN_VALID_AUDIO_SAMPLES,   # FIX
             }
         }
         

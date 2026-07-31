@@ -266,6 +266,7 @@ def analyze_audio():
         with tempfile.NamedTemporaryFile(delete=False, suffix=file_ext) as temp_file:
             temp_file_path = temp_file.name
             file.save(temp_file_path)
+            print(f"📦 Saved audio file size: {os.path.getsize(temp_file_path)} bytes")  # ← ye add karo
             
         # ===== STEP 2: TRANSCRIBE AUDIO (Groq Whisper API) =====
         transcript = ""

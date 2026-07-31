@@ -188,7 +188,14 @@ class SmartFilter:
         return True
 
     def _is_high_quality_text(self, textbox: dict) -> bool:
-        """Heuristic check if text is already high quality."""
+        """Heuristic check if text is already high quality.
+
+        IMPORTANT: This is only a coarse local heuristic and has no visibility
+        into the real AI quality analysis (grammar/tone/clarity/7Cs) shown to
+        the user. It must never be the reason a slide gets fully skipped from
+        rewriting — that decision belongs to the smart filter's caller, which
+        can supply real per-slide scores via `previous_quality_scores`.
+        """
         paragraphs = textbox.get('paragraphs', [])
         texts = [
             p.get('text', '') if isinstance(p, dict) else str(p)
@@ -199,29 +206,9 @@ class SmartFilter:
         if not full_text:
             return True
 
-        issues = 0
-
-        # Check for spelling-like issues
-        words = full_text.split()
-        for word in words[:20]:
-            if len(word) > 1 and word[0].islower() and word[0].isalpha():
-                # First word of sentence should be capitalized
-                pass  # Not necessarily an issue
-
-        # Check sentence length (very long sentences = lower quality)
-        sentences = re.split(r'[.!?]+', full_text)
-        long_sentences = sum(1 for s in sentences if len(s.split()) > 30)
-        if long_sentences > len(sentences) * 0.3:
-            issues += 1
-
-        # Check for weak phrases
-        weak_phrases = ['in order to', 'as you can see', 'it is important to note']
-        for phrase in weak_phrases:
-            if phrase in full_text.lower():
-                issues += 1
-
-        # Return True (high quality) if few issues
-        return issues < 2
+        # Only ever treat as "already high quality" when there is strong,
+        # unambiguous evidence — never as a default assumption.
+        return False
 
     def _title_is_good(self, title: str) -> bool:
         """Check if a title is already clear and descriptive."""

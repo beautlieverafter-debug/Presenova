@@ -41,6 +41,7 @@ def evaluate_7cs(text: str, module_type: str, context_metrics: dict) -> dict:
 
     # ===== BUILD DYNAMIC FALLBACK RESPONSE =====
     fallback_json = {}
+    insufficient_live_data = False  # FIX: Initialize before any if/elif that references it
     
     if module_type == 'document':
         filename = context_metrics.get("filename", "presentation.pdf")
@@ -209,14 +210,7 @@ def evaluate_7cs(text: str, module_type: str, context_metrics: dict) -> dict:
         
         fallback_json = {
             "overall_score": overall_score,
-            "category_scores": {
-                "Structure": max(30, overall_score - 2),
-                "Clarity": max(30, overall_score - 5),
-                "Persuasion": max(30, overall_score - 4),
-                "Content_Quality": max(30, overall_score - 8),
-                "Call_to_Action": max(30, overall_score - 10)
-            },
-            "seven_cs_evaluation": {
+                "seven_cs_evaluation": {
                 "Clear": "The speaking pace supports a reasonably clear delivery.",
                 "Concise": f"Filler words count is {filler_count} ({filler_percentage:.1f}%), which affects conciseness.",
                 "Correct": "The speech follows general grammatical rules.",
@@ -260,6 +254,10 @@ def evaluate_7cs(text: str, module_type: str, context_metrics: dict) -> dict:
         has_qna_scores = context_metrics.get("has_qna_scores", False)
         
         overall_score = context_metrics.get("overall_execution", 0)
+
+        # FIX: kuch bhi measure nahi hua to Gemini ko hallucinate karne ka
+        # mauka hi mat do — call skip kr do
+        insufficient_live_data = not has_visual_metrics and not has_voice_metrics and not has_qna_scores
         
         strengths_list = []
         recs_list = []
@@ -320,34 +318,32 @@ def evaluate_7cs(text: str, module_type: str, context_metrics: dict) -> dict:
             "Consistent": f"Visual focus and body posture remained consistent (posture: {avg_posture}%) during delivery." if has_visual_metrics else "Consistency could not be scored from visual metrics because no valid video samples were captured."
         }
         
-        fallback_json = {
-            "overall_score": overall_score,
-            "category_scores": {
-                "Structure": max(30, overall_score - 2),
-                "Clarity": max(30, overall_score - 5),
-                "Persuasion": max(30, overall_score - 4),
-                "Content_Quality": max(30, overall_score - 8),
-                "Call_to_Action": max(30, overall_score - 10)
-            },
-            "seven_cs_evaluation": seven_cs_eval,
-            "seven_cs_scores": {
-                "Clear": min(100, max(0, avg_eye - 5)) if has_visual_metrics else 0,
-                "Concise": min(100, max(0, 100 - (fillers * 6))) if has_voice_metrics else 0,
-                "Correct": 0 if not text.strip() else 85,
-                "Complete": 0 if not text.strip() and num_interruptions == 0 else (80 if num_interruptions == 0 else 90),
-                "Courteous": 90 if has_visual_metrics else 0,
-                "Concrete": (75 if fillers > 3 else 85) if has_voice_metrics else 0,
-                "Consistent": 80 if has_visual_metrics else 0
-            },
-            "strengths": strengths_list,
-            "recommendations": recs_list,
-            "qna_analysis": qna_feedback,
-            "improved_text": text
-        }
+    if insufficient_live_data:
+            fallback_json = {
+                "overall_score": 0,
+                "category_scores": {
+                    "Structure": 0, "Clarity": 0, "Persuasion": 0,
+                    "Content_Quality": 0, "Call_to_Action": 0
+                },
+                "seven_cs_evaluation": {
+                    c: "Not scored — no camera or microphone data was captured for this session."
+                    for c in ["Clear", "Concise", "Correct", "Complete", "Courteous", "Concrete", "Consistent"]
+                },
+                "seven_cs_scores": {
+                    c: 0 for c in ["Clear", "Concise", "Correct", "Complete", "Courteous", "Concrete", "Consistent"]
+                },
+                "strengths": [],
+                "recommendations": [
+                    "Turn on your camera and microphone before starting the session.",
+                    "Speak clearly and stay in frame so eye contact and posture can be tracked."
+                ],
+                "qna_analysis": "No panelist interruptions occurred during this session.",
+                "detailed_feedback": "No usable video or audio data was captured during this session, so no delivery score could be generated. Check your camera and microphone permissions and try again.",
+                "improved_text": "No speech was captured during this session."
+            }
 
     # ===== BUILD DYNAMIC PROMPT FOR GEMINI =====
     analysis_prompt = ""
-    
     if module_type == 'document':
         filename = context_metrics.get("filename", "presentation.pdf")
         analysis_prompt = f"""
@@ -473,7 +469,7 @@ Original Speech Transcript to Analyze:
 {text}
 """
         
-    elif module_type == 'live':
+    elif module_type == 'live' and not insufficient_live_data:
         topic = context_metrics.get("topic", "General Topic")
         avg_eye = context_metrics.get("avg_eye", 0)
         avg_posture = context_metrics.get("avg_posture", 0)

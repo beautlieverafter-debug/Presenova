@@ -202,7 +202,7 @@ IMPORTANT: Always stay in character as a presentation coach. Guide the user on h
                         "temperature": 0.7,  # Balanced creativity and consistency
                         "top_p": 0.9,
                         "top_k": 40,
-                        "max_output_tokens": 500  # Limit response length for chat
+                        "max_output_tokens": 1024  # Limit response length for chat # Limit response length for chat
                     }
                 )
 

@@ -15,7 +15,8 @@ import {
   ChatResponse,
   ContextReport,
   ChatMessage,
-  ComparisonReport,
+  // ComparisonReport is no longer used (V1/V2 wizard removed)
+  // ComparisonReport,
 } from '../types';
 
 export const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '/api').replace(/\/$/, '');
@@ -352,39 +353,9 @@ export const getUserHistory = async (): Promise<{ status: string; reports: Repor
   }
 };
 
-/**
- * Phase 2: Call backend to compare Version 1 and Version 2 presentation texts
- */
-export const compareDocuments = async (
-  v1_text: string,
-  v2_text: string,
-  v1_score: number,
-  v2_score: number,
-  filename: string
-): Promise<ComparisonReport> => {
-  try {
-    const response = await fetchWithAuth(`${API_BASE_URL}/compare-documents`, {
-      method: 'POST',
-      body: JSON.stringify({
-        v1_text,
-        v2_text,
-        v1_score,
-        v2_score,
-        filename,
-      }),
-    });
-
-    if (!response.ok) {
-      const err = await response.json();
-      throw new Error(err.message || 'Comparison failed');
-    }
-
-    return await response.json();
-  } catch (error) {
-    console.error('Error comparing documents:', error);
-    throw error;
-  }
-};
+// ===== (REMOVED) DOCUMENT COMPARISON =====
+// compareDocuments() has been removed - V1/V2 wizard replaced by single-session analysis
+// The /api/compare-documents endpoint is no longer called from the frontend
 
 // ===== UTILITIES =====
 

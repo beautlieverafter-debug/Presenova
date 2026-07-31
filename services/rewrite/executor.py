@@ -58,6 +58,7 @@ class RewriteExecutor:
         slides: list[dict],
         grammar_issues_summary: str = "",
         presentation_context: Optional[dict] = None,
+        focus_items: Optional[list[str]] = None,
     ) -> tuple[list[dict], dict]:
         """Execute the full rewrite pipeline.
 
@@ -65,6 +66,8 @@ class RewriteExecutor:
             slides: List of slide dicts to rewrite.
             grammar_issues_summary: Pre-computed grammar issues.
             presentation_context: Optional holistic context.
+            focus_items: Pre-analysis recommendations (e.g.
+                quality_scores['recommendations']) the rewrite must address.
 
         Returns:
             Tuple of (rewritten_slides, execution_metrics).
@@ -76,10 +79,32 @@ class RewriteExecutor:
         self.metrics['slides_rewritten'] = len(to_rewrite)
         self.metrics['slides_skipped'] = len(to_skip)
 
+        # Pass-through format for slides the filter genuinely decided to
+        # skip (e.g. no textboxes at all). These must still appear in the
+        # output so update_presentation_text() and the report cover every
+        # slide — silently dropping them was the second half of the bug.
+        def _passthrough(slide: dict) -> dict:
+            return {
+                'slide_number': slide.get('slide_number'),
+                'textboxes': [
+                    {
+                        'shape_index': tb.get('shape_index'),
+                        'paragraphs': [
+                            p.get('text', '') if isinstance(p, dict) else str(p)
+                            for p in tb.get('paragraphs', [])
+                        ],
+                    }
+                    for tb in slide.get('textboxes', [])
+                ],
+                'tables': [],
+                'charts': [],
+                '_change_severity': 'none',
+            }
+
         if not to_rewrite:
             logger.info("[executor] No slides need rewriting; returning originals.")
             self._finalize_metrics()
-            return slides, self.metrics
+            return [_passthrough(s) for s in slides], self.metrics
 
         # Step 2: Plan batches
         batches = self.planner.plan_batches(to_rewrite)
@@ -94,9 +119,14 @@ class RewriteExecutor:
                 presentation_context,
                 batch['batch_index'],
                 batch['context_summary'],
+                focus_items,
             )
             all_rewritten.extend(rewritten)
             self.metrics['batches_processed'] += 1
+
+        # Step 4: Merge skipped slides back in so nothing is silently dropped
+        all_rewritten.extend(_passthrough(s) for s in to_skip)
+        all_rewritten.sort(key=lambda s: s.get('slide_number') or 0)
 
         self._finalize_metrics()
         logger.info(
@@ -113,6 +143,7 @@ class RewriteExecutor:
         presentation_context: Optional[dict],
         batch_index: int,
         context_summary: Optional[str] = None,
+        focus_items: Optional[list[str]] = None,
     ) -> list[dict]:
         """Execute rewrite for a single batch of slides.
 
@@ -124,7 +155,7 @@ class RewriteExecutor:
             slide_num = slide.get('slide_number')
             try:
                 result = self._rewrite_single_slide(
-                    slide, grammar_issues_summary, presentation_context
+                    slide, grammar_issues_summary, presentation_context, focus_items
                 )
                 if result:
                     result['_change_severity'] = self._classify_severity(slide, result)
@@ -181,6 +212,7 @@ class RewriteExecutor:
         slide: dict,
         grammar_issues_summary: str,
         presentation_context: Optional[dict],
+        focus_items: Optional[list[str]] = None,
     ) -> Optional[dict]:
         """Rewrite a single slide using the AI provider.
 
@@ -193,6 +225,7 @@ class RewriteExecutor:
             presentation_context,
             mode=self.planner.mode,
             tone=self.planner.tone,
+            focus_items=focus_items,
         )
 
         # Call provider
