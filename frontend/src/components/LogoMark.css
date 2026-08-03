@@ -1,0 +1,54 @@
+.logo-mark {
+  display: block;
+  filter: drop-shadow(0 0 6px rgba(129, 140, 248, 0.35));
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo-mark:hover {
+  filter: drop-shadow(0 0 12px rgba(129, 140, 248, 0.6));
+  transform: scale(1.05);
+}
+
+.logo-mark-frame {
+  animation: logoFramePulse 3s ease-in-out infinite;
+}
+
+@keyframes logoFramePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.logo-mark-page {
+  transform-origin: 24px 22px;
+}
+
+.logo-mark-page-left {
+  animation: pageFlutterLeft 4s ease-in-out infinite;
+}
+
+.logo-mark-page-right {
+  animation: pageFlutterRight 4s ease-in-out infinite;
+}
+
+@keyframes pageFlutterLeft {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-2deg); }
+}
+
+@keyframes pageFlutterRight {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.logo-mark-dot {
+  animation: dotTwinkle 2.4s ease-in-out infinite;
+}
+
+.dot-1 { animation-delay: 0s; }
+.dot-2 { animation-delay: 0.4s; }
+.dot-3 { animation-delay: 0.8s; }
+
+@keyframes dotTwinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.15); }
+}

@@ -48,7 +48,7 @@
 }
 
 /* Light Theme Variables */
-:root.light-theme {
+:root:not(.dark) {
   --background: #f1f5f9; /* Slate 100 */
   --card-bg: rgba(255, 255, 255, 0.8); /* Semi-transparent white card */
   --text-main: #0f172a; /* Slate 900 */
