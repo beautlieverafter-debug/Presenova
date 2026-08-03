@@ -1,7 +1,6 @@
 /**
  * User Dashboard Page (Phase 4 / Phase 5 Conversion)
  * Visualizes user progress, score trends, and saved analysis history.
- * Adds Light/Dark theme toggles and session logout options.
  */
 
 import React, { useEffect, useState } from 'react';
@@ -18,7 +17,6 @@ import {
   Bar,
   Cell
 } from 'recharts';
-import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { getUserHistory, ReportItem } from '../services/api';
 import './Analytics.css';
@@ -36,34 +34,18 @@ interface SpeechDataPoint {
 }
 
 const Analytics: React.FC = () => {
-  const navigate = useNavigate();
-  const { user, logout } = useAuth();
-  
+  const { user } = useAuth();
+
   // ===== STATE MANAGEMENT =====
   const [reports, setReports] = useState<ReportItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  
+
   // Dashboard navigation tabs: 'overview' (charts) vs 'history' (list of past reports)
   const [activeTab, setActiveTab] = useState<'overview' | 'history'>('overview');
-  
-  // Global theme toggle: 'dark' (default) vs 'light'
-  const [theme, setTheme] = useState<'dark' | 'light'>(() => {
-    return (localStorage.getItem('theme') as 'dark' | 'light') || 'dark';
-  });
-  
+
   // Historical report overlay details modal state
   const [activeReport, setActiveReport] = useState<ReportItem | null>(null);
-
-  // ===== THEME EFFECTS =====
-  useEffect(() => {
-    if (theme === 'light') {
-      document.documentElement.classList.add('light-theme');
-    } else {
-      document.documentElement.classList.remove('light-theme');
-    }
-    localStorage.setItem('theme', theme);
-  }, [theme]);
 
   // ===== HISTORY DATA FETCH =====
   useEffect(() => {
@@ -80,15 +62,6 @@ const Analytics: React.FC = () => {
 
     fetchHistory();
   }, []);
-
-  const toggleTheme = () => {
-    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
-  };
-
-  const handleLogout = () => {
-    logout();
-    navigate('/login');
-  };
 
   if (loading) {
     return (
@@ -108,7 +81,7 @@ const Analytics: React.FC = () => {
   }
 
   // ===== DATA TRANSFORMATIONS =====
-  
+
   // Sort reports chronologically for trends
   const sortedReports = [...reports].sort(
     (a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
@@ -128,8 +101,7 @@ const Analytics: React.FC = () => {
       month: 'short',
       day: 'numeric',
     });
-    
-    // Check if score exists in document or speech report json
+
     const score = r.report_type === 'document_analysis'
       ? r.report_json.overall_score
       : r.report_json.overall_score || r.report_json.clarity_score || 70;
@@ -147,8 +119,7 @@ const Analytics: React.FC = () => {
       month: 'short',
       day: 'numeric',
     });
-    
-    // Support speech analyzer or live coach metrics formats
+
     const wpm = r.report_json.speech_speed_wpm || r.report_json.session_metrics?.avg_wpm || 0;
     const fillers = r.report_json.filler_words_count || r.report_json.session_metrics?.total_fillers || 0;
 
@@ -198,42 +169,18 @@ const Analytics: React.FC = () => {
 
   return (
     <div className="analytics-page">
-      
-      {/* Premium Dashboard Header actions */}
+
+      {/* Dashboard Header */}
       <div className="analytics-header">
         <div className="header-meta">
           <h1>User Dashboard</h1>
           <p className="subtitle">Welcome back, <strong>{user?.name || 'User'}</strong>! Track your progress and manage saved sessions.</p>
         </div>
-        
-        <div className="header-actions">
-          {/* Theme Switcher Toggle */}
-          <button onClick={toggleTheme} className="theme-toggle-btn" title="Toggle Light/Dark Theme">
-            {theme === 'dark' ? (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="4"></circle>
-                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
-              </svg>
-            ) : (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-              </svg>
-            )}
-          </button>
-          
-          {/* Logout Button */}
-          <button onClick={handleLogout} className="logout-btn" title="Sign Out">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"></path>
-            </svg>
-            <span>Logout</span>
-          </button>
-        </div>
       </div>
 
       {/* Tabs Navigation Selectors */}
       <div className="dashboard-tabs">
-        <button 
+        <button
           className={`dash-tab ${activeTab === 'overview' ? 'active' : ''}`}
           onClick={() => setActiveTab('overview')}
         >
@@ -245,7 +192,7 @@ const Analytics: React.FC = () => {
           </svg>
           <span>Progress Overview</span>
         </button>
-        <button 
+        <button
           className={`dash-tab ${activeTab === 'history' ? 'active' : ''}`}
           onClick={() => setActiveTab('history')}
         >
@@ -328,7 +275,7 @@ const Analytics: React.FC = () => {
 
           {/* Chart Section Grid */}
           <div className="charts-grid" style={{ marginTop: '2rem' }}>
-            
+
             {/* 1. Score Progress Line Chart */}
             <section className="chart-container-card">
               <h3>Score Improvement Trend</h3>
@@ -380,7 +327,6 @@ const Analytics: React.FC = () => {
                         strokeWidth={3}
                         activeDot={{ r: 8 }}
                       />
-                      {/* Reference boundaries */}
                       <Line
                         name="Optimal Min (120)"
                         type="monotone"
@@ -470,7 +416,7 @@ const Analytics: React.FC = () => {
         <div className="history-tab-content fadeIn">
           <h2>Your Presentation Analysis History</h2>
           <p className="section-desc">Look up previous document rewrites, recorded speech reports, or live sessions to see detailed scores and recommendations.</p>
-          
+
           {historyReports.length > 0 ? (
             <div className="history-table-wrapper">
               <table className="history-table">
@@ -487,17 +433,17 @@ const Analytics: React.FC = () => {
                   {historyReports.map((report) => {
                     const isDoc = report.report_type === 'document_analysis';
                     const isLive = report.report_type === 'live_coaching';
-                    const score = isDoc 
-                      ? report.report_json.overall_score 
+                    const score = isDoc
+                      ? report.report_json.overall_score
                       : report.report_json.overall_score || report.report_json.clarity_score || 70;
-                      
-                    const displayName = isDoc 
+
+                    const displayName = isDoc
                       ? report.report_json.document_name || 'Presentation Slides'
                       : report.report_json.topic || 'Speech Practice Session';
 
-                    const typeBadge = isDoc 
+                    const typeBadge = isDoc
                       ? { label: 'Document', class: 'badge-doc' }
-                      : isLive 
+                      : isLive
                         ? { label: 'Live Coach', class: 'badge-live' }
                         : { label: 'Speech Practice', class: 'badge-speech' };
 
@@ -524,7 +470,7 @@ const Analytics: React.FC = () => {
                           </span>
                         </td>
                         <td style={{ textAlign: 'right' }}>
-                          <button 
+                          <button
                             className="view-summary-btn"
                             onClick={() => setActiveReport(report)}
                           >
@@ -557,15 +503,15 @@ const Analytics: React.FC = () => {
               </span>
               <button className="modal-close-btn" onClick={() => setActiveReport(null)}>✕</button>
             </div>
-            
+
             <h2 className="modal-title">{activeReport.report_json.document_name || activeReport.report_json.topic || 'Presentation Session'}</h2>
             <p className="modal-date">Analyzed on: {new Date(activeReport.created_at).toLocaleString()}</p>
-            
+
             <div className="modal-score-section">
               <div className="modal-score-circle">
                 <span className="score-num">
-                  {activeReport.report_type === 'document_analysis' 
-                    ? activeReport.report_json.overall_score 
+                  {activeReport.report_type === 'document_analysis'
+                    ? activeReport.report_json.overall_score
                     : activeReport.report_json.overall_score || activeReport.report_json.clarity_score || 70}
                 </span>
                 <span className="score-lbl">Score</span>
@@ -573,14 +519,13 @@ const Analytics: React.FC = () => {
               <div className="modal-feedback-box">
                 <h3>Detailed Feedback Summary</h3>
                 <p>
-                  {activeReport.report_json.detailed_feedback || 
-                   (activeReport.report_json.actionable_feedback && activeReport.report_json.actionable_feedback.join('. ')) || 
+                  {activeReport.report_json.detailed_feedback ||
+                   (activeReport.report_json.actionable_feedback && activeReport.report_json.actionable_feedback.join('. ')) ||
                    'Detailed analysis successfully compiled for this practice session. Review category scores and suggestions below.'}
                 </p>
               </div>
             </div>
-            
-            {/* Category breakdown rendering */}
+
             {activeReport.report_json.category_scores && (
               <div className="modal-scores-grid">
                 <h3>Category Score Breakdown</h3>
@@ -600,8 +545,7 @@ const Analytics: React.FC = () => {
                 </div>
               </div>
             )}
-            
-            {/* Telemetry data for audio/speech recordings */}
+
             {(activeReport.report_json.speech_speed_wpm || activeReport.report_json.session_metrics) && (
               <div className="speech-telemetry-box">
                 <h3>Speech Delivery Metrics</h3>
@@ -615,8 +559,8 @@ const Analytics: React.FC = () => {
                   <div className="telemetry-card">
                     <span className="tel-title">Filler Word Occurrences</span>
                     <span className="tel-val">
-                      {activeReport.report_json.filler_words_count !== undefined 
-                        ? activeReport.report_json.filler_words_count 
+                      {activeReport.report_json.filler_words_count !== undefined
+                        ? activeReport.report_json.filler_words_count
                         : activeReport.report_json.session_metrics?.total_fillers || 0}
                     </span>
                   </div>
@@ -645,8 +589,7 @@ const Analytics: React.FC = () => {
                 </div>
               </div>
             )}
-            
-            {/* Recommendations list */}
+
             {activeReport.report_json.recommendations && activeReport.report_json.recommendations.length > 0 && (
               <div className="modal-recommendations">
                 <h3>Key Recommendations</h3>
@@ -657,15 +600,14 @@ const Analytics: React.FC = () => {
                 </ul>
               </div>
             )}
-            
-            {/* Professional Rewrites */}
+
             {activeReport.report_json.improved_text && (
               <div className="modal-rewrite">
                 <h3>AI Professional Rewrite Suggestion</h3>
                 <p className="rewrite-text">{activeReport.report_json.improved_text}</p>
               </div>
             )}
-            
+
             <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'flex-end' }}>
               <button className="modal-done-btn" onClick={() => setActiveReport(null)}>
                 Close Details
