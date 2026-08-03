@@ -155,8 +155,9 @@ def build_rewrite_prompt(
             f'({len(textbox.get("paragraphs", []))} paragraphs): {paragraphs}'
         )
 
-        for table in slide.get('tables_data', []):            for cell in table.get('cells', []):
-        paragraphs = ' | '.join(
+        for table in slide.get('tables_data', []):            
+            for cell in table.get('cells', []):        
+                paragraphs = ' | '.join(
             f'[P{i}]: {json.dumps(str(p.get("text", "") if isinstance(p, dict) else str(p)), ensure_ascii=False)}'
             for i, p in enumerate(cell.get('paragraphs', []))
             )
