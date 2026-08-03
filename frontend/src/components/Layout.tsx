@@ -30,7 +30,7 @@ const Layout: React.FC = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/analytics" className="navbar-logo">
-            AI Presentation
+            Presenova
           </Link>
 
           <ul className="nav-links">
@@ -84,7 +84,7 @@ const Layout: React.FC = () => {
 
       {/* Footer */}
       <footer className="footer">
-        <p>&copy; 2026 AI Presentation Analyzer | FYP Project</p>
+        <p>&copy; 2026 Presenova | AI Presentation Analyzer & Coach — FYP Project</p>
       </footer>
     </div>
   );
