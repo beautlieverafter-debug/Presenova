@@ -12,11 +12,61 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import { login, signup } from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import './Login.css';
 
 type FormTab = 'login' | 'signup';
+
+// ===== ICONS (inline SVG, no extra dependency) =====
+const EyeIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+    <circle cx="12" cy="12" r="3" />
+  </svg>
+);
+
+const EyeOffIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a18.5 18.5 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" />
+    <line x1="1" y1="1" x2="23" y2="23" />
+  </svg>
+);
+
+const CheckIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="20 6 9 17 4 12" />
+  </svg>
+);
+
+const SpinnerIcon = () => (
+  <svg className="spinner-icon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" strokeOpacity="0.25" />
+    <path d="M22 12a10 10 0 0 1-10 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+  </svg>
+);
+
+// ===== ANIMATION VARIANTS =====
+const cardVariants = {
+  hidden: { opacity: 0, y: 24, scale: 0.98 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1], staggerChildren: 0.06, delayChildren: 0.1 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 12 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.35, ease: 'easeOut' } },
+};
+
+const brandingVariants = {
+  hidden: { opacity: 0, x: -30 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1], staggerChildren: 0.1, delayChildren: 0.15 } },
+};
 
 const Login: React.FC = () => {
   // ===== NAVIGATION AND AUTH =====
@@ -36,6 +86,11 @@ const Login: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [message, setMessage] = useState<string | null>(null);
 
+  // ===== PASSWORD VISIBILITY (UI-only, no logic impact) =====
+  const [showLoginPassword, setShowLoginPassword] = useState(false);
+  const [showSignupPassword, setShowSignupPassword] = useState(false);
+  const [showSignupConfirm, setShowSignupConfirm] = useState(false);
+
   // ===== LOGIN FORM STATE =====
   const [loginForm, setLoginForm] = useState({
     email: '',
@@ -50,7 +105,7 @@ const Login: React.FC = () => {
     confirmPassword: '',
   });
 
-  // ===== LOGIN HANDLER =====
+  // ===== LOGIN HANDLER (unchanged) =====
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
@@ -58,22 +113,16 @@ const Login: React.FC = () => {
     setIsLoading(true);
 
     try {
-      // Validate form
       if (!loginForm.email || !loginForm.password) {
         setError('Please fill in all fields');
         setIsLoading(false);
         return;
       }
 
-      // ===== SEND LOGIN REQUEST TO BACKEND =====
       const response = await login(loginForm.email, loginForm.password);
-
-      // ===== SAVE AUTH STATE =====
       loginContext(response.user, response.access_token);
-
       setMessage('Login successful! Redirecting...');
 
-      // ===== REDIRECT TO DASHBOARD =====
       setTimeout(() => {
         navigate('/analytics');
       }, 1500);
@@ -85,7 +134,7 @@ const Login: React.FC = () => {
     }
   };
 
-  // ===== SIGNUP HANDLER =====
+  // ===== SIGNUP HANDLER (unchanged) =====
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
@@ -93,7 +142,6 @@ const Login: React.FC = () => {
     setIsLoading(true);
 
     try {
-      // ===== VALIDATION =====
       if (!signupForm.name || !signupForm.email || !signupForm.password) {
         setError('Please fill in all fields');
         setIsLoading(false);
@@ -112,19 +160,10 @@ const Login: React.FC = () => {
         return;
       }
 
-      // ===== SEND SIGNUP REQUEST TO BACKEND =====
-      const response = await signup(
-        signupForm.name,
-        signupForm.email,
-        signupForm.password
-      );
-
-      // ===== SAVE AUTH STATE =====
+      const response = await signup(signupForm.name, signupForm.email, signupForm.password);
       loginContext(response.user, response.access_token);
-
       setMessage('Account created successfully! Redirecting...');
 
-      // ===== REDIRECT TO DASHBOARD =====
       setTimeout(() => {
         navigate('/analytics');
       }, 1500);
@@ -136,18 +175,59 @@ const Login: React.FC = () => {
     }
   };
 
+  const features = [
+    'Real-time AI delivery coaching with live camera feedback',
+    'Document-grounded viva question generation',
+    'Instant speech, posture & confidence analysis',
+    'AI-powered presentation rewriting',
+  ];
+
   return (
     <div className="login-page">
-      <div className="login-container">
-        <div className="login-card">
+      {/* Ambient background blobs */}
+      <div className="bg-blob blob-1" />
+      <div className="bg-blob blob-2" />
+
+      {/* Left: Branding panel */}
+      <motion.div
+        className="login-branding"
+        initial="hidden"
+        animate="visible"
+        variants={brandingVariants}
+      >
+        <motion.div className="brand-mark" variants={itemVariants}>Presenova</motion.div>
+        <motion.h2 className="brand-heading" variants={itemVariants}>
+          Ace every presentation.<br />Ace every viva.
+        </motion.h2>
+        <motion.p className="brand-subtext" variants={itemVariants}>
+          Your AI-powered coach for confident, well-prepared presentations.
+        </motion.p>
+        <motion.ul className="feature-list" variants={itemVariants}>
+          {features.map((f) => (
+            <li key={f}>
+              <span className="feature-check"><CheckIcon /></span>
+              <span>{f}</span>
+            </li>
+          ))}
+        </motion.ul>
+      </motion.div>
+
+      {/* Right: Form panel */}
+      <div className="login-form-panel">
+        <motion.div
+          className="login-card"
+          initial="hidden"
+          animate="visible"
+          variants={cardVariants}
+        >
           {/* Header */}
-          <div className="login-header">
-            <h1>Presenova</h1>
-            <p>Presentation Analysis & AI Coach</p>
-          </div>
+          <motion.div className="login-header" variants={itemVariants}>
+            <h1 className="mobile-brand">Presenova</h1>
+            <p>{activeTab === 'login' ? 'Welcome back — sign in to continue' : 'Create your account to get started'}</p>
+          </motion.div>
 
           {/* Tabs */}
-          <div className="login-tabs">
+          <motion.div className="login-tabs" variants={itemVariants}>
             <button
               className={`tab-button ${activeTab === 'login' ? 'active' : ''}`}
               onClick={() => {
@@ -170,16 +250,40 @@ const Login: React.FC = () => {
             >
               Sign Up
             </button>
-          </div>
+          </motion.div>
 
           {/* Messages */}
-          {error && <div className="message message-error">{error}</div>}
-          {message && <div className="message message-success">{message}</div>}
+          <AnimatePresence mode="wait">
+            {error && (
+              <motion.div
+                key="error-msg"
+                className="message message-error"
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0, x: [0, -6, 6, -6, 6, 0] }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.4 }}
+              >
+                {error}
+              </motion.div>
+            )}
+            {message && (
+              <motion.div
+                key="success-msg"
+                className="message message-success"
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.3 }}
+              >
+                {message}
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           {/* Login Form */}
           {activeTab === 'login' && (
             <form onSubmit={handleLogin} className="login-form">
-              <div className="form-group">
+              <motion.div className="form-group" variants={itemVariants}>
                 <label htmlFor="login-email">Email</label>
                 <input
                   id="login-email"
@@ -190,31 +294,53 @@ const Login: React.FC = () => {
                   disabled={isLoading}
                   required
                 />
-              </div>
+              </motion.div>
 
-              <div className="form-group">
+              <motion.div className="form-group" variants={itemVariants}>
                 <label htmlFor="login-password">Password</label>
-                <input
-                  id="login-password"
-                  type="password"
-                  placeholder="Enter your password"
-                  value={loginForm.password}
-                  onChange={(e) => setLoginForm({ ...loginForm, password: e.target.value })}
-                  disabled={isLoading}
-                  required
-                />
-              </div>
+                <div className="input-with-icon">
+                  <input
+                    id="login-password"
+                    type={showLoginPassword ? 'text' : 'password'}
+                    placeholder="Enter your password"
+                    value={loginForm.password}
+                    onChange={(e) => setLoginForm({ ...loginForm, password: e.target.value })}
+                    disabled={isLoading}
+                    required
+                  />
+                  <button
+                    type="button"
+                    className="icon-toggle"
+                    onClick={() => setShowLoginPassword((v) => !v)}
+                    tabIndex={-1}
+                    aria-label="Toggle password visibility"
+                  >
+                    {showLoginPassword ? <EyeOffIcon /> : <EyeIcon />}
+                  </button>
+                </div>
+              </motion.div>
 
-              <button type="submit" className="login-button" disabled={isLoading}>
-                {isLoading ? 'Logging in...' : 'Login'}
-              </button>
+              <motion.button
+                type="submit"
+                className="login-button"
+                disabled={isLoading}
+                variants={itemVariants}
+                whileHover={!isLoading ? { scale: 1.015 } : {}}
+                whileTap={!isLoading ? { scale: 0.98 } : {}}
+              >
+                {isLoading ? (
+                  <span className="btn-loading"><SpinnerIcon /> Logging in...</span>
+                ) : (
+                  'Login'
+                )}
+              </motion.button>
             </form>
           )}
 
           {/* Signup Form */}
           {activeTab === 'signup' && (
             <form onSubmit={handleSignup} className="login-form">
-              <div className="form-group">
+              <motion.div className="form-group" variants={itemVariants}>
                 <label htmlFor="signup-name">Full Name</label>
                 <input
                   id="signup-name"
@@ -225,9 +351,9 @@ const Login: React.FC = () => {
                   disabled={isLoading}
                   required
                 />
-              </div>
+              </motion.div>
 
-              <div className="form-group">
+              <motion.div className="form-group" variants={itemVariants}>
                 <label htmlFor="signup-email">Email</label>
                 <input
                   id="signup-email"
@@ -238,45 +364,78 @@ const Login: React.FC = () => {
                   disabled={isLoading}
                   required
                 />
-              </div>
+              </motion.div>
 
-              <div className="form-group">
+              <motion.div className="form-group" variants={itemVariants}>
                 <label htmlFor="signup-password">Password</label>
-                <input
-                  id="signup-password"
-                  type="password"
-                  placeholder="Min 6 characters"
-                  value={signupForm.password}
-                  onChange={(e) => setSignupForm({ ...signupForm, password: e.target.value })}
-                  disabled={isLoading}
-                  required
-                />
-              </div>
+                <div className="input-with-icon">
+                  <input
+                    id="signup-password"
+                    type={showSignupPassword ? 'text' : 'password'}
+                    placeholder="Min 6 characters"
+                    value={signupForm.password}
+                    onChange={(e) => setSignupForm({ ...signupForm, password: e.target.value })}
+                    disabled={isLoading}
+                    required
+                  />
+                  <button
+                    type="button"
+                    className="icon-toggle"
+                    onClick={() => setShowSignupPassword((v) => !v)}
+                    tabIndex={-1}
+                    aria-label="Toggle password visibility"
+                  >
+                    {showSignupPassword ? <EyeOffIcon /> : <EyeIcon />}
+                  </button>
+                </div>
+              </motion.div>
 
-              <div className="form-group">
+              <motion.div className="form-group" variants={itemVariants}>
                 <label htmlFor="signup-confirm">Confirm Password</label>
-                <input
-                  id="signup-confirm"
-                  type="password"
-                  placeholder="Confirm your password"
-                  value={signupForm.confirmPassword}
-                  onChange={(e) => setSignupForm({ ...signupForm, confirmPassword: e.target.value })}
-                  disabled={isLoading}
-                  required
-                />
-              </div>
+                <div className="input-with-icon">
+                  <input
+                    id="signup-confirm"
+                    type={showSignupConfirm ? 'text' : 'password'}
+                    placeholder="Confirm your password"
+                    value={signupForm.confirmPassword}
+                    onChange={(e) => setSignupForm({ ...signupForm, confirmPassword: e.target.value })}
+                    disabled={isLoading}
+                    required
+                  />
+                  <button
+                    type="button"
+                    className="icon-toggle"
+                    onClick={() => setShowSignupConfirm((v) => !v)}
+                    tabIndex={-1}
+                    aria-label="Toggle password visibility"
+                  >
+                    {showSignupConfirm ? <EyeOffIcon /> : <EyeIcon />}
+                  </button>
+                </div>
+              </motion.div>
 
-              <button type="submit" className="login-button" disabled={isLoading}>
-                {isLoading ? 'Creating account...' : 'Sign Up'}
-              </button>
+              <motion.button
+                type="submit"
+                className="login-button"
+                disabled={isLoading}
+                variants={itemVariants}
+                whileHover={!isLoading ? { scale: 1.015 } : {}}
+                whileTap={!isLoading ? { scale: 0.98 } : {}}
+              >
+                {isLoading ? (
+                  <span className="btn-loading"><SpinnerIcon /> Creating account...</span>
+                ) : (
+                  'Sign Up'
+                )}
+              </motion.button>
             </form>
           )}
 
           {/* Footer */}
-          <div className="login-footer">
+          <motion.div className="login-footer" variants={itemVariants}>
             <p>Secure authentication powered by JWT tokens</p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

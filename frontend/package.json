@@ -10,6 +10,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
+    "framer-motion": "^12.43.0",
     "jspdf": "^2.5.1",
     "react": "^18.2.0",
     "react-diff-viewer-continued": "^4.2.2",
