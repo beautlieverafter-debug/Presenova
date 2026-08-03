@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLiveSession } from '../hooks/useLiveSession';
 import VideoCapture from '../components/VideoCapture';
@@ -8,7 +7,6 @@ import ReportDashboard from '../components/ReportDashboard';
 // compareDocuments is no longer used - V1/V2 wizard removed
 // import { compareDocuments } from '../services/api'; // Removed - no longer used
 import { downloadProgressReportPDF } from '../services/pdfGenerator';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import './LiveCoach.css';
 
 /**
@@ -20,14 +18,11 @@ import './LiveCoach.css';
  * SpeechAnalyzer.tsx and DocumentAnalyzer.tsx). Search "COMPARISON_DISABLED" to re-enable all sections at once.
  * Nothing below is deleted — everything is preserved as comments for easy restoration.
  */
-
 const LiveCoach: React.FC = () => {
-  const navigate = useNavigate();
-  const { user } = useAuth();
-  const userId = user?.id || 'guest';
+    const { user } = useAuth();
+    const userId = user?.id || 'guest';
 
   // ===== WIZARD STATE (kept for potential re-enable, unused while comparison is disabled) =====
-  const [step, setStep] = useState(1);
 
   /* COMPARISON_DISABLED — uncomment to re-enable tab switching in step 3
   const [activeReportTab, setActiveReportTab] = useState<'comparison' | 'v1' | 'v2'>('comparison');
@@ -52,7 +47,6 @@ const LiveCoach: React.FC = () => {
   */
 
   // Version 1 (single-session) states
-  const [v1SessionId, setV1SessionId] = useState<string | null>(null);
   const [v1Report, setV1Report] = useState<any | null>(null);
   const [v1Topic, setV1Topic] = useState('');
 
@@ -107,23 +101,22 @@ const LiveCoach: React.FC = () => {
     };
   }, [status]);
 
-  // Save session report (always V1 — comparison disabled)
+ // Save session report (always V1 — comparison disabled)
   useEffect(() => {
     if (status === 'FINISHED' && finalReport && sessionId) {
       if (!v1Report) {
         setV1Report(finalReport);
-        setV1SessionId(sessionId);
         setV1Topic(topic);
       }
-
-      /* COMPARISON_DISABLED — uncomment else-if to re-enable step-based V2 saving
-      } else if (step === 2 && sessionId !== v1SessionId && !v2Report) {
-        setV2Report(finalReport);
-        setV2SessionId(sessionId);
-      }
-      */
     }
   }, [status, finalReport, sessionId, topic, v1Report]);
+
+  /* COMPARISON_DISABLED — uncomment else-if to re-enable step-based V2 saving
+  } else if (step === 2 && sessionId !== v1SessionId && !v2Report) {
+    setV2Report(finalReport);
+    setV2SessionId(sessionId);
+  }
+  */
 
   const handleStart = (e: React.FormEvent) => {
     e.preventDefault();
@@ -283,12 +276,11 @@ const LiveCoach: React.FC = () => {
   */
 
   const handleReset = () => {
-    setTopic('');
-    setSeconds(0);
-    setAnswerText('');
-    setV1SessionId(null);
-    setV1Report(null);
-    setV1Topic('');
+  setTopic('');
+  setSeconds(0);
+  setAnswerText('');
+  setV1Report(null);
+  setV1Topic('');
 
     /* COMPARISON_DISABLED — uncomment to re-enable full reset
     setStep(1);

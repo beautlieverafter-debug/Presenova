@@ -9,14 +9,13 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Button from '../components/Button';
-import { useNavigate } from 'react-router-dom';
 import { analyzeAudio, analyzeSpeech } from '../services/api';
 // compareDocuments removed - no longer used
 import { SpeechMetrics } from '../types';
 // ComparisonReport removed - no longer used
 import { downloadProgressReportPDF } from '../services/pdfGenerator';
 // COMPARISON_DISABLED: import ReactDiffViewer from 'react-diff-viewer-continued';
-import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend } from 'recharts';
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import './SpeechAnalyzer.css';
 
 // Sub-component: 7Cs Pie Chart
@@ -89,10 +88,8 @@ const SevenCsPieChart: React.FC<{ scores?: any; overallScore?: number }> = ({ sc
 };
 
 const SpeechAnalyzer: React.FC = () => {
-  const navigate = useNavigate();
 
   // ===== WIZARD STATE =====
-  const [step, setStep] = useState(1);
 
   /* COMPARISON_DISABLED — uncomment to re-enable tab switching in step 3
   const [activeReportTab, setActiveReportTab] = useState<'comparison' | 'v1' | 'v2'>('comparison');
@@ -332,7 +329,6 @@ const SpeechAnalyzer: React.FC = () => {
     setComparison(null);
     */
 
-    setStep(1);
   };
 
   const handleUseDemoSpeech = async () => {
